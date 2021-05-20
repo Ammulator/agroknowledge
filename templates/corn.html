@@ -1,0 +1,369 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>AgroKnowledge |Crops| Corn</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/crop.css' %}">
+  <script src="{% static 'js/jquery.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate-1.1.1.js' %}"></script>
+  <script src="{% static 'js/superfish.js' %}"></script>
+  <script src="{% static 'js/sForm.js' %}"></script>
+  <script src="{% static 'js/jquery.equalheights.js' %}"></script>
+  <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+</head>
+<body>
+
+
+  <header>
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="h_phone">Need Help? Call Us +91 6265222852</div>
+        <h1><a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt=""></a></h1>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="menu_block">
+      <div class="container_12">
+        <div class="grid_12">
+          <div class="socials"><a
+              href="https://www.facebook.com/groups/787250868600891/?notif_id=1618812220245678&notif_t=group_invited_to_group&ref=notif"></a><a
+              href="https://twitter.com/AgroKnowledge"></a></div>
+          <div class="autor">Social </div>
+          <nav class="">
+            <ul class="sf-menu">
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="{% url 'services' %}">Schemes</a>
+              </li>
+              <li><a href="{% url 'products' %}">Crops</a>
+                <ul>
+                  <li><a href="#">Rabi Crops</a>
+                    <ul>
+                      <li class="current"><a href="{% url 'wheat' %}">Wheat</a></li>
+                      <li><a href="{% url 'gram' %}">Gram</a></li>
+                      <li><a href="{% url 'sunflower' %}">Sunflower</a></li>
+                      <li><a href="{% url 'potato' %}">Potato</a></li>
+                      <li><a href="{% url 'onion' %}">Onion</a></li>
+                      <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Kharif Crops</a>
+                    <ul>
+                      <li><a href="{% url 'rice' %}">Rice</a></li>
+                      <li><a href="{% url 'corn' %}">Corn</a></li>
+                      <li><a href="{% url 'soyabean' %}">Soyabean</a></li>
+                      <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                      <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                      <li><a href="{% url 'moong' %}">Moong</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="{% url 'contacts' %}">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="bod">
+    <h1>Maize Farming ( मक्का की खेती )</h1>
+  </div>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box1">
+        <img src="{% static 'images/maize1.jfif' %}" alt="">
+        <p class="center">In India,maize or corn is the third most important food.maize is grown throughout the year in all states of the country for various
+          purposes fodder for animal,sweet corn, baby corn, green cobs.
+        </p>
+      </div>
+      <div class="box" id="box2">
+        <h2 class="h-secondary">मक्का की खेती</h2><br>
+        <p class="center">मक्का (Maize) विश्व में उगाई जाने वाली फसल है| मक्का (Maize) को खरीफ की फसल कहा जाता है, लेकिन
+          बहुत से क्षेत्रों में इसको रवि के समय भी उगाया जाता है| इसके गुणकारी होने के कारण पहले की तुलना में आज के समय
+          इसका उपयोग मानव आहर के रूप में ज्यादा होता है| इसके गुण इस प्रकार है, कार्बोहाइड्रेट 70, प्रोटीन 10 और तेल 4
+          प्रतिशत पाया जाता है| ये सब तत्व मानव शरीर के लिए बहुत ही आवश्यक है|साथ ही साथ यह पशुओं का भी प्रमुख आहर
+          है|अन्य फसलों की तुलना मे मक्का (Maize) अल्प समय में पकने और अधिक पैदावार देने वाली फसल है| अगर किसान भाई थोड़े
+          से ध्यान से और आज की तकनीकी के अनुसार खेती करे, तो इस फसल की अधिक पैदावार से अच्छा मुनाफा ले सकते है|
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+        <img src="{% static 'images/maize2.jfif' %}" alt="">
+        <p class="center">This is all about wheather conditon in Maize farming. </p>
+        <img src="{% static 'images/maize3.jfif' %}" alt="">
+        <p class="center">This is all about land selection in Maize farming. </p>
+        <img src="{% static 'images/gram4.jfif' %}" alt="">
+        <p class="center">This is all about land preparation in Maize farming. </p>
+        <img src="{% static 'images/maize5.jfif' %}" alt="">
+        <p class="center">Different types of Maize for different conditions </p>
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">उपयुक्त जलवायु</h2><br>
+        <p class="center">मक्का की खेती विभिन्न प्रकार की जलवायु में की जा सकती है, परन्तु उष्ण क्षेत्रों में मक्का की
+          वृद्धि, विकास एवं उपज अधिक पाई जाती है| यह गर्म ऋतु की फसल है| इसके जमाव के लिए रात और दिन का तापमान ज्यादा
+          होना चाहिए| मक्के की फसल को शुरुआत के दिनों से भूमि में पर्याप्त नमी की आवश्यकता होती है| जमाव के लिए 18 से 23
+          डिग्री सेल्सियस तापमान एवं वृद्धि व विकास अवस्था में 28 डिग्री सेल्सियस तापमान उत्तम माना गया है|
+
+        </p>
+        <h2 class="h-secondary center">भूमि का चयन</h2><br>
+        <p class="center">मक्का की खेती सभी प्रकार की भूमि में की जा सकती है| परंतु मक्का की अच्छी बढ़वार और उत्पादकता
+          के लिए दोमट एवं मध्यम से भारी मिट्टी जिसमें पर्याप्त मात्रा में जीवांश और उचित जल निकास का प्रबंध हो, उपयुक्त
+          रहती है| लवणीय तथा क्षारीय भूमियां मक्का की खेती के लिए उपयुक्त नहीं रहती|
+        </p>
+        <h2 class="h-secondary center">खेती की तैयारी</h2><br>
+        <p class="center">पहली जुताई मिट्टी पलटने वाले हल से करें| उसके बाद 2 से 3 जुलाई हैरो या देसी हल से करें, मिट्टी
+          के ढेले तोड़ने एवं खेत सीधा करने हेतु हर जुताई के बाद पाटा या सुहागा लगाएँ| यदि मिट्टी में नमी कम हो तो पलेवा
+          करके जुताई करनी चाहिए| सिंचित अवस्था में 60 सेंटीमीटर की दूरी पर मेड़े बनानी चाहिए जिससे जल निकासी में आसानी
+          रहती है और फसल भी अच्छी बढ़ती है|<br>
+          
+
+        </p>
+        <h2 class="h-secondary center">उन्नत किस्में</h2><br>
+        <p class="center">अति शीघ्र पकने वाली किस्में (75 दिन से कम)- जवाहर मक्का- 8, विवेक- 4, विवेक- 17 विवेक- 43
+          विवेक- 42 और प्रताप हाइब्रिड मक्का- 1 आदि प्रमुख है|
+
+          शीघ्र पकने वाली किस्में (85 दिन से कम)- जवाहर मक्का- 12, अमर, आजाद कमल, पंत संकुल मक्का- 3, चन्द्रमणी, प्रताप-
+          3, विकास मक्का- 421, हिम- 129, डीएचएम- 107, डीएचएम- 109 पूसा अरली हाइब्रिड मक्का- 1, पूसा अली हाइब्रिड मक्का-
+          2, प्रकाश, पी एम एच- 5, प्रा– 368, एक्स- 3342, डीके सी- 7074, जेकेएमएच- 175 और हाईशेल व बायो- 9637 आदि प्रमुख
+          है|
+
+          मध्यम अवधि में पकने वाली किस्में (95 दिन से कम)- जवाहर मक्का- 216, एचएम- 10, एचएम- 4, प्रताप- 5, पी- 3441,
+          एनके- 21, केएमएच- 3426, केएमएच- 3712 एनएमएच- 803 और बिस्को – 2418 आदि मुख्य है|
+
+        </p>
+        <p class="center">बेबीकॉर्न- वी एल- 78, पी ई एच एम- 2, पी ई एच एम- 5 और वी एल बेबी कॉर्न- 1आदि|
+
+          पॉपकॉर्न- अम्बर पॉप, वी एल अम्बर पॉप और पर्ल पॉप आदि|
+
+          स्वीट कॉर्न- माधुरी, प्रिया, विन ओरेंज और एस सी एच- 1 आदि|
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+        <img src="{% static 'images/maize6.jfif' %}" alt="">
+        <p class="center">This is all about sowing techniques </p>
+        <img src="{% static 'images/maize7.jfif' %}" alt="">
+        <p class="center">sowing techniques </p>
+        <img src="{% static 'images/maize8.jfif' %}" alt="">
+        <p class="center">Fertilize</p>
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">बुवाई का समय</h2><br>
+        <p class="center">1. मुख्य फसल के लिए बुवाई मई के अंत तक करें|<br>
+
+          2. शरदकालीन मक्का की बुवाई अक्टूबर अंत से नवंबर तक करें|<br>
+
+          3. बसंत ऋतु में मक्का की बुवाई हेतु सही समय जनवरी के तीसरे सप्ताह में मध्य फरवरी तक है|<br>
+
+          4. बुवाई में देरी करने से अधिक तापमान तथा कम नमी के कारण बीज कम बनता है|<br>
+
+          5. यदि बारिश न होने के कारण बुवाई में देरी हो जाए तो फलीदर फसलों की अंतर फसल लगाएं|
+        </p>
+        <h2 class="h-secondary center">बीज की मात्रा</h2><br>
+        <p class="center">बीज साफ, स्वस्थ एवं खरपतवारों के बीजों से रहित होना चाहिए| सिकुड़े, छोटे एवं कटे-फटे बीजों को
+          निकाल देना चाहिए| हमेशा उन्नत, नई तथा क्षेत्र विशेष के लिए संस्तुत प्रजातियों का चयन करना चाहिए| बीज दर दानों
+          के आकार, जमाव प्रतिशत, बोने का समय, बोने की विधि और भूमि की दशा पर निर्भर करती है|
+        </p>
+        <h2 class="h-secondary center">बुवाई की विधि एवं अन्तराल</h2><br>
+        <p class="center">1. बीज हाथों द्वारा या सीड ड्रिल से बोया जा सकता है|<br>
+
+          2. बीज को 75 सेंटीमीटर दूर कतारों या मंड़ों पर बोएं, बीज से बीज (पौधे से पौधे) का अंतर 22 सेंटीमीटर रखें, इस
+          तरह प्रति एकड़ 21000 पौधे लगेंगे|<br>
+
+          3. अधिक पैदावार हेतु पौधों को 75 सेंटीमीटर दुरी की कतारों में पौधो से पौधे में 20 सेंटीमीटर का अंतर रख कर
+          बुवाई करे, इस तरह 26000 पौधे प्रति एकड़ लगेंगे|<br>
+
+          4. बीज की गहराई 3 से 5 सेंटीमीटर रखें|<br>
+
+          5. मेड़ों पर बुवाई करनी हो तो बीज पूर्व पश्चिम दिशा में बनी मेड़ों की दक्षिण ढलान पर बीज बोएं|<br>
+
+          6. छिड़काव विधि की जगह बुवाई कतारों में करें|<br>
+          <br>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+
+
+        <img src="{% static 'images/maize9.jfif' %}" alt="">
+        <p class="center">irrigation technique </p>
+        <img src="{% static 'images/maize10.jfif' %}" alt="">
+        <p class="center">irrigation technique </p>
+        <img src="{% static 'images/maize11.jfif' %}" alt="">
+        <p class="center">Maize harvesting </p>
+        <img src="{% static 'images/maize12.jfif' %}" alt="">
+        <p class="center">Maize harvesting </p>
+        <img src="{% static 'images/maize13.jfif' %}" alt="">
+        <p class="center">Maize yielding</p>
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">सिंचाई प्रबंधन</h2><br>
+        <p class="center">बसंत (जायद) की फसल को अधिक सिंचाई की जरूरत होती है| सही समय पर सिंचाई न करने से पैदावार में
+          भारी कमी आ जाती है| पहली सिंचाई बुवाई के 15 से 20 दिन बाद करें| उसके बाद फसल घुटने तक होने पर, नर फूल निकलने
+          पर, भुटा बनते वक्त व दाना भरते वक्त सिंचाई जरूर करें| फसल को 5-6 सिंचाई चाहिए|<br>
+
+          सिंचाई के जरूरी चरण- नए पौधे निकलने पर, फसल घुटने तक होने पर, नर फूल निकलने पर व भुट्टा बनते वक्त सिंचाई बेहद
+          जरूरी है| 90 प्रतिशत दाना भराई तक सिंचाई जरूर करें|<br>
+
+          सूक्ष्म सिंचाई- मक्का की हर दो कतारों के लिए एक ड्रिप लाईन काफी है| ड्रिप्रर की दूरी 30 से 40 सेंटीमीटर रखें|
+          पानी की बहाव दर 1 से 1.5 लीटर प्रति घंटा रखें| मौसम के अनुसार हर दूसरे दिन 3 से 5 घंटे के लिए सुबह के समय
+          ड्रिप चलाएं|<br>
+          <a href="https://www.youtube.com/watch?v=wZw_X2z7lJc"><b><u>सिंचाई की अधिक जानकारी के लिए यह वीडियो
+                देखे...</u></b></a>
+
+        </p>
+        <h2 class="h-secondary center">कटाई एवं मॅडाई</h2><br>
+        <p class="center">जब भुट्टे को ढकने वाले पत्ते पीले या भूरे होने लगे एवं दानो की नमी 30 प्रतिशत से कम हो जाए तो
+          फसल काट लेनी चाहिए भुट्टे काटने पर पौधा हरा रहता है, उसे पशु के चारे हेतु प्रयोग करें|<br>
+
+          <b>प्रसंस्करण व मूल्य संवर्धन</b><br>
+
+          मक्का के भुट्टों को धूप में तब तक सुखाएं जब तक दाना कठोर न हो जाए व उसमे नमी 12 से 14 प्रतिशत हो जाए| फिर
+          भुट्टों को बोरी में भरकर मंडी ले जा सकते हैं| दाने को भुट्टे से निकालने के लिए ध्यान रखें की वो इतने सूखे हो
+          कि हाथ या थ्रेसर से गहाई करते समय उन्हें नुकसान न हो|<br>
+          <a href="https://www.youtube.com/watch?v=1vQqY9wlER4"><b><u>कटाई एवं मॅडाई की अधिक जानकारी के लिए यह वीडियो
+                देखे...</u></b></a>
+        </p>
+        <h2 class="h-secondary center">पैदावार</h2><br>
+        <p class="center">उपरोक्त विधि से मक्का की फसल से औसतन पैदावार सामान्य किस्म से 35 से 55 क्विंटल और संकर किस्म
+          से 55 से 65 क्विंटल प्रति हेक्टयर होनी चाहिए|
+        </p>
+        <h2 class="h-secondary center">मक्का की खेती से अधिक पैदावार के लिए आवश्यक बिंदु</h2><br>
+        <p class="center">1.फसल कटाई के समय खेत में गहरी जुताई करनी चाहिये जिससे पौधे के अवशेष व कीट के प्यूपा अवस्था नष्ट
+          हो जाये।<br>
+          2.मक्का की कीट प्रतिरोधी प्रजाति का उपयोग करना चाहिए।<br>
+          3.मक्का की बुआई मानसुन की पहली बारिश के बाद करना चाहिए।<br>
+          4.एक ही कीटनाशक का उपयोग बार-बार नहीं करना चाहिए।<br>
+          5.प्रकाश प्रपंच का उपयोग सायं 6.30 बजे से रात्रि 10.30 बजे तक करना चाहिए।<br>
+          6.मक्का फसल के बाद ऐसी फसल लगानी चाहिए जिसमें कीटव्याधि मक्का की फसल से भिन्न हो।<br>
+          7.जिन खेतों पर तना मक्खी, सफेद भृंग, दीमक एवं कटुवा इल्ली का प्रकोप प्रत्येक वर्ष दिखता है, वहाँ दानेदार दवा
+          फोरेट 10 जी. को 10 कि.ग्रा./हे. की दर से बुवाई के समय बीज के नीचे डालें।<br>
+          8.तनाछेदक के नियंत्रण के लिये अंकुरण के 15 दिनों बाद फसल पर क्विनालफास 25 ई.सी. का 800 मि.ली./हे. अथवा कार्बोरिल
+          9.50 प्रतिशत डब्ल्यू.पी. का 1.2 कि.ग्रा./हे. की दर से छिड़काव करना चाहिए। <br>
+          10.इसके 15 दिनों बाद 8 कि.ग्रा.क्विनालफास 5 जी. अथवा फोरेट 10 जी. को 12 कि.ग्रा. रेत में मिलाकर एक हेक्टेयर खेत में पत्तों के गुच्छों में
+          डालें।
+        </p>
+
+      </div>
+    </div>
+  </section>
+  <div class="bod">
+    <h1>Details about pesticides and weedicides</h1>
+  </div>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxt" id="box5">
+
+        <table>
+          <tr>
+            <th>Detail</th>
+            <th>fertilizer/pesticides</th>
+            <th>quantity</th>
+          </tr>
+          <tr>
+            <td> भूमि की तैयारी करते समय जहां जस्ते की कमी हो</td>
+            <td>जिंक सल्फेट वर्षा से पूर्व डालना चाहिए</td>
+            <td>25 कि.ग्रा./हे ,5 से 8 टन अच्छी तरह सड़ी हुई गोबर की खाद</td>
+          </tr>
+          <tr>
+            <td>जिन खेतों पर तना मक्खी, सफेद भृंग, दीमक एवं कटुवा इल्ली का प्रकोप हो</td>
+            <td> दानेदार दवा फोरेट 10 जी</td>
+            <td>10 कि.ग्रा./हे</td>
+          </tr>
+          <tr>
+            <td>तनाछेदक के नियंत्रण के लिये</td>
+            <td>15 दिनों बाद फसल पर क्विनालफास 25 ई.सी. अथवा कार्बोरिल 50 प्रतिशत डब्ल्यू.पी</td>
+            <td>मेडिकेटर के निर्देशानुसार छिड़काव करें</td>
+          </tr>
+          <tr>
+            <td>मक्का के प्रमुख रोग-</td>
+            <td>डायथेन एम-45 दवा</td>
+            <td>पानी में घोलकर 3-4 छिड़काव करना</td>
+          </tr>
+          <tr>
+            <td>पत्तियों का झुलसा रोग,तुलासिता रोग</td>
+            <td>जिनेब का 0.12%,जिंक मैगनीज कार्बमेट या जीरम 80 प्रतिशत,</td>
+            <td>छिड़काव करना </td>
+          </tr>
+          <tr>
+            <td>तना सड़न :</td>
+            <td>केप्टान </td>
+            <td>150 ग्रा. केप्टान को 100 ली. पानी मे घोलकर जड़ों पर डालना चाहिये</td>
+          </tr>
+          <tr>
+            <td> दीमक,सूत्रकृमि,तना छेदक कीट,प्ररोह मक्खी</td>
+            <td>क्लोरपाइरीफास 20 फीसदी ईसी ,फोरेट 10 जी,कार्बोफ्यूरान 3जी</td>
+            <td>मेडिकेटर के निर्देशानुसार छिड़काव करें </td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxt" id="box5">
+        <div class="bod">
+          <h1>To get more detail about the Maize farming you have to watch this video...</h1>
+          <h1><a href="https://www.youtube.com/watch?v=JM8BYs5UMPI"><b>Detail about Maize farming... click here</b></a>
+          </h1>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="bod">
+    <h1>Minimum Support Price(M.S.P) for Maize</h1>
+  </div>
+  <section></section>
+  <section id="msp">
+    <ul style="list-style-type:disc;">
+      <li class="msp1">Price : 1850 Rs</li>
+      <li class="msp1">Quantity : 1 quintal</li>
+      <li class="msp1">year : 2020-21</li>
+    </ul><br>
+    <a href="{% url 'cornmsp' %}"><b><u>To get more detail about M.S.P of Maize from 2010 to 2021 Click here...</u></b></a>
+  </section>
+
+
+
+  <footer>
+    <h4 align="center">Made in Djano</h4>
+    <div class="container_12">
+      <div class="grid_2"></div>
+      <div class="grid_2"></div>
+      <div class="grid_2"></div>
+      <div class="grid_3 prefix_1"></div>
+      <div class="clear"></div>
+    </div>
+    <div class="f_bot">
+      <div class="container_12">
+        <div class="grid_12"></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

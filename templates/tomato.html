@@ -1,0 +1,352 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>AgroKnowledge |Crops| Tomato</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/crop.css' %}">
+  <script src="{% static 'js/jquery.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate-1.1.1.js' %}"></script>
+  <script src="{% static 'js/superfish.js' %}"></script>
+  <script src="{% static 'js/sForm.js' %}"></script>
+  <script src="{% static 'js/jquery.equalheights.js' %}"></script>
+  <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+</head>
+<body>
+
+
+  <header>
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="h_phone">Need Help? Call Us +91 6265222852</div>
+        <h1><a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt=""></a></h1>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="menu_block">
+      <div class="container_12">
+        <div class="grid_12">
+          <div class="socials"><a
+              href="https://www.facebook.com/groups/787250868600891/?notif_id=1618812220245678&notif_t=group_invited_to_group&ref=notif"></a><a
+              href="https://twitter.com/AgroKnowledge"></a></div>
+          <div class="autor">Social </div>
+          <nav class="">
+            <ul class="sf-menu">
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="{% url 'services' %}">Schemes</a>
+              </li>
+              <li><a href="{% url 'products' %}">Crops</a>
+                <ul>
+                  <li><a href="#">Rabi Crops</a>
+                    <ul>
+                      <li class="current"><a href="{% url 'wheat' %}">Wheat</a></li>
+                      <li><a href="{% url 'gram' %}">Gram</a></li>
+                      <li><a href="{% url 'sunflower' %}">Sunflower</a></li>
+                      <li><a href="{% url 'potato' %}">Potato</a></li>
+                      <li><a href="{% url 'onion' %}">Onion</a></li>
+                      <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Kharif Crops</a>
+                    <ul>
+                      <li><a href="{% url 'rice' %}">Rice</a></li>
+                      <li><a href="{% url 'corn' %}">Corn</a></li>
+                      <li><a href="{% url 'soyabean' %}">Soyabean</a></li>
+                      <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                      <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                      <li><a href="{% url 'moong' %}">Moong</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="{% url 'contacts' %}">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </header>
+
+
+    <div class="bod">
+        <h1>Tomato Farming ( टमाटर की खेती )</h1>
+    </div>
+    <section id="services-container">
+        <div id="services">
+            <div class="boxe" id="box1">
+                <img src="{% static 'images/tomato1.jfif' %}" alt="">
+                <p class="center">Tomato grows very well on a wide range of soils, but it grows well on deep,
+                    well-drained soils with good drainage ability. Sandy loam to medium black soils is considered to be
+                    best suitable for Tomato...
+                </p>
+            </div>
+            <div class="box" id="box2">
+                <h2 class="h-secondary">टमाटर की खेती </h2><br>
+                <p class="center">टमाटर (Tomato) भारत में पुरे वर्ष उगाई जाने वाली महत्वपूर्ण फसल है| अपने पोषक गुणों और
+                    विविध उपयोगो के कारण टमाटर (Tomato) सबसे महत्वपूर्ण सब्जी वाली फसल है| बहुत से लोग तो टमाटर (Tomato)
+                    के बिना सब्जी की कल्पना भी नही कर सकते| इसमें भरपूर मात्रा में कैल्सियम, फास्फोरस और विटामिन सी पाए
+                    जाते है| यह एसिडिटी की सिकायत को दूर करता है| इसका स्वाद खटा होता है|
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="services-container">
+        <div id="services">
+            <div class="boxe" id="box4">
+                <img src="{% static 'images/tomato2.jfif' %}" alt="">
+                <p class="center">This is all about wheather conditon in Tomato farming. </p>
+
+                <img src="{% static 'images/tomato3.jpg' %}" alt="">
+                <p class="center">Different types of Tomato for different conditions </p>
+            </div>
+            <div class="box" id="box3">
+                <h2 class="h-secondary center">उपयुक्त जलवायु</h2><br>
+                <p class="center">टमाटर की खेती वर्ष भर की जा सकती है, परन्तु यह फसल अत्यधिक नमी और पाला सहन नहीं कर
+                    सकती है| इसके लिए तापमान 18 डिग्री से 27 डिग्री सेंटीग्रेट के बीच उपयुक्त है| फल लगने के लिए रात का
+                    आदर्श तापमान 15 डिग्री से 20 डिग्री सेंटीग्रेट के बीच रहना चाहिए| ज्यादा गर्मी में फलों के रंग व
+                    स्वाद पर प्रतिकूल प्रभाव पड़ता है|
+
+                </p>
+                <h2 class="h-secondary center">भूमि का चयन</h2><br>
+                <p class="center">पोषक तत्व युक्त दोमट भूमि इसकी खेती के लिए उपयुक्त है| इसके लिए अच्छी जल निकास
+                    व्यवस्था होना आवश्यक है|
+                </p>
+                <h2 class="h-secondary center">किस्में और बुआई का समय</h2><br>
+                <p class="center">टमाटर की अनुमोदित किस्में और बुआई का समय इस प्रकार है, जैसे-
+                    ऋतू नर्सरी बीज बुआई का समय मुख्य खेत में रोपण का समय उन्नत और संकर किस्में
+                    सर्दी का मौसम जुलाई से सितम्बर अगस्त से अक्तूबर पूसा सदाबहार, पूसा रोहिणी, पूसा- 120, पूसागौरव, पी
+                    एच- 8, पी एच- 4
+                    बसन्त-ग्रीष्म नवंबर से दिसंबर दिसंबर से जनवरी पूसा सदाबहार, पूसा शीतल, पूसा- 120, पूसा उपहार, पूसा
+                    हाइब्रिड- 1
+                    <br>
+                    
+
+                </p>
+
+
+            </div>
+        </div>
+    </section>
+    <section id="services-container">
+        <div id="services">
+            <div class="boxe" id="box4">
+                <img src="{% static 'images/tomato4.jfif' %}" alt="">
+                <p class="center">This is all about Transplanting techniques </p>
+                <img src="{% static 'images/tomato5.jfif' %}" alt="">
+                <p class="center">sowing techniques </p>
+                <img src="{% static 'images/tomato6.jfif' %}" alt="">
+                <p class="center">Transplanting techniques </p>
+                <img src="{% static 'images/tomato7.jfif' %}" alt="">
+                <p class="center">Pesticides spraying </p>
+            </div>
+            <div class="box" id="box3">
+                <h2 class="h-secondary center">बीजोत्पादन</h2><br>
+                <p class="center">टमाटर के बीज उत्पादन हेतु ऐसे खेत का चुनाव करें, जिसमें पिछले वर्ष टमाटर की फसल न
+                    लगायी गयी हो| पृथक्करण दूरी आधार बीज के लिए 50 मीटर और प्रमाणित बीज के लिए 25 मीटर रखें| अवांछनीय
+                    पौधों को पुष्पन अवस्था से पूर्व, पुष्पन अवस्था में तथा जब तक फल पूर्ण रूप से परिपक्व न हुए हों, तो
+                    पौधे, फूल और फलों के गुणों के आधार पर निकाल देना चाहिए|<br>
+                    फलों की तुड़ाई पूर्ण रूप से पकी अवस्था में करें, पके फलों को तोड़ने के बाद लकड़ी के बक्सों या सीमेंट
+                    के बने टैंकों में कुचलकर एक दिन के लिए किण्वन हेतु रखें| अगले दिन पानी तथा छलनी की सहायता से बीजों
+                    को गूदे से अलग करके छाया में सुखा लें| बीज को पेपर के लिफाफे, कपड़े के थैलों तथा शीशे के बर्तनों में
+                    भण्डारण हेतु रखें|
+
+                </p>
+                <h2 class="h-secondary center">बीज की मात्रा</h2><br>
+                <p class="center">संकर किस्मों के लिए 250 से 300 ग्राम बीज और उन्नत किस्मों के लिए 500 से 600 ग्राम बीज
+                    प्रति हैक्टेयर पर्याप्त है|
+                </p>
+                <h2 class="h-secondary center">नर्सरी में बीज बुवाई</h2><br>
+                <p class="center">इसके बीजों को सीधे खेत में न बोकर पहले नर्सरी में बोया जाता है, जब पौधे 4 से 5 सप्ताह
+                    अर्थात 10 से 15 सेंटीमीटर के हो जाएँ तब इन्हें खेत में प्रतिरोपित करते हैं| नर्सरी तैयार करना टमाटर
+                    नर्सरी के लिए 10 से 15 सेंटीमीटर उठी हुई क्यारियाँ बनानी चाहिये ताकि क्यारी में आवश्यकता से अधिक
+                    पानी न रूके| क्यारियाँ किसी भी दशा में 90 से 100 सेंटीमीटर (एक गज या एक मीटर) से अधिक चौड़ी न हों
+                    अन्यथा निराई-गुड़ाई, बीज बुआई या सिंचाई करने में असुविधा हो सकती है|<br>
+                    इनकी लम्बाई 5 मीटर होनी चाहिये, एक एकड़ के लिए ऐसी 25 क्यारियों की आवश्यकता होती है| बीजों की बुवाई
+                    के पूर्व 8 से 10 ग्राम कार्बोफुरान 3 जी प्रति वर्गमीटर के हिसाब से भूमि में मिलावें और 2 ग्राम
+                    केप्टान प्रति किलोग्राम बीज के हिसाब से उपचारित कर बुवाई करें| बीजों को 5 से 7 सेंटीमीटर फासले पर
+                    कतारों में बोया जाता है| जैसे ही बीजों का अंकुरण हो कैप्टान के 0.2 प्रतिशत घोल से क्यारियों का उपचार
+                    करें, नर्सरी में पौधों की फव्वारे से सिंचाई करें|
+
+
+                </p>
+                <h2 class="h-secondary center">मुख्य खेत में रोपाई</h2><br>
+                <p class="center">पौध की रोपाई 60 सेंटीमीटर की दूरी पर बनी कतारों में, पौधे से पौधे की दूरी 45 से 60
+                    सेंटीमीटर रखते हुए शाम के समय करें|
+                    <a href="https://www.youtube.com/watch?v=6rOl7VxWl40"><b><u>पौध की रोपाई की अधिक जानकारी के लिए यह
+                        वीडियो
+                        देखे...</u></b></a>
+
+
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="services-container">
+        <div id="services">
+            <div class="boxe" id="box4">
+
+
+                <img src="{% static 'images/tomato8.jfif' %}" alt="">
+                <p class="center">irrigation technique </p>
+                <img src="{% static 'images/tomato9.jfif' %}" alt="">
+                <p class="center">Tomato Towing </p>
+                <img src="{% static 'images/tomato10.jfif' %}" alt="">
+                <p class="center">Tomato Towing </p>
+                
+                <img src="{% static 'images/tomato11.jfif' %}" alt="">
+                <p class="center">Tomato yielding</p>
+            </div>
+            <div class="box" id="box3">
+                <h2 class="h-secondary center">सिंचाई प्रबंधन</h2><br>
+                <p class="center">सिंचाई पहली सिंचाई प्रतिरोपण के तुरंत बाद करनी चाहिए। टमाटर में 15-20 दिनों पर सिंचाई
+                    करें। जाड़े में पाला तथा गर्मी में 'लू' से बचाव के लिए 10-12 दिनों पर सिंचाई करें।
+                </p>
+                <p class="center"> सिंचाई फुव्वारा विधि से करनी चाहिये| इसमें
+                    क्यारी सिंचाई की अपेक्षा कम पानी की आवश्यकता होती है|<br>
+                    <a href="https://www.youtube.com/watch?v=RfCyC9Y7wQk"><b><u>सिंचाई की अधिक जानकारी के लिए यह वीडियो
+                                देखे...</u></b></a>
+
+                </p>
+                <h2 class="h-secondary center">तुड़ाई एवं पैदावार </h2><br>
+                <p class="center">फलों को दूरस्थ स्थानों पर भेजने के लिए तुड़ाई, फल का रंग लाल होने के पहले तथा स्थानीय
+                    बाजार के लिये फलों का रंग लाल होने पर तुड़ाई करें| टमाटर की फसल 75 से 100 दिनों में तुड़ाई के लिए
+                    तैयार हो जाती है| संकर किस्म की पैदावार 45 से 65 टन प्रति हेक्टेयर तथा उन्नत किस्मों की 20 से 35 टन
+                    प्रति हेक्टेयर तक हो जाती है|
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=mGzYOEHA8m8"><b><u>तुड़ाई एवं पैदावार की अधिक जानकारी के
+                                लिए यह
+                                वीडियो
+                                देखे...</u></b></a>
+                </p>
+                <h2 class="h-secondary center">कटाई उपरांत प्रौद्योगिकी</h2><br>
+                <p class="center">1. नजदीकी बाजार में भेजने हेतु पूरे पके फलों की तुड़ाई करें|<br>
+                    2. ग्रेडिंग करके प्लास्टिक के क्रेट में बाजार भेजें या 8 से 10डिग्री सेंटीग्रेट तापमान पर 20 से 25
+                    दिनों तक भण्डारित करें|<br>
+                    3. पके फलों से केचअप, चटनी आदि उत्पाद बनाएं|
+
+                </p>
+                <h2 class="h-secondary center",style="line-height=1.6;">टमाटर की खेती से अधिक पैदावार के लिए आवश्यक बिंदु</h2><br>
+                <p class="center">
+                    1.टमाटर की फसल के लिए काली दोमट मिट्टी, रेतीली दोमट मिट्टी और लाल दोमट मिट्टी में सफलतापूर्वक उगाई जा
+                    सकती है। वैसे टमाटर की खेती के लिए दोमट मिट्टी सबसे उत्तम मानी जाती है। हल्की मिट्टी में भी टमाटर की
+                    खेती अच्छी होती है।<br>
+                    2.इसकी अच्छी पैदावार के लिए मिट्टी का पीएच मान 7 से 8.5 होना चाहिए। क्योंकि इसमें मध्यम अम्लीय और
+                    लवणीय मिट्टी को सहन करने की क्षमता होती है।<br>
+                    3.विभिन्न कीटों और मृदाजनित रोगों से बचाने के लिए बीज को 3 ग्राम थायरम या 3 ग्राम कार्बेन्डाजिम से
+                    उचारित करें।<br>
+                    4.यदि आपने टमाटर की फसल गर्मियों के दिनों में लगाई हैं तो 6 से 7 दिनों के अंतर में सिंचाई करना चाहिए।<br>
+                    5.यदि आप सर्दियों में टमाटर की फसल लें रहे हो तो 10-15 दिन के अंतर में सिंचाई करना पर्याप्त है।
+                    टमाटर की अच्छी पैदावार के लिए समय-समय पर निराई-गुड़ाई करना जरूरी है।
+                </p>
+
+            </div>
+        </div>
+    </section>
+    <div class="bod">
+        <h1>Details about pesticides and weedicides</h1>
+    </div>
+    <section id="services-container">
+        <div id="services">
+            <div class="boxt" id="box5">
+
+                <table>
+                    <tr>
+                        <th>Detail</th>
+                        <th>fertilizer/pesticides</th>
+                        <th>quantity</th>
+                    </tr>
+                    <tr>
+                        <td>Nitrogen deficiency ,phosphorus and potash found in most of the gram<br>
+                            growing areas for this before sowing: 1 .Time-fed condition:<br>
+                            2.Late sowing ,cow dung manure</td>
+                        <td>Nitrogen , phosphorus ,potash</td>
+                        <td>20kg,40kg,20kg /hectare<br>
+                            3 to 5 tone</td>
+                    </tr>
+                    <tr>
+                        <td>weed control After 4 to 5 days:</td>
+                        <td> Pendimethalin 30 E.C</td>
+                        <td>3 to 4 litre with 800 litre water /hectare</td>
+                    </tr>
+                    <tr>
+                        <td>To control Adra Galan (Deming Off) -</td>
+                        <td>Captan </td>
+                        <td>0.2 gram in 1 litre</td>
+                    </tr>
+                    <tr>
+                        <td>To control Leaf Miner -</td>
+                        <td>Dimethoate,Imidacloprid</td>
+                        <td>2 ml/litre</td>
+                    </tr>
+                    <tr>
+                        <td>To avoid Viral disease</td>
+                        <td>Imidacloprid</td>
+                        <td>100ml in 500 litre in 15 days interval</td>
+                    </tr>
+                    <tr>
+                        <td>Early scorching </td>
+                        <td>Diethane Z- 78</td>
+                        <td>20g/10 litre water</td>
+                    </tr>
+                    
+                </table>
+            </div>
+
+        </div>
+    </section>
+    <section id="services-container">
+        <div id="services">
+            <div class="boxt" id="box5">
+                <div class="bod">
+                    <h1>To get more detail about the Tomato farming you have to watch this video...</h1>
+                    <h1><a href="https://www.youtube.com/watch?v=_gOj8aN9IXs"><b>Detail about Tomato farming... click
+                                here</b></a>
+                    </h1>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="bod">
+        <h1>Minimum Support Price(M.S.P) for Tomato </h1>
+    </div>
+    <section></section>
+    <section id="msp">
+        <ul style="list-style-type:disc;">
+            <li class="msp1">Price : 800 Rs</li>
+            <li class="msp1">Quantity : 1 quintal</li>
+            <li class="msp1">year : 2020-21</li>
+        </ul><br>
+        <a href="{% url 'tomatomsp' %}"><b><u>To get more detail about M.S.P of Tomato from 2010 to 2021 Click here...</u></b></a>
+    </section>
+
+
+
+    <footer>
+        <h4 align="center">Made in Djano</h4>
+        <div class="container_12">
+            <div class="grid_2"></div>
+            <div class="grid_2"></div>
+            <div class="grid_2"></div>
+            <div class="grid_3 prefix_1"></div>
+            <div class="clear"></div>
+        </div>
+        <div class="f_bot">
+            <div class="container_12">
+                <div class="grid_12"></div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

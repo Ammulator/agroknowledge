@@ -1,0 +1,364 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>AgroKnowledge |Crops| Soyabean</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/crop.css' %}">
+  <script src="{% static 'js/jquery.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate-1.1.1.js' %}"></script>
+  <script src="{% static 'js/superfish.js' %}"></script>
+  <script src="{% static 'js/sForm.js' %}"></script>
+  <script src="{% static 'js/jquery.equalheights.js' %}"></script>
+  <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+</head>
+<body>
+
+
+  <header>
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="h_phone">Need Help? Call Us +91 6265222852</div>
+        <h1><a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt=""></a></h1>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="menu_block">
+      <div class="container_12">
+        <div class="grid_12">
+          <div class="socials"><a
+              href="https://www.facebook.com/groups/787250868600891/?notif_id=1618812220245678&notif_t=group_invited_to_group&ref=notif"></a><a
+              href="https://twitter.com/AgroKnowledge"></a></div>
+          <div class="autor">Social </div>
+          <nav class="">
+            <ul class="sf-menu">
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="{% url 'services' %}">Schemes</a>
+              </li>
+              <li><a href="{% url 'products' %}">Crops</a>
+                <ul>
+                  <li><a href="#">Rabi Crops</a>
+                    <ul>
+                      <li class="current"><a href="{% url 'wheat' %}">Wheat</a></li>
+                      <li><a href="{% url 'gram' %}">Gram</a></li>
+                      <li><a href="{% url 'sunflower' %}">Sunflower</a></li>
+                      <li><a href="{% url 'potato' %}">Potato</a></li>
+                      <li><a href="{% url 'onion' %}">Onion</a></li>
+                      <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Kharif Crops</a>
+                    <ul>
+                      <li><a href="{% url 'rice' %}">Rice</a></li>
+                      <li><a href="{% url 'corn' %}">Corn</a></li>
+                      <li><a href="{% url 'soyabean' %}">Soyabean</a></li>
+                      <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                      <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                      <li><a href="{% url 'moong' %}">Moong</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="{% url 'contacts' %}">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="bod">
+    <h1>Soyabean Farming (सोयाबीन की खेती )</h1>
+  </div>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box1">
+        <img src="{% static 'images/soya1.jfif' %}" alt="">
+        <p class="center">It can be grown on wide variety of soils. Sandy loam to clay loam is considered to be most
+          suitable soil for gram cultivation. Soil having water logging problem are not suitable for cultivation.
+        </p>
+      </div>
+      <div class="box" id="box2">
+        <h2 class="h-secondary">सोयाबीन की खेती</h2><br>
+        <p class="center">सोयाबीन को पिला सोना कहा जाता है. किसानों का मानना है कि सोयाबीन की खेती से निश्चित रूप से लाभ
+          मिलता ,है इसमें नुक़सान की गुंजाइश कम होता है. मध्य प्रदेश काला सोना(अफ़ीम) और पिला सोना (सोयाबीन) के लिए जाना
+          जाता है. विश्व में 60% अमेरिका में सोयाबीन पैदा होती है उसके अलावा भारत में सबसे अधिक मध्य प्रदेश में सोयाबीन
+          का उत्पादन होता है. सोयाबीन रिसर्च सेंटर इंदौर में है. सोयाबीन का वैज्ञानिक नाम ‘ग्लाइसीन मेक्स’ है. इसमें
+          अधिक प्रोटीन होता है शाकाहारी मनुष्यों के लिए मांस के समान प्रोटीन मिलता है. मुख्य घटक प्रोटीन, कार्बोहाइड्रेट
+          और वसा होता है. सोयाबीन में 38-40 प्रतिशत प्रोटीन,22 प्रतिशत तेल, 21 प्रतिशत कार्बोहाइड्रेट, 12 प्रतिशत नमी
+          तथा 5 प्रतिशत भस्म होती है. सोयाबीन दलहन की फसल है, इसमें अधिक मात्रा में प्रोटीन होता है.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+        <img src="{% static 'images/soya2.jfif' %}" alt="">
+        <p class="center">This is all about land selection in Soyabean farming. </p>
+        <img src="{% static 'images/soya3.jfif' %}" alt="">
+        <p class="center">This is all about land selection in Soyabean farming. </p>
+        <img src="{% static 'images/soya4.jfif' %}" alt="">
+        <p class="center">This is all about land preparation in Soyabean farming. </p>
+        <img src="{% static 'images/soya5.jfif' %}" alt="">
+        <p class="center">Different types of Soyabean for different conditions </p>
+      </div>
+      <div class="box" id="box3">
+
+        <h2 class="h-secondary center">भूमि का चयन</h2><br>
+        <p class="center">सोयाबीन की बोने से पहले ध्यान रखे खेत समतल होना ज़रूरी होता है. जुलाई में बारिश का मौसम शुरू
+          होने पर पानी का खेत में ठहराव ना हो सके. खेत में पानी भर जाने से सोयाबीन की फ़सल ख़राब हो सकती है. पथरीली भूमि
+          को छोड़कर कर सभी जगह सोयाबीन को बोया जा सकता है. समतल होने से पानी का निकास होगा ओर पैदावार भी अच्छी हो सकती
+          है. चिकनी ओर दोमट भूमि उपयुक्त होती है. खाली खेतों की ग्रीष्म कालीन गहरी जुताई मिट्टी पलटने वाले हल से अप्रैल
+          से 15 मई तक 10 से 12 इंच गहराई तक करें.<br>
+          1. मृदा में वातायन, पानी सोखने एवं जल धारण शक्ति, मृदा भुरभुरापन, भूमि संरचना व मृदा भौतिक गुणो में सुधार
+          होगा.<br>
+          2. खरपतवार नियंत्रण में सहायता प्राप्त होगी.<br>
+          3. कीड़े मकोड़े तथा बिमारियों के नियंत्रण में सहायक होता है.<br>
+          4. उर्वरक प्रबंधन एवं जिवांश पदार्थ के विघटन में लाभकारी.
+        </p>
+        <h2 class="h-secondary center">खेती की तैयारी</h2><br>
+        <p class="center">संतुलित उर्वरक व मृदा स्वास्थ्य हेतु मिट्टी में मुख्य तत्व- नत्रजन, फासफोरस, पोटाश, द्वितीयक
+          पोषक तत्व जैसे सल्फर, कैल्शियम, मैग्नीशियम एवं सूक्ष्म पोषक तत्व जैसे जस्ता, तांबा, लोहा, मैंगनीज, मोलिब्डेनम,
+          बोरॉन साथ ही पी.एच., ई.सी. एवं कार्बनिक द्रव्य का परीक्षण करायें.<br>
+          <a href="https://www.youtube.com/watch?v=IlmfvWDoaJg"><b><u>खेत की तैयारी की अधिक जानकारी के लिए यह वीडियो
+                देखे...</u></b></a>
+
+        </p>
+        <h2 class="h-secondary center">उन्नत किस्में</h2><br>
+        <p class="center">जे. एस-335 :-
+          यह सोयाबीन की उन्नत तकनीक है . इस प्रजाति की बीज 95 से 100 दिन में हो जाता है | इस बीज की खासियत यह है की वजन
+          में अच्छी है 10 से 13 दाने का वजन 100 ग्राम होता है | इस बीज की उत्पादन क्षमता 25 – 30 किवंटल / हैक्टेयर होता
+          है | इसका रोग प्रतिरोधक क्षमता अधिक है अन्य बीज से ज्यादा है |<br>
+
+          जे.एस. 93-05 :-
+          इस प्रजाति की बीज का उपज क्षमता 20 से 25 किवंटल प्रति हैक्टेयर है | यह 90 से 95 दिनों में तैयार हो जाता है |
+          इस प्रजाति की बीज का भी वजन 13 बीज का 100 ग्राम होता है | इसकी विशेषताएं अर्द्ध-परिमित वृद्धि किस्म, बैंगनी
+          फूल. कम चटकने वाली फलियां होती है |<br>
+
+          एन.आर.सी-86 :-
+          इसकी विशेषताएं: सफेद फूल, भूरा नाभी एवं रोये, परिमित वृद्धि, गर्डल बीटल और तना-मक्खी के लिये प्रतिरोधी, चारकोल
+          राॅट एवं फली झुलसा के लिये मध्यम प्रतिरोधी है | प्रजाति की बीज का उपज क्षमता 20 से 25 किवंटल प्रति हैक्टेयर है
+          | यह 90 से 95 दिनों में तैयार हो जाता है | इस प्रजाति की बीज का भी वजन 13 बीज का 100 ग्राम होता है |<br>
+
+          एन.आर.सी-12 :-
+          इस प्रजाति की बीज का उपज क्षमता 20 से 25 किवंटल प्रति हैक्टेयर है | यह 90 से 95 दिनों में तैयार हो जाता है |
+          इस प्रजाति की बीज का भी वजन 13 बीज का 100 ग्राम होता है | इसकी विशेषताएं: परिमित वृद्धि, बैंगनी फूल, गर्डल
+          बीटल और तना-मक्खी के लिए सहनषील, पीला मोजैक प्रतिरोधी होता है |<br>
+
+          एन.आर.सी-7 :-
+          इस प्रजाति की बीज का उपज क्षमता 20 से 25 किवंटल प्रति हैक्टेयर है | यह 90 से 95 दिनों में तैयार हो जाता है |
+          इस प्रजाति की बीज का भी वजन 13 बीज का 100 ग्राम होता है | <br></p>
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+        <img src="{% static 'images/soya6.jpg' %}" alt="">
+        <p class="center">This is all about sowing techniques </p>
+        <img src="{% static 'images/soya7.jfif' %}" alt="">
+        <p class="center">sowing techniques </p>
+        <img src="{% static 'images/soya8.jfif' %}" alt="">
+        <p class="center">sowing techniques </p>
+
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">बुवाई का समय</h2><br>
+        <p class="center">ख़रीफ की फ़सल की तैयारी शुरू कर दी है जुलाई माह में इसकी बुवाई के लिए खेत तैयार है। इसमें
+          सोयाबीन की फ़सल को अधिक मात्रा मप्र मे बोया जाता है।सोयाबीन को सबसे उपयुक्त माना गया है ये समय सोयाबीन को बोने
+          के समय अच्छे अंकुकरण के लिए भूमि में 8/10 सेमी भूमि मे नमी की ज़रूरी है। खेत की तैयारी अगर बुवाई मेन देरी हो
+          जाती है तो 5/10 प्रतिशत बीज को बड़ा कर डाले.
+        </p>
+        <h2 class="h-secondary center">बीज की मात्रा</h2><br>
+        <p class="center">बुवाई हेतु दानों के आकार के अनुसार बीज की मात्रा का निर्धारण करें । पौध संख्या 4-4.5 लाख/हे.
+          रखे ।<br>
+          छोटे दाने वाली प्रजातियों के लिये बीज की मात्रा 60-70 किलोग्राम प्रति हेक्टेयर की दर से उपयोग करें ।<br>
+          बड़े दाने वाली प्रजातियों के लिये बीज की मात्रा 80-90 कि.ग्रा. प्रति हेक्टयर की दर से निर्धारित करें ।<br>
+          गहरी काली भूमि तथा अधिक वर्षा क्षेत्रों में रिजर सीडर प्लांटर द्वारा कूड (नाली) मेड़ पद्धति या रेज्ड बेड
+          प्लांटर या ब्राड बेड फरो पद्धति से बुआई करें ।<br>
+          बीज के साथ किसी भी प्रकार के रासायनिक उर्वरको का प्रयोग न करें ।
+        </p>
+        <h2 class="h-secondary center">बुवाई की विधि एवं अन्तराल</h2><br>
+        <p class="center">
+          बीजोपचार:-
+          बीज को थायरम $ कार्बेन्डाजिम (2:1) के 3 ग्राम मिश्रण, अथवा थयरम $ कार्बोक्सीन 2.5 ग्राम अथवा थायोमिथाक्सेम 78
+          ws 3 ग्राम अथवा ट्राईकोडर्मा विर्डी 5 ग्राम प्रति किलोग्राम बीज की दर से उपचारित करें ।<br>
+          बुवाई के पूर्व बीज की अंकुरण क्षमता (70%) अवश्य ज्ञात करें ।
+          100 दानें तीन जगह लेकर गीली बोरी में रखकर औसत अंकुरण क्षमता का आकंलन करें ।<br>
+          1.कम फैलने वाली प्रजातियों जैसे जे.एस. 93-05, जे.एस. 95-60 इत्यादि के लिये बुवाई के समय कतार से
+          कतार की दूरी 40 से.मी. रखे ।<br>
+          2.ज्यादा फैलनेवाली किस्में जैसे जे.एस. 335, एन.आर.सी. 7, जे.एस. 97-52 के लिए 45 से.मी. की दूरी रखें ।<br>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+
+
+        <img src="{% static 'images/soya9.jfif' %}" alt="">
+        <p class="center">irrigation technique </p>
+        <img src="{% static 'images/soya10.jfif' %}" alt="">
+        <p class="center">Soyabean harvesting </p>
+        <img src="{% static 'images/soya11.jfif' %}" alt="">
+        <p class="center">Soyabean harvesting </p>
+        <img src="{% static 'images/soya12.jfif' %}" alt="">
+        <p class="center">Soyabean harvesting </p>
+        <img src="{% static 'images/soya14.jfif' %}" alt="">
+        <p class="center">Soyabean yielding</p>
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">सोयाबीन में खरपतवार नींदा प्रबंधन</h2><br>
+        <p class="center">खरपतवारों को सोयाबीन फसल में निम्न विधियों द्वारा नियंत्रित किया जा सकता है:<br>
+          1. कर्षण विधि<br>
+          2. यांत्रिकी विधि :फसल को 30-45 दिन की अवस्था तक नींदा रहित रखें । इस हेतु फसल उगने के पश्चात डोरे/कुलपे चलावे
+          ।<br>
+          3. रसायनिक विधि :<br>
+          1.बोवनी के पूर्व उपयोगी (पीपीआई) :- सोयाबीन की फसल की बुवाई से पहले खरपतवार के नियंत्रण के लिए फ्लुक्लोरेलीन
+          तथा
+          ट्राईफ्लूरेलीन का उपयोग कर सकते है | इसकी 2.22 ली. प्रति हैक्टेयर की दर से उपयोग कर सकते हैं |<br>
+          2.बोवनी के तुरन्त बाद(पीआई) :- बुवाई के बाद खरपतवार की नियंत्रण के लिए किसान मेटालोक्लोर (2.00 ली./हैक्टेयर),
+          क्लोमाझोन (2.00 ली./हैक्टेयर), पेण्डीमिथालीन (3.25 ली./हैक्टेयर) तथा डाइक्लोसुलम (26 ग्राम /हैक्टेयर) का उपयोग
+          कर सकते हैं |<br>
+          3.15 से 20 दिन की फसल में में खरपतवार नियंत्रण के लिए इमेजाथायपर (1लि./हैक्टेयर), क्विजालोफाप इथइल (1 लि./
+          हैक्टेयर), फेनाक्सीफाप-पी-इथइल (0.75 ली./हैक्टेयर) तथा हेलाक्सीफाप (135 मिली. / हैक्टेयर) का उपयोग करें |
+        </p>
+        <p class="center"> सिंचाई फुव्वारा विधि से करनी चाहिये| इसमें
+          क्यारी सिंचाई की अपेक्षा कम पानी की आवश्यकता होती है|<br>
+          
+
+        </p>
+        <h2 class="h-secondary center">जल संरक्षण उपाय</h2><br>
+        <p class="center">साधारण सीड ड्रील से बुवाई के समय 5-6 कतारों के बाद फरो ओपनर के माध्यम से एक कूंड बनाए । खाली
+          कूंड को डोरा चलाते वक्त गहरा कर दे । इससे अधिक वर्षा की स्थिति में जल निकासी एवं अल्प वर्षा की स्थिति में जल
+          संरक्षण होगा । सीड ड्रिल के साथ पावडी का उपयोग करें, जिससे जल संरक्षण एवं उचित पौध संख्या प्राप्त की जा सकती
+          है ।
+        </p>
+        <h2 class="h-secondary center">कटाई एवं मॅडाई</h2><br>
+        <p class="center">फसल की कटाई उपयुक्त समय पर कर लेने से चटकने पर दाने बिखरने से होने वाली हानि में समुचित कमी
+          लाई जा सकती है।
+          फलियों के पकने की उचित अवस्था पर (फलियों का रंग बदलने पर या हरापन पूर्णतया समाप्त होने पर) कटाई करनी चाहिए ।
+          कटाई के समय बीजों में उपयुक्त नमी की मात्रा 14-16 प्रतिशत है ।
+          फसल को 2-3 दिन तक धूप में सुखाकर थ्रशर से धीमी गति (300-400 आर.पी.एम.) पर गहाई करनी चाहिए ।
+          गहाई के बाद बीज को 3 से 4 दिन तक धूप में अच्छा सुखा कर भण्डारण करना चाहिए ।<br>
+          <a href="https://www.youtube.com/watch?v=Awm8X8G8Sj8"><b><u>कटाई एवं मॅडाई की अधिक जानकारी के लिए यह वीडियो
+                देखे...</u></b></a>
+        </p>
+        <h2 class="h-secondary center">पैदावार</h2><br>
+        <p class="center">उपरोक्त उन्नत तकनीक का प्रयोग कर उगायी गई सोयाबीन की खेती द्वारा 4 से 10 क्विटल उपज प्रति
+          हैक्टेयर प्राप्त की जा सकती है|
+        </p>
+        
+
+      </div>
+    </div>
+  </section>
+  <div class="bod">
+    <h1>Details about pesticides and weedicides</h1>
+  </div>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxt" id="box5">
+
+        <table>
+          <tr>
+            <th>Detail</th>
+            <th>fertilizer/pesticides</th>
+            <th>quantity</th>
+          </tr>
+          <tr>
+            <td>Before sowing in the use of ejaculatory</td>
+            <td>Fluochlorine</td>
+            <td>800ml/Acre<br>
+              3 to 5 tone</td>
+          </tr>
+          <tr>
+            <td>Grass weed control:</td>
+            <td> Cuzelephope Ethyl</td>
+            <td>400ml/Acre</td>
+          </tr>
+          <tr>
+            <td>wide leaf weeds</td>
+            <td>Imagethafire</td>
+            <td>300ml/Acre</td>
+          </tr>
+          <tr>
+            <td>To control Blue-beetle leaf-eating caterpillars,Girdle beetle</td>
+            <td>Thyomithozoam 70 w.s.</td>
+            <td>3g/kg Treated at seed rate</td>
+          </tr>
+          <tr>
+            <td>To avoid Green worm,fly</td>
+            <td>Chloropyriphos 20 E.C. or Qinalphos 25 E.C.</td>
+            <td>600ml/Acre</td>
+          </tr>
+          <tr>
+            <td>biological kit control</td>
+            <td>Bt And Vieweriana Basiana</td>
+            <td>400g Spray 50-55 days later</td>
+          </tr>
+          
+        </table>
+      </div>
+
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxt" id="box5">
+        <div class="bod">
+          <h1>To get more detail about the Soyabean farming you have to watch this video...</h1>
+          <h1><a href="https://www.youtube.com/watch?v=s2wEWJkGc3Q"><b>Detail about Soyabean farming... click
+                here</b></a>
+          </h1>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="bod">
+    <h1>Minimum Support Price(M.S.P) for Soyabean</h1>
+  </div>
+  <section></section>
+  <section id="msp">
+    <ul style="list-style-type:disc;">
+      <li class="msp1">Price : 3880 Rs</li>
+      <li class="msp1">Quantity : 1 quintal</li>
+      <li class="msp1">year : 2020-21</li>
+    </ul><br>
+    <a href="{% url 'soyabeanmsp' %}"><b><u>To get more detail about M.S.P of Soyabean from 2010 to 2021 Click here...</u></b></a>
+  </section>
+
+
+
+  <footer>
+    <h4 align="center">Made in Djano</h4>
+    <div class="container_12">
+      <div class="grid_2"></div>
+      <div class="grid_2"></div>
+      <div class="grid_2"></div>
+      <div class="grid_3 prefix_1"></div>
+      <div class="clear"></div>
+    </div>
+    <div class="f_bot">
+      <div class="container_12">
+        <div class="grid_12"></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

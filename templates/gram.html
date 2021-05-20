@@ -1,0 +1,392 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>AgroKnowledge| Crops | Gram</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/crop.css' %}">
+  <script src="{% static 'js/jquery.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate-1.1.1.js' %}"></script>
+  <script src="{% static 'js/superfish.js' %}"></script>
+  <script src="{% static 'js/sForm.js' %}"></script>
+  <script src="{% static 'js/jquery.equalheights.js' %}"></script>
+  <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+  <!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+<![endif]-->
+</head>
+
+<body>
+
+
+  <header>
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="h_phone">Need Help? Call Us +91 6265222852</div>
+        <h1><a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt=""></a></h1>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="menu_block">
+      <div class="container_12">
+        <div class="grid_12">
+          <div class="socials"><a
+              href="https://www.facebook.com/groups/787250868600891/?notif_id=1618812220245678&notif_t=group_invited_to_group&ref=notif"></a><a
+              href="https://twitter.com/AgroKnowledge"></a></div>
+          <div class="autor">Social </div>
+          <nav class="">
+            <ul class="sf-menu">
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="{% url 'services' %}">Schemes</a>
+              </li>
+              <li class="current"><a href="{% url 'products' %}">Crops</a>
+                <ul>
+                  <li><a href="#">Rabi Crops</a>
+                    <ul>
+                      <li><a href="{% url 'wheat' %}">Wheat</a></li>
+                      <li class="current"><a href="{% url 'gram' %}">Gram</a></li>
+                      <li><a href="{% url 'sunflower' %}">Sunflower</a></li>
+                      <li><a href="{% url 'potato' %}">Potato</a></li>
+                      <li><a href="{% url 'onion' %}">Onion</a></li>
+                      <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Kharif Crops</a>
+                    <ul>
+                      <li><a href="{% url 'rice' %}">Rice</a></li>
+                      <li><a href="{% url 'corn' %}">Corn</a></li>
+                      <li><a href="{% url 'soyabean' %}">Soyabean</a></li>
+                      <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                      <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                      <li><a href="{% url 'moong' %}">Moong</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="{% url 'contacts' %}">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </header>
+  <div class="bod">
+    <h1>Gram Farming ( चने की खेती )</h1>
+  </div>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box1">
+        <img src="{% static 'images/gram1.jpg' %}" alt="">
+        <p class="center">It can be grown on wide variety of soils. Sandy loam to clay loam is considered to be most
+          suitable soil for gram cultivation. Soil having water logging problem are not suitable for cultivation.
+        </p>
+      </div>
+      <div class="box" id="box2">
+        <h2 class="h-secondary">चने की खेती</h2><br>
+        <p class="center">चने की खेती हमारे देश में दलहनी फसलों में अपना प्रमुख स्थान रखती है| भारत विश्व का सबसे बड़ा
+          चना उत्पादक (कुल उत्पादन का 75 प्रतिशत) देश है| क्षेत्रफल और उत्पादन दोनों ही दृष्टि में दलहनी फसलों में चने
+          का मुख्य स्थान है| समस्त उत्तर से मध्य व दक्षिण भारतीय राज्यों में चना रबी फसल के रूप में उगाया जाता है| चना
+          उत्पादन की नई उन्नत तकनीक व उन्नतशील किस्मों का उपयोग कर किसान चने का उत्पादन बढ़ा सकते हैं एवं उच्चतम एवं
+          वास्तविक उत्पादकता के अन्तर को कम कर सकते हैं| इस लेख में चने की उन्नत खेती कैसे करें की विस्तृत जानकारी का
+          उल्लेख है|
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+        <img src="{% static 'images/gram2.jfif' %}" alt="">
+        <p class="center">This is all about wheather conditon in Gram farming. </p>
+        <img src="{% static 'images/gram3.jfif' %}" alt="">
+        <p class="center">This is all about land selection in gram farming. </p>
+        <img src="{% static 'images/gram4.jfif' %}" alt="">
+        <p class="center">This is all about land selection in Gram farming. </p>
+        <img src="{% static 'images/gram5.jpg' %}" alt="">
+        <p class="center">Different types of Gram for different conditions </p>
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">उपयुक्त जलवायु</h2><br>
+        <p class="center">चने की खेती साधारणतः बारानी दशाओं में अधिक की जाती है, असिंचित दशा में चने की खेती का लगभग 78
+          प्रतिशत क्षेत्र देश के विभिन्न भागों में फैला हुआ है| 22 प्रतिशत क्षेत्र में इसकी खेती सिंचित दशा में भी की
+          जाती है, शरद कालीन फसल होने के कारण चना की खेती कम वर्षा वाले तथा हलकी ठंडक वाले क्षेत्रों में की जाती है|
+          फूल आने की दशा में यदि वर्षा हो जाती है, तो फूल झड़ने के कारण फसल को बहुत हानि होती है, फसल को क्षति पहुँचने
+          का अन्य कारण ज्यादा वर्षा होने से पौधों में अत्यधिक वानस्पतिक वृद्धि भी है, अधिक वानस्पतिक वृद्धि होने पर पौधे
+          गिर जाते है, जिससे फूल व फलियाँ सड़कर खराब हो जाती है|
+
+        </p>
+        <h2 class="h-secondary center">भूमि का चयन</h2><br>
+        <p class="center">चने की खेती बलुई भूमि से लेकर दोमट तथा मटियार भूमि में की जा सकती है, चने की खेती के लिए दोमट
+          या भारी दोमट मार एवं मडुआ, पड़आ, कछारी भूमि जहाँ पानी न भरता हो, उपयुक्त मानी जाती है| काबुली चना के लिए
+          अपेक्षाकृत अच्छी भूमि की आवश्यकता होती है, दक्षिण भारत में, मटियार दोमट तथा काली मिट्टी में जिसमे पानी की
+          प्रचुर मात्रा धारण करने की शक्ति होती है, में चना की सफलतापूर्वक खेती की जाती है, परन्तु आवश्यक यह है की पानी
+          के भराव की समस्या न हो| भूमि में जल निकासी का उचित प्रबंध उतना ही आवश्यक है, जितना की सिंचाई से जल देना| हलकी
+          ढलान वाले खेतोँ में चना की फसल अच्छी होती है| ढेलेदार मिट्टी में देशी चना की भरपूर फसल ली जा सकती है| इसके लिए
+          मृदा का पी एच मान 6 से 7.5 उपयुक्त रहता है|
+        </p>
+        <h2 class="h-secondary center">खेती की तैयारी</h2><br>
+        <p class="center">चने की खेती के लिए प्रथम जुताई मिट्टी पलटने वाले हल या डिस्क हैरो से करनी चाहिये| इसके पश्चात्
+          एक क्रास जुताई हैरों से करके पाटा लगाकर भूमि समतल कर देनी चाहिये| फसल को दीमक एवं कटवर्म के प्रकोप से बचाने के
+          लिए अन्तिम जुताई के समय हैप्टाक्लोर (4 प्रतिशत) या क्यूनालफॉस (1.5 प्रतिशत) या मिथाइल पैराथियोन (2 प्रतिशत) या
+          एन्डोसल्फॉन की (1.5 प्रतिशत) चूर्ण की 25 किलोग्राम मात्रा को प्रति हैक्टेयर की दर से मिट्टी में अच्छी प्रकार
+          मिला देनी चाहिये|<br>
+         <a href="https://www.youtube.com/watch?v=sOblCiZrTGQ"><b><u>खेत की तैयारी की अधिक जानकारी के लिए यह वीडियो
+              देखे...</u></b></a>
+
+        </p>
+        <h2 class="h-secondary center">उन्नत किस्में</h2><br>
+        <p class="center">चने की खेती हेतु देश के विभिन्न राज्यों के लिए अनुमोदित उन्नत और प्रचलित किस्में इस प्रकार है,
+          जैसे-
+          मध्य प्रदेश- जे जी- 74, जे जी- 315, जे जी- 322 पूसा- 391, विश्वास (फुलेजी- 5), विजय, विशाल, जे जी- 16, जे जी-
+          130, जे जी जी- 1, जवाहर ग्राम काबुली- 1, बी जी डी- 128 (के), आई पी सी के- 2002-29, आई पी सी के- 2004-29 (के)
+          और पेकेवीं कबूली- 4 आदि प्रमुख है|
+
+        </p>
+        <p class="center">हरियाणा चना- 1, डी सी पी- 92-3, पूसा- 372, पूसा- 329, पूसा- 362, उदय, सम्राट, जी पी एफ- 2,
+          पूसा चमत्कार (बी जी- 1053), आर एस जी- 888 आलोक (के जी डी- 1168), बी जी डी- 28 (के), जी एन जी- 1581, आर एस जी-
+          963, राजास, आर एस जी- 931, जी एन जी- 143, पी बी जी- 1 और जी एन जी- 663 आदि प्रमुख है|
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+        <img src="{% static 'images/wheat6.jpg' %}" alt="">
+        <p class="center">This is all about sowing techniques </p>
+        <img src="{% static 'images/wheat7.jfif' %}" alt="">
+        <p class="center">sowing techniques </p>
+        <img src="{% static 'images/wheat8.jfif' %}" alt="">
+        <p class="center">sowing techniques </p>
+        <img src="{% static 'images/gram6.jfif' %}" alt="">
+        <p class="center">Pesticides spraying </p>
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">बुवाई का समय</h2><br>
+        <p class="center">उत्तर भारत के असिंचित क्षेत्रों में चना की बुवाई अक्टूबर के दूसरे पखवाड़े तथा सिंचित क्षेत्रों
+          में नवम्बर के प्रथम पखवाड़े में करनी चाहिए| धान की फसल के बाद बुवाई करने की स्थिति में बुवाई दिसम्बर के प्रथम
+          सप्ताह तक कर लेनी चाहिए| देश के मध्य भाग में अक्टूबर का प्रथम तथा दक्षिणी राज्यों में सितम्बर के अंतिम सप्ताह
+          से अक्टूबर का प्रथम सप्ताह चना की बुवाई के लिए उपयुक्त है|
+        </p>
+        <h2 class="h-secondary center">बीज की मात्रा</h2><br>
+        <p class="center">बीज साफ, स्वस्थ एवं खरपतवारों के बीजों से रहित होना चाहिए| सिकुड़े, छोटे एवं कटे-फटे बीजों को
+          निकाल देना चाहिए| हमेशा उन्नत, नई तथा क्षेत्र विशेष के लिए संस्तुत प्रजातियों का चयन करना चाहिए| बीज दर दानों
+          के आकार, जमाव प्रतिशत, बोने का समय, बोने की विधि और भूमि की दशा पर निर्भर करती है| चने के बीज की मात्रा दानों
+          के आकार/भार, बुवाई का समय एवं बुवाई विधि पर निर्भर करती है| बड़े दानों वाले प्रजातियों (काबुली चना) का 80 से
+          90 किलोग्राम तथा बारानी खेती के लिए छोटे दानों वाली प्रजातियों का 80 किलोग्राम तथा सिंचित क्षेत्र के लिए 60
+          किलोग्राम बीज की मात्रा प्रति हैक्टेयर पर्याप्त होती है| पछेती बुवाई की स्थिति में 20 से 25 प्रतिशत अधिक बीज
+          का उपयोग करें| फसल से अधिक पैदावार प्राप्त करने के लिए खेत में प्रति इकाई पौधों की उचित संख्या होना बहुत
+          आवश्यक है|
+        </p>
+        <h2 class="h-secondary center">बुवाई की विधि एवं अन्तराल</h2><br>
+        <p class="center">चने की खेती के लिए पौधों की उचित संख्या के लिए आवश्यक बीज दर व पंक्ति से पंक्ति एवं पौधे से
+          पौधे की उचित दूरी की महत्वपूर्ण भूमिका होती हैं| इसलिए बारानी फसल के लिए बीज की गहराई 7 से 10 सेंटीमीटर और
+          सिंचित क्षेत्र के लिए बीज की बुवाई 5 से 7 सेंटीमीटर गहराई पर करनी चाहिये| फसल की बुवाई पंक्ति से पंक्ति की
+          दूरी 30 से 45 सेंटीमीटर रखनी चाहिये और पंक्ति में पौधे से पौधे की दुरी 8 से 10 सेंटीमीटर उचित मानी गई है|
+          इसी प्रकार फसल अवशेष के बिना साफ किए हुए अगली फसल के बीज बोने के लिए रोटरी-टिल ड्रिल मशीन भी
+          उपयोग में लाई जा रही है|<br>
+          <br>
+
+          सामान्य स्थिति में चने की खेती के लिए 20 किलोग्राम नत्रजन, 40 किलोग्राम फास्फोरस, 20 किलोग्राम पोटाश एवं 20
+          किलोग्राम गंधक प्रति हेक्टेयर संस्तुत की गई है| जिन क्षेत्रों की मिटटी में बोरान या मोलिब्डेनम की कमी हो वहाँ
+          10 किलोग्राम बोरेक्स पाउडर या 1.0 किलोग्राम अमोनियम मोलिब्डेट प्रति हेक्टेयर का प्रयोग करना चाहिए| असिंचित
+          क्षेत्रों में मृदा में नमी की कमी की अवस्था में 2 प्रतिशत यूरिया के घोल का छिड़काव फली बनने की अवस्था में करने
+          पर उपज में वृद्धि होती है| अंतिम जुताई के समय मिटटी में 3 से 5 टन गोबर की खाद या कम्पोष्ट का उपयोग लाभदायक
+          पाया गया है|
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+
+
+        <img src="{% static 'images/wheat15.jfif' %}" alt="">
+        <p class="center">irrigation technique </p>
+        <img src="{% static 'images/gram7.jpg' %}" alt="">
+        <p class="center">Gram harvesting </p>
+        <img src="{% static 'images/gram8.jpg' %}" alt="">
+        <p class="center">Gram harvesting </p>
+        <img src="{% static 'images/gram10.jfif' %}" alt="">
+        <p class="center">Gram harvesting </p>
+        <img src="{% static 'images/gram9.jpg' %}" alt="">
+        <p class="center">Gram yielding</p>
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">सिंचाई प्रबंधन</h2><br>
+        <p class="center">चने की खेती मुख्यतः असिंचित अवस्था में की जाती है| जहाँ पर सिंचाई के लिए सीमित जल उपलब्ध हो,
+          वहाँ फूल आने के पहले (बुवाई के 50 से 60 दिन बाद) एक हल्की सिंचाई करें| सिंचित क्षेत्रों में दूसरी सिंचाई फली
+          बनते समय अवश्य करें| सिंचाई करते समय यह ध्यान दें कि खेत के किसी भाग में जल भराव की स्थिति न हो अन्यथा फसल को
+          नुकसान हो सकता है| फूल आने की स्थिति में सिंचाई नहीं करनी चाहिए|
+        </p>
+        <p class="center"> सिंचाई फुव्वारा विधि से करनी चाहिये| इसमें
+          क्यारी सिंचाई की अपेक्षा कम पानी की आवश्यकता होती है|<br>
+          <a href="https://www.youtube.com/watch?v=Yb0gUtES_pg"><b><u>सिंचाई की अधिक जानकारी के लिए यह वीडियो देखे...</u></b></a>
+
+        </p>
+        <h2 class="h-secondary center">कटाई एवं मॅडाई</h2><br>
+        <p class="center">जब पौधे पीले पड़ जाये तथा बालियां सूख जाये तो फसल की कटाई कर लेनी चाहिये| जब दानों में 15 से
+          20 प्रतिशत नमी हो तो कटाई का उचित समय होता है| कटाई के पश्चात् फसल को 3 से 4 दिन सूखाना चाहिये तथा मंडाई करके
+          अनाज में जब 8 से 10 प्रतिशत नमी रह जाये तो भंडारण कर देना चाहिये|
+          चने की खेती जब अच्छी प्रकार पक जाये तो कटाई करनी चाहिये| जब पत्तियाँ व फलियाँ पीली व भूरे रंग की हो जाये तथा
+          पत्तियाँ गिरने लगे और दाने सख्त हो जाये तो फसल की कटाई कर लेनी चाहिये| कटाई की गई फसल जब अच्छी प्रकार सूख जाये
+          तो थ्रेशर द्वारा दाने को भूसे से अलग कर लेना चाहिये तथा अच्छी प्रकार सुखाकर सुरक्षित स्थान पर भण्डारित कर लेना
+          चाहिये|<br>
+          <a href="https://www.youtube.com/watch?v=DjHovHfxj30"><b><u>कटाई एवं मॅडाई की अधिक जानकारी के लिए यह वीडियो
+              देखे...</u></b></a>
+        </p>
+        <h2 class="h-secondary center">पैदावार</h2><br>
+        <p class="center">उपरोक्त उन्नत तकनीक का प्रयोग कर उगायी गई चने की खेती द्वारा 20 से 25 क्विटल उपज प्रति
+          हैक्टेयर प्राप्त की जा सकती है|
+        </p>
+        <h2 class="h-secondary center">चने  की खेती से अधिक पैदावार के लिए आवश्यक बिंदु</h2><br>
+        <p class="center">1. भूमि में रोग और कीटो के प्रसुप्तावस्था में पड़े प्यूपा को नष्ट करने के लिये तीन वर्ष में एक
+          बार ग्रीष्म कालीन गहरी जुताई करे|<br>
+
+          2. चने की अधिक पैदावार के लिए पोषक तत्वों की मात्रा मिट्टी परीक्षण के आधार पर ही दें|<br>
+
+          3. बीज का उपचार ट्राइकोडर्मा विरडी (6 ग्राम) एवं कार्बोक्सिन (1 ग्राम) प्रति किलोग्राम बीज के हिसाब से
+          करे|<br>
+
+          4. उकठा रोग रोधी या सहनशील किस्मो जैसे जे जी- 315, जे जी- 12, जे जी-11, जाकी- 9218, जे जी के- 1, जे जी के- 2,
+          जे जी के- 3 या अन्य इत्यादि को क्षेत्र विशेष की अनुकूलता अनुसार ही बोयें|<br>
+
+          5. फूल की अवस्था में खेत में T आकार की खूटियाँ 50 प्रति हेक्टेयर के हिसाब से लगाये तथा दाना पक्ते समय इनको
+          निकाल दें|<br>
+
+          6. फेरोमेन ट्रेप्स का प्रयोग करें (12 प्रति हेक्टेयर)|<br>
+
+          7. चने की अधिक पैदावार हेतु फसल जब 15 से 20 सेंटीमीटर ऊँचाई की हो जाये तो खुटाई करे|<br>
+
+          8. फसल में शाखाएँ बनते समय और फली बनते समय सिंचाई करे|<br>
+          9. बीज का उपचार अमोनियम मोलिब्डेट 1 ग्राम प्रति किलोग्राम बीज के हिसाब से चना-सोयाबीन फसल प्रणाली वाले
+          क्षेत्रो में करे|<br>
+
+          10. फसल मंज फल आने के पहले की अवस्था में NSKE 5 प्रतिशत या एजेडिराक्टिन 0.03 प्रतिशत (300 पी पी एम) WSP की
+          2500 से 5000 ग्राम प्रति हेक्टेयर के हिसाब से 15 दिन के अन्तराल छिडकाव पर करे|<br>
+
+          11. जैविक कीट नियंत्रण हेतु NSKE (5 प्रतिशत) का प्रयोग करें, द्वितीय स्प्रे NPV 250 एल ई और तृतीय स्प्रे
+          इंडोक्साकार्ब (1 मिलीलीटर प्रति लीटर पानी)|<br>
+
+          12. पौध संरक्षण के लिये एकीकृत पौध संरक्षण के उपायों को अपनाना चाहिए|<br>
+
+          13. चने की अधिक पैदावार हेतु खरपतवार नियंत्रण अवश्य करे<br>
+          14. चने में फुल आते समय सिंचाई न करें|
+        </p>
+
+      </div>
+    </div>
+  </section>
+  <div class="bod">
+    <h1>Details about pesticides and weedicides</h1>
+  </div>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxt" id="box5">
+
+        <table>
+          <tr>
+            <th>Detail</th>
+            <th>fertilizer/pesticides</th>
+            <th>quantity</th>
+          </tr>
+          <tr>
+            <td>Nitrogen deficiency ,phosphorus and potash found in most of the wheat<br>
+              growing areas for this before sowing: 1 .Time-fed condition:<br>
+              2.Late sowing ,cow dung manure</td>
+            <td>Nitrogen , phosphorus ,potash</td>
+            <td>20kg,40kg,20kg /hectare<br>
+              3 to 5 tone</td>
+          </tr>
+          <tr>
+            <td>weed control After 4 to 5 days:</td>
+            <td> Pendimethalin 30 E.C</td>
+            <td>3 to 4 litre with 500 litre water /hectare</td>
+          </tr>
+          <tr>
+            <td>wild oats(जंगली जई) weed control</td>
+            <td>Quezalophope-Ethyl 5.0 EC</td>
+            <td>400ml in 1 litre water</td>
+          </tr>
+          <tr>
+            <td>weed control After 30 to 35 days:</td>
+            <td>Pendimethalin 30 E.C</td>
+            <td>3 to 4 litre with 500 litre water /hectare</td>
+          </tr>
+          <tr>
+            <td>To avoid dry root thawing disease While sowing seed</td>
+            <td>1.0 gram Betavex + 4 grams Trichoderma mix with seeds</td>
+            <td>5g mixture in 1 kg Gram</td>
+          </tr>
+          <tr>
+            <td>If termite infestation is in standing crop</td>
+            <td>Indexocarb,Spinosad</td>
+            <td>200ml to 400 in 1 litre</td>
+          </tr>
+          <tr>
+            <td> To avoid Frost effect in Gram</td>
+            <td>Sulfuric acid</td>
+            <td>1 litre in 1000 litre water </td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxt" id="box5">
+        <div class="bod">
+          <h1>To get more detail about the Gram farming you have to watch this video...</h1>
+          <h1><a href="https://www.youtube.com/watch?v=BctCzypXITk"><b>Detail about wheat farming... click here</b></a>
+          </h1>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<div class="bod">
+    <h1>Minimum Support Price(M.S.P) for Gram</h1>
+  </div>
+  <section></section>
+  <section id="msp">
+        <ul style="list-style-type:disc;"  >
+            <li class="msp1">Price : 5100 Rs</li>
+            <li class="msp1">Quantity : 1 quintal</li>
+            <li class="msp1">year : 2021</li>
+          </ul><br>
+          <a href="{% url 'grammsp' %}"><b><u>To get more detail about M.S.P of Gram from 2010 to 2021 Click here...</u></b></a>
+    </section>
+
+
+
+  <footer>
+    <h4 align="center">Made in Djano</h4>
+    <div class="container_12">
+      <div class="grid_2"></div>
+      <div class="grid_2"></div>
+      <div class="grid_2"></div>
+      <div class="grid_3 prefix_1"></div>
+      <div class="clear"></div>
+    </div>
+    <div class="f_bot">
+      <div class="container_12">
+        <div class="grid_12"></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

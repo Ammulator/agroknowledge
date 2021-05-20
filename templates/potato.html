@@ -1,0 +1,406 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>AgroKnowledge |Crops| Potato</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/crop.css' %}">
+  <script src="{% static 'js/jquery.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate-1.1.1.js' %}"></script>
+  <script src="{% static 'js/superfish.js' %}"></script>
+  <script src="{% static 'js/sForm.js' %}"></script>
+  <script src="{% static 'js/jquery.equalheights.js' %}"></script>
+  <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+</head>
+<body>
+
+
+  <header>
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="h_phone">Need Help? Call Us +91 6265222852</div>
+        <h1><a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt=""></a></h1>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="menu_block">
+      <div class="container_12">
+        <div class="grid_12">
+          <div class="socials"><a
+              href="https://www.facebook.com/groups/787250868600891/?notif_id=1618812220245678&notif_t=group_invited_to_group&ref=notif"></a><a
+              href="https://twitter.com/AgroKnowledge"></a></div>
+          <div class="autor">Social </div>
+          <nav class="">
+            <ul class="sf-menu">
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="{% url 'services' %}">Schemes</a>
+              </li>
+              <li><a href="{% url 'products' %}">Crops</a>
+                <ul>
+                  <li><a href="#">Rabi Crops</a>
+                    <ul>
+                      <li class="current"><a href="{% url 'wheat' %}">Wheat</a></li>
+                      <li><a href="{% url 'gram' %}">Gram</a></li>
+                      <li><a href="{% url 'sunflower' %}">Sunflower</a></li>
+                      <li><a href="{% url 'potato' %}">Potato</a></li>
+                      <li><a href="{% url 'onion' %}">Onion</a></li>
+                      <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Kharif Crops</a>
+                    <ul>
+                      <li><a href="{% url 'rice' %}">Rice</a></li>
+                      <li><a href="{% url 'corn' %}">Corn</a></li>
+                      <li><a href="{% url 'soyabean' %}">Soyabean</a></li>
+                      <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                      <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                      <li><a href="{% url 'moong' %}">Moong</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="{% url 'contacts' %}">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </header>
+
+
+    <div class="bod">
+        <h1>Potato Farming ( आलू की खेती )</h1>
+    </div>
+    <section id="services-container">
+        <div id="services">
+            <div class="boxe" id="box1">
+                <img src="{% static 'images/potato1.jfif' %}" alt="">
+                <p class="center">Planting The potato crop is usually grown not from seed but from "seed potatoes" -
+                    small tubers or pieces of tuber sown to a depth of 5 to 10 cm...
+                </p>
+            </div>
+            <div class="box" id="box2">
+                <h2 class="h-secondary">आलू की खेती</h2><br>
+                <p class="center">भारत में आलू का उत्पादन मुख्यतः सब्जी के लिए किया जाता है| यहाँ कुल उत्पादन का करीब
+                    नब्बे प्रतिशत सब्जी के रूप में प्रयोग किया जाता है| सब्जी के अलावा इसका उपयोग डॉइस, रवा, आटा, फलेक,
+                    चिप्स, फ्रेंच फ्राई, बिस्कुट इत्यादि बनाने में किया जाता है| इसके अतिरिक्त इस से अच्छे प्रकार का
+                    स्टार्च, अल्कोहल आदि और द्विपदार्थ के रूप में अच्छा प्रोटीन भी मिलता है|
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="services-container">
+        <div id="services">
+            <div class="boxe" id="box4">
+                <img src="{% static 'images/potato2.jfif' %}" alt="">
+                <p class="center">This is all about wheather conditon in Potato farming. </p>
+                <img src="{% static 'images/potato3.jfif' %}" alt="">
+                <p class="center">This is all about land selection in Potato farming. </p>
+                <img src="{% static 'images/gram4.jfif' %}" alt="">
+                <p class="center">This is all about land preparation in Potato farming. </p>
+                <img src="{% static 'images/potato4.jfif' %}" alt="">
+                <p class="center">Different types of Potato for different conditions </p>
+            </div>
+            <div class="box" id="box3">
+                <h2 class="h-secondary center">उपयुक्त जलवायु</h2><br>
+                <p class="center">दोमट तथा बलुई दोमट मिट्टियाँ जिसमें जैविक पदार्थ की बहुलता हो आलू की खेती के लिए
+                    उपयुक्त है| अच्छी जल निकासवाली, समतल और उपजाऊ जमीन आलू की खेती के लिए उत्तम मानी जाती है| आलू की
+                    खेती में तापमान का अधिक महत्त्व है| आलू की अच्छी उपज के लिए औसत तापमान कंद बनने के समय 17 से 21
+                    डिग्री सेंटीग्रेड उपयुक्त माना जाता है|
+
+                </p>
+                <h2 class="h-secondary center">भूमि का चयन</h2><br>
+                <p class="center">इसके लिए सबसे जरूरी है, मिट्टी की जांच करा लें, अगर मिट्टी की जांच नहीं हो पायी है तो
+                    देखना चाहिए कि खेती की मिट्टी बलुई दोमट होनी चाहिए और पीएच की जांच आसानी से हो जाती है अगर मिट्टी का
+                    पीएच मान छह से आठ के बीच में है और उचित जल निकास वाली मृदा है पानी अच्छी तरह से खेत से निकल जा रहा
+                    है तो खेत आलू की खेती के लिए सही है।
+                    खेत की मिट्टी में जैविक खाद जैसे वर्मी कम्पोस्ट, गोबर की खाद या मुर्गी की खाद डालेंगे तो आपके खेत का
+                    आलू हरा नहीं होगा। मीठा नहीं होगा, उत्पादन अच्छा होगा और कीट और बीमारियों से लड़ने की क्षमता भी
+                    ज्यादा रहेगी। इसलिए मिट्टी में जितना हो सके जैव उर्वरकों का प्रयोग करें।
+
+
+
+                </p>
+                <h2 class="h-secondary center">खेती की तैयारी</h2><br>
+                <p class="center">सितम्बर माह के अंतिम सप्ताह में हल से चार से पाँच बार जोताई कर देनी चाहिये, जिससे 25
+                    सेंटीमीटर गहराई तक खेत तैयार हो जाए हल्की तथा अच्छी जुती मिट्टी में आलू कंद अधिक बैठते हैं| प्रत्येक
+                    जुताई के बाद पाटा दे देने से मिट्टी समतल तथा भुरभूरी हो जाती है एवं खेत में नमी का संरक्षण भी होता
+                    है| अंतिम जुताई के साथ हीं 20 टन प्रति हेक्टर सड़ी हुई गोबर की खाद खेत में देकर बराबर मिला देने से
+                    पैदावार में काफी वृद्धि हो जाती है| दीमक के प्रकोप से बचने के लिए अंतिम जोताई के समय ही 25 से 30
+                    किलोग्राम प्रति हेक्टर की दर से लिन्डेन मिट्टी में मिला देना चाहिये|<br>
+                   
+                </p>
+                <h2 class="h-secondary center">उन्नत किस्में</h2><br>
+                <p class="center">अगेती किस्मों में कुफरी चन्द्रमुखी, कुफरी कुबेर और कुफरी बहार इत्यादि मुख्य है| इन
+                    सबों में कुफरी चन्द्रमुखी को अधिक उपयोगी माना गया है| ये किस्में 80 से 90 दिनों में तैयार हो जाती है
+                    और तीन फसली तथा चार फसली सघन खेती में भी अच्छी पैदावार दे देती है|
+                    मध्यकालीन फसल के लिए कुफरी बादशाह, कुफरी लालिमा, कुफरी बहार और कुफरी ज्योति अच्छी किस्में पायी गयी
+                    हैं| ये किस्में 100 दिनों में तैयार होती हैं|
+                    पछेती किस्मों में कुफरी सिन्दूरी अधिक लाभप्रद सिद्ध हुई है| यह लाल किस्म का आलू है और इसकी पैदावार
+                    क्षमता अन्य किस्मों की अपेक्षा अधिक है
+
+                </p>
+
+            </div>
+        </div>
+    </section>
+    <section id="services-container">
+        <div id="services">
+            <div class="boxe" id="box4">
+                <img src="{% static 'images/potato5.jfif' %}" alt="">
+                <p class="center">This is all about sowing techniques </p>
+                <img src="{% static 'images/potato6.jfif' %}" alt="">
+                <p class="center">sowing techniques </p>
+                <img src="{% static 'images/potato7.jfif' %}" alt="">
+                <p class="center">sowing techniques </p>
+                <img src="{% static 'images/potato8.jfif' %}" alt="">
+                <p class="center">Pesticides spraying </p>
+            </div>
+            <div class="box" id="box3">
+                <h2 class="h-secondary center">बुवाई का समय</h2><br>
+                <p class="center">अधिक पैदावार प्राप्त करने के लिए उचित समय पर बोआई करना आवश्यक है| जब अधिकतम तथा
+                    न्यूनतम तापक्रम क्रमशः 30 व 18 डिग्री सेंटीग्रेड के बीच में रहे तो आलू की बोआई की जा सकती है|
+                    अक्टूबर के मध्य से नवम्बर के मध्य तक आलू की बोआई अवश्य कर देनी चाहिये|
+                </p>
+                <h2 class="h-secondary center">बीज की मात्रा</h2><br>
+                <p class="center">सफल खेती के लिए स्वस्थ्य और रोगमुक्त बीज का उपयोग करना चाहिये| इसके लिए प्रमाणित बीज
+                    किसी विश्वसनीय संस्थान या एजेन्सी से खरीदना चाहिये| बोआई के पहले बीजों का पूर्ण रूप से अंकुरित करा
+                    लेना चाहिये| पूर्ण अंकुरण वाले बीज कंद जल्द उगते हैं तथा खेतों में कंद कम सडते हैं| पूर्ण बीज कंद का
+                    ही व्यवहार हमेशा करना चाहिये| अगर बड़े आकार को बीज कदं को काटना आवश्यक हो जाय तो काटे हुए बीज कंदों
+                    को इन्डोफिल एम- 45 दवा के 0.2 प्रतिशत घोल में 10 मिनट तक डुबाकर उसे उपचारित कर लेना चाहिये|<br>
+                    बीजों को छाया में सुखाकर ही खेत में रोपना चाहिये| इससे बीज कंद कम सड़ते हैं और मृदा जनित फफंदों से
+                    इन्हें छुटकारा मिल जाता है, आलू का बीज दर उनके आकर पर निर्भर करता है| बड़े आकार का बीज कंद अधिक लगता
+                    है, लेकिन पैदावार अधिक होती है| बहुत छोटे आकार के बीज कंद से पैदावार कम होती है| इसलिए मध्यम आकार का
+                    बीज कंद ही उपयोग में लाना चाहिये| 40 से 50 ग्राम आकार का बीज लगाने से एक हेक्टर में 40 से 50 क्विंटल
+                    और छोटे आकार 25 से 30 ग्राम का लगाने 25 से 30 क्विंटल बीज की आवश्यकता होती है|<br>
+                    <br>
+                    खेत को अच्छी तरह तैयार कर लेने के बाद बोआई के लिए 50 सेंटीमीटर की दूरी पर मेड बना ली जाती हैं| उसमें
+                    रसायनिक खादों का मिश्रण देकर मिट्टी में अच्छी प्रकार मिला लिया जाता है| मेडों की 20 से 20 सेंटीमीटर
+                    की दूरी पर बीज को रखकर उसे 10 सेंटीमीटर ऊँची मेड़ से ढक दिया जाता है| बुआई के बाद दो मेड़ों के बीच
+                    में सिंचाई की नाली बना दी जाती हैं, जिससे सिंचाई में सुविधा हो|
+
+                </p>
+                <h2 class="h-secondary center">निराई-गुड़ाई और मिट्टी चढ़ाना</h2><br>
+                <p class="center">पौधे जब 25 से 30 दिनों के हो जाये तो पंक्तियों में निराई-गुड़ाई करके खरपतवार को साफ कर
+                    देना चाहिये और मिट्टी को भुरभूरा कर देना चाहिये| निराई-गुड़ाई के बाद में नाईट्रोजन खाद की आधी मात्रा
+                    जड़ से 50 सेंटीमीटर की दूरी पर छिड़क कर मिट्टी चढ़ा देनी चाहिये| आलू के जड़ और कंद किसी भी अवस्था
+                    में दिखाई न दें क्योंकि खुला आलू कंद प्रकाश के सम्पर्क में हरे हो जाते हैं और खाने योग्य नहीं रहते|
+                    बीच-बीच में खुले आलु कंदों को मिट्टी से ढकते रहना चाहिये| यदि आप खरपतवार पर कीटनाशक से नियंत्रण
+                    चाहते है तो पेंडामेथलिन 30 प्रतिशत 3.5 लिटर का 900 से 1000 लिटर पानी में घोल बनाकर बुवाई के 2 दिन तक
+                    प्रति हेक्टेयर छिड़काव कर सकते है| जिसे खरपतवार का जमाव ही नही होगा|<br>
+                    <a href="https://www.youtube.com/watch?v=wlOghU1KHlY"><b><u>निराई-गुड़ाई और मिट्टी चढ़ाना की अधिक जानकारी के लिए यह
+                                वीडियो देखे...</u></b></a>
+
+                    <br>
+
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="services-container">
+        <div id="services">
+            <div class="boxe" id="box4">
+
+
+                <img src="{% static 'images/potato9.jfif' %}" alt="">
+                <p class="center">irrigation technique </p>
+                <img src="{% static 'images/potato10.jfif' %}" alt="">
+                <p class="center">Crop dig </p>
+                <img src="{% static 'images/potato11.jfif' %}" alt="">
+                <p class="center">Crop dig </p>
+                <img src="{% static 'images/potato12.jfif' %}" alt="">
+                <p class="center">Crop dig </p>
+                <img src="{% static 'images/potato13.jfif' %}" alt="">
+                <p class="center">Potato yielding</p>
+                <img src="{% static 'images/potato14.jpg' %}" alt="">
+                <p class="center">Potato yielding</p>
+            </div>
+            <div class="box" id="box3">
+                <h2 class="h-secondary center">सिंचाई प्रबंधन</h2><br>
+                <p class="center">आलू में पहली सिंचाई आलू बोआई के एक सप्ताह बाद करनी चाहिये और उसके बाद प्रत्येक 8 से 10
+                    दिनों के अंतराल पर सिंचाई करते रहना चाहिये| आलू खुदाई के दो सप्ताह पहले सिंचाई बंद कर देनी चाहिये|
+                    ध्यान यह रखा जाना चाहिये, कि प्रत्येक सिंचाई में पानी आधी मेड़ तक ही देना चाहिये|
+                </p>
+                <p class="center"> सिंचाई फुव्वारा विधि से करनी चाहिये| इसमें
+                    क्यारी सिंचाई की अपेक्षा कम पानी की आवश्यकता होती है|<br>
+                    <a href="https://www.youtube.com/watch?v=d13pL9VsTpc"><b><u>सिंचाई की अधिक जानकारी के लिए यह वीडियो
+                                देखे...</u></b></a>
+
+                </p>
+                <h2 class="h-secondary center">फसल की खुदाई, वर्गीकरण और भंडारण</h2><br>
+                <p class="center">आलू पौधे के पत्ते पीला पड़ने लगे तब खुदाई शुरू कर देनी चाहिये| खुदाई के दो सप्ताह पहले
+                    सिंचाई बन्द कर देनी चहिये और तापक्रम बढ़ने के पहले खुदाई कर लेनी चाहिये| खुदाई के बाद आलू कंदों को
+                    छप्पर वाले घर में फैलाकर कुछ दिन रखना चहिये ताकि छिलके कड़े हो जायें| इसके बाद उपयोग के अनुसार आलू
+                    कंदों का वर्गीकरण कर देना चाहिये| 50 ग्राम से उपर और 20 ग्राम से छोटे आकार वाले कंदों को बेच देना
+                    चाहिये या खाने के उपयोग में लाना चाहिये एवं 20 से 50 ग्राम के बीच वाले आलू कंदों को 50 किलोग्राम
+                    वाले झालीदार बेग में भरकर उसे शीतगृह में गर्मी बढ़ने के पहले पहुँचा देना चाहिये| इसी आलू का बीज के
+                    लिए उपयोग करना चाहिये|<br>
+                    <a href="https://www.youtube.com/watch?v=4ghtgIlLXXY"><b><u>फसल की खुदाई की अधिक जानकारी के लिए यह
+                                वीडियो
+                                देखे...</u></b></a>
+                </p>
+                <h2 class="h-secondary center">पैदावार</h2><br>
+                <p class="center">आलू की पैदावार किस्म और समय पर निर्भर करती है, वैसे आमतौर पर सामान्य किस्मों से 300 से
+                    350 क्विंटल और संकर किस्मों से 350 से 600 क्विंटल प्रति हेक्टेयर पैदावार मिल जाती है|
+                </p>
+                <h2 class="h-secondary center">आलू की खेती से अधिक पैदावार के लिए आवश्यक बिंदु</h2><br>
+                <p class="center">1. आलू की खेती के लिए जीवांशयुक्त बलुई दोमट भूमि एवं दोमट भूमि उपयुक्त मानी जाती है,
+                    भूमि में जल निकास की अच्छी व्यवस्था होनी चाहिए।
+
+                    |<br>
+
+                    2. आलू की फसल के लिए मध्यम शीतोष्ण वाली जलवायु की आवश्यकता होती है, भारत में आलू उन क्षेत्रों में
+                    उगाया जाता है जहाँ पर दिन के समय तापमान 35 डिग्री सेंटीग्रेट से अधिक न हो, तथा रात का तापमान 21
+                    डिग्री सेंटीग्रेट से अधिक न हो, आलू की फसल की वृद्धि के लिए 15-25 डिग्री सेंटीग्रेट तापमान उपयुक्त
+                    माना जाता है।|<br>
+
+                    3. आलू की फसल के लिए खेत में 2-3 जुताई के बाद खेत में बुवाई से पहले एक सिंचाई करके खेत को
+                    आवश्यकतानुसार जुताई करके पाटा लगाकर खेत को समतल एवं भुरभुरा कर लेना चाहिए।
+
+                    |<br>
+
+                    4. आलू का बीज हमेशा विश्वसनीय स्रोतों विशेषकर सहकारी संस्थाओं एवं बीज उत्पादक एजेंसियों से ही
+                    प्राप्त करना चाहिए, आलू की बुवाई के लिए 40-50 ग्राम वजन वाले अच्छे अंकुरित बीज का प्रयोग करें
+                    सामान्यत आलू की एक हैक्टर फसल बोने के लिए 30-35 कुंतल बीज की आवश्यकता पड़ती है।<br>
+
+                    5. बीज बोने से पहले शोधन करना अति आवाश्यक है, बीज की आलुओ की बुवाई से पहले 3% अगैनोमक्र्युरल यौगिक
+                    के 0.2% घोल में 30 मिनट तक उपचारित करें तथा बीज कन्दी की छाया में सुखाकर ही बुवाई करनी चाहिए।
+
+                    <br>
+
+                    6. आलू की फसल की अगेती किस्मों की बुवाई 15 सितम्बर के आस पास की जाती है, तथा मुख्य फसल की बुवाई के
+                    लिए 15-25 अक्टूबर का समय उचित रहता है।|<br>
+
+                    7. आलू की बुवाई में लाइन से लाइन की दूरी 60 सेंटीमीटर रखें तथा कन्द से कन्द की दूरी आलू के आकर के
+                    अनुसार की जाती है जैसे की 20,40,60 व 80 ग्राम आकार वाले बीज कन्दों की क्रमश: 152030 व 40 सेंटीमीटर
+                    की दूरी पर क्रमश: रख कर मेंड़ों में 8-10 सेंटीमीटर की गहरे में बुवाई करें।
+
+                    |<br>
+
+                    8. आलू की फसल में अच्छी उपज प्राप्त करने के लिए 7-10 सिंचाइयों की आवश्यकता पड़ती है, भारी मृदा में
+                    बुवाई के 10-12 दिन बाद अंकुरण से पहले पहली सिंचाई करनी चाहिए<br>
+                    9. आलू की अच्छी फसल के लिए सामान्यतः 180 कि.ग्रा. नत्रजन, 60 कि.ग्रा. फास्फोरस, तथा 100 कि.ग्रा.
+                    पोटाश की आवश्यकता पड़ती है, यदि मृदा में जस्ता एवं लोहा जैसे सूक्ष्म तत्वों की कमी है, तो 25
+                    कि.ग्रा. जिंक सल्फेट एवं 50 कि.ग्रा. फेरस सल्फेट को प्रति हैक्टर की दर से उर्वरकों के साथ बुवाई के
+                    पहले खेत में डालना चाहिए।
+
+                    <br>
+
+                    10. अगेती फसल में अधिक कीमत प्राप्त करने के लिए बुवाई के 60-70 दिन के उपरांत खुदाई करनी चाहिए, जिससे
+                    कि आप को अच्छा पैसा मिल सके, मुख्य फसल कि खुदाई 20-30 डिग्री सेंटीग्रेट तापमान पहुँचने से पहले कर
+                    लें ताकि फसल अधिक तापमान पर म्रदुगलन तथा काला गलन जैसे रोगों से फसल को बचाया जा सके|
+
+                    
+                </p>
+
+            </div>
+        </div>
+    </section>
+    <div class="bod">
+        <h1>Details about pesticides and weedicides</h1>
+    </div>
+    <section id="services-container">
+        <div id="services">
+            <div class="boxt" id="box5">
+
+                <table>
+                    <tr>
+                        <th>Detail</th>
+                        <th>fertilizer/pesticides</th>
+                        <th>quantity</th>
+                    </tr>
+                    <tr>
+                        <td>Nitrogen deficiency ,phosphorus and potash found in most of the gram<br>
+                            growing areas for this before sowing: 1 .Time-fed condition:<br>
+                            2.Late sowing ,cow dung manure</td>
+                        <td>Nitrogen , phosphorus ,potash ,uria</td>
+                        <td>180kg,60kg,120kg /hectare,5,6 quiental ursia<br>
+                            3 to 5 tone cow dung</td>
+                    </tr>
+                    <tr>
+                        <td>weed control After 4 to 5 days:</td>
+                        <td> cizamin 50 w.p or linuron </td>
+                        <td>0.5 kg with 700 litre water /hectare</td>
+                    </tr>
+                    <tr>
+                        <td>To avoid tuber mott,afid</td>
+                        <td>Andosalfan or melathiyan</td>
+                        <td>0.06 % in water</td>
+                    </tr>
+                    <tr>
+                        <td>To avoid katuva kid</td>
+                        <td>eldrin or heptaclore</td>
+                        <td>20 to 25kg/hectare</td>
+                    </tr>
+                    <tr>
+                        <td>To avoid root knote nematod</td>
+                        <td>before sowing eldikarb or carbofuran</td>
+                        <td>2kh/hectare</td>
+                    </tr>
+                    <tr>
+                        <td>Potato leaf roll</td>
+                        <td>Methyl oxydimetan or dimethylate,Phosphomidan</td>
+                        <td>0.1% ,0.04%</td>
+                    </tr>
+                   
+                </table>
+            </div>
+
+        </div>
+    </section>
+    <section id="services-container">
+        <div id="services">
+            <div class="boxt" id="box5">
+                <div class="bod">
+                    <h1>To get more detail about the Potato farming you have to watch this video...</h1>
+                    <h1><a href="https://www.youtube.com/watch?v=X2v_mc6G3M0"><b>Detail about Potato farming... click
+                                here</b></a>
+                    </h1>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="bod">
+        <h1>Minimum Support Price(M.S.P) for Potato</h1>
+    </div>
+    <section></section>
+    <section id="msp">
+        <ul style="list-style-type:disc;">
+            <li class="msp1">Price : 1500 Rs</li>
+            <li class="msp1">Quantity : 1 quintal</li>
+            <li class="msp1">year : 2020-21</li>
+        </ul><br>
+        <a href="{% url 'potatomsp' %}"><b><u>To get more detail about M.S.P of Potato from 2010 to 2021 Click here...</u></b></a>
+    </section>
+
+
+
+    <footer>
+        <h4 align="center">Made in Djano</h4>
+        <div class="container_12">
+            <div class="grid_2"></div>
+            <div class="grid_2"></div>
+            <div class="grid_2"></div>
+            <div class="grid_3 prefix_1"></div>
+            <div class="clear"></div>
+        </div>
+        <div class="f_bot">
+            <div class="container_12">
+                <div class="grid_12"></div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

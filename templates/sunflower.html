@@ -1,0 +1,365 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>AgroKnowledge |Crops| Sunflower</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/crop.css' %}">
+  <script src="{% static 'js/jquery.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate-1.1.1.js' %}"></script>
+  <script src="{% static 'js/superfish.js' %}"></script>
+  <script src="{% static 'js/sForm.js' %}"></script>
+  <script src="{% static 'js/jquery.equalheights.js' %}"></script>
+  <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+</head>
+<body>
+
+
+  <header>
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="h_phone">Need Help? Call Us +91 6265222852</div>
+        <h1><a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt=""></a></h1>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="menu_block">
+      <div class="container_12">
+        <div class="grid_12">
+          <div class="socials"><a
+              href="https://www.facebook.com/groups/787250868600891/?notif_id=1618812220245678&notif_t=group_invited_to_group&ref=notif"></a><a
+              href="https://twitter.com/AgroKnowledge"></a></div>
+          <div class="autor">Social </div>
+          <nav class="">
+            <ul class="sf-menu">
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="{% url 'services' %}">Schemes</a>
+              </li>
+              <li><a href="{% url 'products' %}">Crops</a>
+                <ul>
+                  <li><a href="#">Rabi Crops</a>
+                    <ul>
+                      <li class="current"><a href="{% url 'wheat' %}">Wheat</a></li>
+                      <li><a href="{% url 'gram' %}">Gram</a></li>
+                      <li><a href="{% url 'sunflower' %}">Sunflower</a></li>
+                      <li><a href="{% url 'potato' %}">Potato</a></li>
+                      <li><a href="{% url 'onion' %}">Onion</a></li>
+                      <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Kharif Crops</a>
+                    <ul>
+                      <li><a href="{% url 'rice' %}">Rice</a></li>
+                      <li><a href="{% url 'corn' %}">Corn</a></li>
+                      <li><a href="{% url 'soyabean' %}">Soyabean</a></li>
+                      <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                      <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                      <li><a href="{% url 'moong' %}">Moong</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="{% url 'contacts' %}">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="bod">
+    <h1>Sunflower Farming ( सूरजमुखी की खेती )</h1>
+  </div>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box1">
+        <img src="{% static 'images/sun1.jfif' %}" alt="">
+        <p class="center">Sunflower is sown by Dibbling method which requires 5-6 kg seed per hectare, while furrow
+          sowing needs 8-10 kg per hectare. The excess seedlings are thinned 10-15 days after...
+        </p>
+      </div>
+      <div class="box" id="box2">
+        <h2 class="h-secondary">सूरजमुखी की खेती </h2><br>
+        <p class="center">सूरजमुखी की खेती (Farming of sunflower) खरीफ, रबी एवं जायद तीनो ही मौसमों में की जा सकती है|
+          परन्तु खरीफ में सूरजमुखी पर अनेक रोग कीटों का प्रकोप होता है, फूल छोटे होते है, तथा उनमें दाना भी कम पड़ता है|
+          जायद में सूरजमुखी की खेती (Farming of sunflower) से अच्छी उपज प्राप्त की जा सकती है|
+          कहा जाता इसके फूल, सूरज की दिशा होने में मुड़ जाने के कारण इसे सूरजमुखी कहा जाता है| यह देश की महत्तवपूर्ण
+          तिलहनी फसल है| इसका तेल हल्के रंग, अच्छे स्वाद और इसमें उच्च मात्रा में लिनोलिक एसिड होता है, जो कि दिल के
+          मरीज़ों के लिए अच्छा होता है| सूरजमुखी के बीज में खाने योग्य तेल की मात्रा 48 से 53 प्रतिशत होती है|
+
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+        <img src="{% static 'images/sun2.jfif' %}" alt="">
+        <p class="center">This is all about wheather conditon in sunflower farming. </p>
+        <img src="{% static 'images/sun3.jfif' %}" alt="">
+        <p class="center">This is all about land selection in sunflower farming. </p>
+        <img src="{% static 'images/sun4.jfif' %}" alt="">
+        <p class="center">This is all about land preparation in sunflower farming. </p>
+        <img src="{% static 'images/sun5.jfif' %}" alt="">
+        <p class="center">Different types of sunflower for different conditions </p>
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">उपयुक्त जलवायु</h2><br>
+        <p class="center">चसूरजमुखी की खेती खरीफ रबी जायद तीनो मौसम में की जा सकती है| फसल पकते समय शुष्क जलवायु की अति
+          आवश्यकता पड़ती है|
+
+        </p>
+        <h2 class="h-secondary center">भूमि का चयन</h2><br>
+        <p class="center">चसूरजमुखी की खेती (Farming of sunflower) सभी प्रकार की भूमि में की जा सकती है| परन्तु अधिक जल
+          रोकने वाली भारी भूमि उपयुक्त है| निश्चित सिचाई वाली सभी प्रकार की भूमि में अम्लीय व क्षारीय भूमि को छोडकर इसकी
+          खेती सफलतापूर्वक की जा सकती है| हालाँकि दोमट भूमि सर्वोतम मानी जाती है|
+        </p>
+        <h2 class="h-secondary center">खेती की तैयारी</h2><br>
+        <p class="center">खेत में पर्याप्त नमी न होने की दशा में पलेवा लंगाकर जुताई करनी चाहियें| एक जुताई मिट्टी पलटने
+          वाले हल से तथा देशी हल से 2 से 3 बार जोतकर मिट्टी भुरभुरी बना लेनी चाहिए| रोटावेटर से खेत की तैयारी जल्दी हो
+          जाती है||<br>
+          <a href="https://www.youtube.com/watch?v=AuAaFI8rWAg"><b><u>खेत की तैयारी की अधिक जानकारी के लिए यह वीडियो
+                देखे...</u></b></a>
+
+        </p>
+        <h2 class="h-secondary center">उन्नत किस्में</h2><br>
+        <p class="center">बी.एस.एच 1- इस किस्म में तेल की मात्रा 41 प्रतिशत होती है, किट्ट प्रतिरोधक, पौधे की ऊंचाई 130
+          से 150 सेंटीमीटर रहती है| उपज 10 से 15 क्विंटल है और अवधि 90 से 95 दिन है|<br>
+
+          एम.एस.एफ.एस 8- इस किस्म में तेल की मात्रा 42 से 44 प्रतिशत होती है| पौधे की ऊंचाई 170 से 200 सेंटीमीटर होती
+          है| उपज 15 से 18 क्विंटल प्रति हेक्टेयर है, और अवधि 90 से 100 दिन है|<br>
+
+          मार्डन- पौधे की ऊंचाई लगभग 90 से 100 सेंटीमीटर तक होती है| बहु फसली क्षेत्रों के लिये उपयुक्त|तेल की मात्रा 38
+          से 40 प्रतिशत होती है| उपज 6 से 8 क्विंटल प्रति हेक्टेयर है, और अवधि 80 से 90 दिन है|<br>
+
+          एम.एस.एच- तेल की मात्रा 42 से 44 प्रतिशत होती है| पौधे की ऊंचाई 170 से 200 सेंटीमीटर होती है| उपज 15 से 18
+          क्विंटल प्रति हेक्टेयर है| अवधि 90 से 100 दिन है|<br>
+
+          एम.एस.एफ.एच 4- तेल की मात्रा 42 से 44 प्रतिशत होती है| पौधे की ऊंचाई 120 से 150 सेंटीमीटर होती है| रबी एवं
+          जायद के लिए उपयुक्त हैं| उपज 20 से 30 क्विंटल प्रति हेक्टेयर है और अवधि 90 से 95 दिन है|<br>
+
+          एस.एच.एफ.एच 1- तेल की मात्रा 40 से 42 प्रतिशत होती है| पौधे की ऊंचाई 120 से 150 सेंटीमीटर होती है| उपज 15 से
+          20 क्विंटल प्रति हेक्टेयर है| अवधि 90 से 95 दिन है|
+
+        </p>
+        <p class="center">ज्वालामुखी- तेल की मात्रा 42 से 44 प्रतिशत होती है| पौधे की ऊंचाई 160 से 170 सेंटीमीटर होती
+          है| उपज 30 से 35 क्विंटल प्रति हेक्टेयर है| अवधि 85 से 90 दिन है|<br>
+          सूर्या- पौधे की ऊंचाई लगभग 130 से 135 सेंटीमीटर तक होती है| पिछैती बुवाई के लिये उपयुक्त| तेल की मात्रा 38 से
+          40 प्रतिशत होती है| उपज 8 से 10 क्विंटल प्रति हेक्टेयर है और अवधि 90 से 100 दिन है|
+
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+        <img src="{% static 'images/sun6.jfif' %}" alt="">
+        <p class="center">This is all about sowing techniques </p>
+        
+        <img src="{% static 'images/sun7.jfif' %}" alt="">
+        <p class="center">sowing techniques </p>
+        <img src="{% static 'images/sun9.jfif' %}" alt="">
+        <p class="center">Pesticides spraying </p>
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">बुवाई का समय</h2><br>
+        <p class="center">- जायद में सूरजमुखी की बुवाई का उपयुक्त समय फरवरी का दूसरा पखवारा है| जिससे फसल मई के अन्त या
+          जून के प्रथम सप्ताह तक पक जायें| बुवाई में देर करने से वर्ष शुरू हो जाने के बाद पैदावार में नुकसान पहुंचता है|
+        </p>
+        <h2 class="h-secondary center">बीज की मात्रा</h2><br>
+        <p class="center">बीज की मात्रा अलग अलग पड़ती है, जैसे की सामान्य प्रजातियो में 12 से 15 किलो ग्राम प्रति हैक्टर
+          बीज लगता है, और संकर प्रजातियो में 5 से 6 किलो ग्राम प्रति हैक्टर बीज लगता है| यदि बीज की जमाव गुणवता 70 या 75
+          प्रतिशत से कम हो तो बीज की मात्रा बढ़ाकर बुवाई करना चाहिए|
+        </p>
+        <h2 class="h-secondary center">बुवाई की विधि एवं अन्तराल</h2><br>
+        <p class="center">बुवाई लाइनों में हल के पीछे 4 से 5 सेंटीमीटर गहराई पर करनी चाहिए| लाइन से लाइन की दूरी 45
+          सेंटी मीटर तथा पौध से पौध की दूरी 15 से 20 सेंटीमीटर रखनी उपयुक्त है|
+          <br>
+
+          बीजोपचार- बीज को बुवाई से पहले 3 ग्राम थीरम या बाविस्टीन प्रति किलो ग्राम बीज को शोधित करना चाहिए| बीज को
+          बुवाई से पहले रात में 12 घंटा भिगोकर सुबह 3 से 4 घंटा छाया में सुखाकर दोपहर के बाद बुवाई करनी चाहिए|<br>
+          जायद फसल की बोवाई फरवरी के अंतिम हफ्ते से ले कर मध्य मार्च तक कर लेनी चाहिए, जबकि बसंतकालीन बोवाई 15 जनवरी से 10 फरवरी तक कर लेनी चाहिए। लाइन से बोवाई करना बेहतर होता है। बोवाई हल के पीछे कूंड़ों में 4-5 सेंटीमीटर गहराई पर करें और लाइन से लाइन की दूरी 45 सेंटीमीटर व पौधे से पौधे की दूरी 15 सेंटीमीटर रखें।
+
+
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+
+
+        <img src="{% static 'images/sun8.jfif' %}" alt="">
+        <p class="center">irrigation technique </p>
+        <img src="{% static 'images/sun10.jfif' %}" alt="">
+        <p class="center">sunflower harvesting </p>
+        <img src="{% static 'images/sun11.jfif' %}" alt="">
+        <p class="center">sunflower harvesting </p>
+        <img src="{% static 'images/sun12.jfif' %}" alt="">
+        <p class="center">sunflower harvesting </p>
+        <img src="{% static 'images/sun13.jfif' %}" alt="">
+        <p class="center">sunflower yielding</p>
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">सिंचाई प्रबंधन</h2><br>
+        <p class="center">सूरजमुखी की खेती (Farming of sunflower) के लिए हल्की भूमि में जायद मे सूरजमुखी की अच्छी फसल के
+          लिए 4 से 5 सिचांईयो की आवश्यकता पडती है| तथा भारी भूमि में 3 से 4 सिंचाइयां की आवश्यकता होती है| पहली सिंचाई
+          बोने के 20 से 25 दिन बाद आवश्यक है| फूल निकलते समय तथा दाना भरते समय भूमि में पर्याप्त नमी होनी चाहिए| इस
+          अवस्था में सिंचाई बहुत सावधानी पूर्वक करनी चाहिए ताकि पौधे न गिरने पायें| सामान्यतः 10 से 15 दिनों के अन्तर पर
+          सिंचाई की आवश्यकता होती है|
+        </p>
+        <p class="center"> सिंचाई फुव्वारा विधि से करनी चाहिये| इसमें
+          क्यारी सिंचाई की अपेक्षा कम पानी की आवश्यकता होती है|<br>
+          <a href="https://www.youtube.com/watch?v=S5RtUze5qyc"><b><u>सिंचाई की अधिक जानकारी के लिए यह वीडियो
+                देखे...</u></b></a>
+
+        </p>
+        <h2 class="h-secondary center">कटाई एवं मॅडाई</h2><br>
+        <p class="center">कटाई- जब सूरजमुखी के बीज कड़े हो जाए तो फूलो के कटाई करके एकत्र कर लेना चाहिए, तथा इनको छाया
+          में सुख लेना चाहिए| इनको ढेर बनाकर नहीं रखना चाहिए, इसके बाद डंडे से पिटाई करके बीज निकल लेना चाहिए साथ ही
+          सूरजमुखी थ्रेशर का प्रयोग करना उपयुक्त होता है||<br>
+          <a href="https://www.youtube.com/watch?v=xQmR6qocmi4"><b><u>कटाई एवं मॅडाई की अधिक जानकारी के लिए यह वीडियो
+                देखे...</u></b></a>
+        </p>
+        <h2 class="h-secondary center">पैदावार</h2><br>
+        <p class="center">सामान्य किस्मों की पैदावार 15 से 20 क्विंटल प्रति हैक्टर होती है तथा संकर प्रजातियों की
+          पैदावार 23 से 30 क्विंटल प्रति हैक्टर प्राप्त होती है||
+        </p>
+        <h2 class="h-secondary center">सूरजमुखी की खेती से अधिक पैदावार के लिए आवश्यक बिंदु</h2><br>
+        <p class="center">
+          1.खेत की अच्छी तरह तैयारी करें। उन्नत एवं संकर किस्मों के बीजों का उपयोग करें। <br>
+          2.जब नये बीज को बिजाई के लिए इस्तेमाल करने से पहले इथ्रेल से उपचार कर सुप्तावस्था को हटा दें। <br>
+          3. सूरजमुखी की बिजाई जनवरी अथवाफरवरी माह में अवश्य पूरा कर लें। <br>
+          4.सिफारिश की गई उर्वरकों की मात्रा के साथ गोबर की अच्छी गली-सड़ी खाद या कम्पोस्ट
+          खाद का प्रयोग करें। <br>
+          5.मुख्य पोषक तत्व जैसे नाइट्रोजन, फास्फोरस,पोटेशियम, गन्धक तथा सूक्ष्म तत्व जैसे बोराॅन एवं
+          जिंक की आवश्यकता पूरी करें। <br>
+          6.फूल के निकलने पर बोरेक्स का छिड़काव जरूर करें ताकि बीज अच्छे गुण वाले बने।<br>
+          7. नीलगाय एवं चिड़ियों से बचाने के लिए बड़े क्षेत्र में सूरजमुखी की खेती करें।<br>
+          8. बीज को 4-6 घण्टे तक पानी में अवश्य भिगोंयें
+          एवं छाया में सुखाकर बिजाई करें ।<br>
+          9.इस की खेती अम्लीय और क्षारीय जमीनों को छोड़ कर हर तरह की जमीनों में की जा सकती है। वैसे ज्यादा पानी सोखने
+          वाली भारी जमीन इस के लिए ज्यादा अच्छी होती है।<br>
+          10.खेत में भरपूर नमी न होने पर पलेवा लगा कर जुताई करनी चाहिए।पहली जुताई मिट्टी पलटने वाले हल से करने के बाद
+          साधारण हल से 2-3 बार जुताई कर के खेत को भुरभुरा बना लेना चाहिए या रोटावेटर का इस्तेमाल करना चाहिए।<br>
+          11.सूर्यमुखी की 2 तरह की किस्में होती हैं, एक कंपोजिट और दूसरी हाईब्रिड। कंपोजिट किस्मों में माडर्न व सूर्या
+          खास हैं। हाईब्रिड किस्मों में केवीएसएच 1, एसएच 3222, एमएसएफएच 17 व वीएसएफ 1 वगैरह शामिल हैं।<br>
+
+          12.हाईब्रिड किस्म होने पर 5-6 किलोग्राम और कंपोजिट किस्म होने पर 12-15 किलोग्राम बीजों का प्रति हेक्टेयर की दर
+          से इस्तेमाल करना चाहिए।
+        </p>
+
+      </div>
+    </div>
+  </section>
+  <div class="bod">
+    <h1>Details about pesticides and weedicides</h1>
+  </div>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxt" id="box5">
+
+        <table>
+          <tr>
+            <th>Detail</th>
+            <th>fertilizer/pesticides</th>
+            <th>quantity</th>
+          </tr>
+          <tr>
+            <td>Nitrogen deficiency ,phosphorus and potash found in most of the sunflower<br>
+              growing areas for this before sowing: 1 .Time-fed condition:<br>
+              2.Late sowing ,cow dung manure</td>
+            <td>Nitrogen , phosphorus ,potash</td>
+            <td>80kg,60kg,40kg /hectare <br>
+              250 to 300 quiental cow dung</td>
+          </tr>
+          <tr>
+            <td>weed control After 4 to 5 days:</td>
+            <td> Pendimethalin 30 E.C</td>
+            <td>3 to 4 litre with 500 litre water /hectare</td>
+          </tr>
+  
+          <tr>
+            <td>weed control After 30 to 35 days:</td>
+            <td>Pendimethalin 30 E.C</td>
+            <td>3 to 4 litre with 500 litre water /hectare</td>
+          </tr>
+          <tr>
+            <td>To avoid Dark spots disease, flower rot, root and stem rot</td>
+            <td>M-45 or copper oxychloride</td>
+            <td>1.5 to 2 litre in 800 litre <br>
+              water in every 15 days</td>
+          </tr>
+          <tr>
+            <td>Kit prevention</td>
+            <td>Methyl odimentan</td>
+            <td> 1 litre in water 100 litre</td>
+          </tr>
+          <tr>
+            <td> To avoid Termite Hare Bites Bugm</td>
+            <td>25 EC or Fenlarrat</td>
+            <td>750ml in 1000 litre water </td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxt" id="box5">
+        <div class="bod">
+          <h1>To get more detail about the sunflower farming you have to watch this video...</h1>
+          <h1><a href="https://www.youtube.com/watch?v=xjs6lIZid14"><b>Detail about sunflower farming... click
+                here</b></a>
+          </h1>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="bod">
+    <h1>Minimum Support Price(M.S.P) for sunflower</h1>
+  </div>
+  <section></section>
+  <section id="msp">
+    <ul style="list-style-type:disc;">
+      <li class="msp1">Price : 5885 Rs</li>
+      <li class="msp1">Quantity : 1 quintal</li>
+      <li class="msp1">year : 2020-21</li>
+    </ul><br>
+    <a href="{% url 'sunflowermsp' %}"><b><u>To get more detail about M.S.P of sunflower from 2010 to 2021 Click here...</u></b></a>
+  </section>
+
+
+
+  <footer>
+    <h4 align="center">Made in Djano</h4>
+    <div class="container_12">
+      <div class="grid_2"></div>
+      <div class="grid_2"></div>
+      <div class="grid_2"></div>
+      <div class="grid_3 prefix_1"></div>
+      <div class="clear"></div>
+    </div>
+    <div class="f_bot">
+      <div class="container_12">
+        <div class="grid_12"></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

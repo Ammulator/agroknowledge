@@ -1,0 +1,336 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>AgroKnowledge |Crops| Cotton</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/crop.css' %}">
+  <script src="{% static 'js/jquery.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate-1.1.1.js' %}"></script>
+  <script src="{% static 'js/superfish.js' %}"></script>
+  <script src="{% static 'js/sForm.js' %}"></script>
+  <script src="{% static 'js/jquery.equalheights.js' %}"></script>
+  <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+</head>
+<body>
+
+
+  <header>
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="h_phone">Need Help? Call Us +91 6265222852</div>
+        <h1><a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt=""></a></h1>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="menu_block">
+      <div class="container_12">
+        <div class="grid_12">
+          <div class="socials"><a
+              href="https://www.facebook.com/groups/787250868600891/?notif_id=1618812220245678&notif_t=group_invited_to_group&ref=notif"></a><a
+              href="https://twitter.com/AgroKnowledge"></a></div>
+          <div class="autor">Social </div>
+          <nav class="">
+            <ul class="sf-menu">
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="{% url 'services' %}">Schemes</a>
+              </li>
+              <li><a href="{% url 'products' %}">Crops</a>
+                <ul>
+                  <li><a href="#">Rabi Crops</a>
+                    <ul>
+                      <li class="current"><a href="{% url 'wheat' %}">Wheat</a></li>
+                      <li><a href="{% url 'gram' %}">Gram</a></li>
+                      <li><a href="{% url 'sunflower' %}">Sunflower</a></li>
+                      <li><a href="{% url 'potato' %}">Potato</a></li>
+                      <li><a href="{% url 'onion' %}">Onion</a></li>
+                      <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Kharif Crops</a>
+                    <ul>
+                      <li><a href="{% url 'rice' %}">Rice</a></li>
+                      <li><a href="{% url 'corn' %}">Corn</a></li>
+                      <li><a href="{% url 'soyabean' %}">Soyabean</a></li>
+                      <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                      <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                      <li><a href="{% url 'moong' %}">Moong</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="{% url 'contacts' %}">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="bod">
+    <h1>Cotton Farming ( कपास की खेती )</h1>
+  </div>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box1">
+        <img src="{% static 'images/cotton1.jfif' %}" alt="">
+        <p class="center">Temperature: 25°C is ideal for cotton cultivation. Rainfall: 150 cm to 200 cm rainfall is
+          essential for cotton farming. Moisture in the wind is necessary.
+        </p>
+      </div>
+      <div class="box" id="box2">
+        <h2 class="h-secondary">कपास की खेती</h2><br>
+        <p class="center">कपास की खेती भारत की सबसे महत्वपूर्ण रेशा और नगदी फसल में से एक है| कपास की खेती लगभग पुरे
+          विश्व में उगाई जाती है। यह कपास की खेती वस्त्र उद्धोग को बुनियादी कच्चा माल प्रदान करता है। भारत में कपास की
+          खेती लगभग 6 मिलियन किसानों को प्रत्यक्ष तौर पर आजीविका प्रदान करता है और 40 से 50 लाख लोग इसके व्यापार या
+          प्रसंस्करण में कार्यरत है। कई लोगो के लिए कपास कमाई का साधन भी है।
+          हमारे देश में कपास की खेती को सफेद सोना भी कहा जाता है। देश में व्यापक स्तर पर कपास उत्पादन की आवश्यकता है।
+          क्योंकी कपास का महत्व इन कार्यो से लगाया जा सकता है इसे कपड़े बनते है, इसका तेल निकलता है और इसका विनोला बिना
+          रेशा का पशु आहर में व्यापक तौर पर उपयोग में लाया जाता है।
+
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+        <img src="{% static 'images/cotton2.jfif' %}" alt="">
+        <p class="center">This is all about wheather conditon in Cotton farming. </p>
+        <img src="{% static 'images/cotton3.jfif' %}" alt="">
+        <p class="center">This is all about land selection in Cotton farming. </p>
+        <img src="{% static 'images/cotton7.jfif' %}" alt="">
+        <p class="center">This is all about land preparation in Cotton farming. </p>
+        <img src="{% static 'images/cotton6.jpg' %}" alt="">
+        <p class="center">Different types of Cotton for different conditions </p>
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">उपयुक्त जलवायु</h2><br>
+        <p class="center">फसल के उगने के लिए कम से कम 16 डिग्री सेंटीग्रेट और अंकुरण के लिए आदर्श तापमान 32 से 34 डिग्री
+          सेंटीग्रेट होना उचित है। इसकी बढ़वार के लिए 21 से 27 डिग्री तापमान चाहिए। फलन लगते समय दिन का तापमान 25 से 30
+          डिग्री सेंटीग्रेट तथा रातें ठंडी होनी चाहिए।<br>
+          कपास के लिए कम से कम 75 सेंटीमीटर वर्षा का होना आवश्यक है। 125 सेंटीमीटर से अधिक वर्षा का होना हानिकारक होता
+          है।
+        </p>
+        <h2 class="h-secondary center">भूमि का चयन</h2><br>
+        <p class="center">कपास की खेती के लिए बलुई दोमट मिट्टी और काली मिट्टी को सबसे उपयुक्त माना जाता है। इस तरह की
+          मिट्टी में कपास की पैदावार ज्यादा होती है। लेकिन आज कई तरह की संकर किस्में बाज़ार में आ चुकी हैं। जिस कारण आज
+          कपास को पहाड़ी और रेतीली जगहों पर भी आसानी से उगाया जा रहा है। इसके लिए जमीन का पी.एच. मान 5.5 से 6 तक होना
+          चाहिए। कपास की खेती को पानी की कम जरूरत होती है। इस कारण इसकी फसल अच्छी जल निकासी वाली मिट्टी में की जानी
+          चाहिए।
+        </p>
+        <h2 class="h-secondary center">खेती की तैयारी</h2><br>
+        <p class="center">रबी की फसल की कटाई के पश्चात् खेत की मिट्टी पलटने वाले हल से एक गहरी जुताई करनी चाहिये । इसके
+          पश्चात् दो या तीन बार हैरो चलाकर खेती की मिट्टी को बारीक व भुरभुरा बना लेना चाहिये । इस प्रकार खेत बुवाई के
+          लिये तैयार हो जाता है।<br>
+          <a href="https://www.youtube.com/watch?v=QP_gA5-yXmQ"><b><u>खेत की तैयारी की अधिक जानकारी के लिए यह वीडियो
+                देखे...</u></b></a>
+
+        </p>
+        <h2 class="h-secondary center">उन्नत किस्में</h2><br>
+        <p class="center"><b>कपास को तीन श्रेणी में वर्गीकृत किया गया है :-</b>
+          देखा जाये तो लम्बे रेशा वाले कपास को सर्वोतम माना जाता है जिसकी लम्बाई 5 सेंटीमीटर इसको उच्च कोटि की वस्तुओं
+          में शामिल किया जाता है। मध्य रेशा वाला कपास (Cotton) जिसकी लम्बाई 3.5 से 5 सेंटीमीटर होती है इसको मिश्रित कपास
+          कहा जाता है। तीसरे प्रकार का कपास छोटे रेशा वाला होता है। जिसकी लम्बाई 3.5 सेंटीमीटर होती है।
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+        <img src="{% static 'images/cotton4.jpg' %}" alt="">
+        <p class="center">This is all about sowing techniques </p>
+        <img src="{% static 'images/cotton5.jfif' %}" alt="">
+        <p class="center">pasticide spraying </p>
+        <img src="{% static 'images/cotton8.jfif' %}" alt="">
+        <p class="center">sowing techniques </p>
+
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">बुवाई का समय</h2><br>
+        <p class="center">कपास की बुवाई का उपयुक्त समय अलग - अलग क्षेत्रों में भिन्न होता है। इस फसल की बुवाई अप्रैल और
+          मई के महीने में अवश्य ही कर लेनी चाहिये ।
+
+
+        </p>
+        <h2 class="h-secondary center">बीज की मात्रा</h2><br>
+        <p class="center">बीज की मात्रा बीजों की किस्म, उगाये जाने वाले इलाके, सिंचाई आदि पर बहुत ज्यादा निर्भर करती है।
+          अमेरिकन हाइब्रिड कपास के लिए 1.5 - 2 किलो प्रति एकड़ जबकि अमेरिकन कपास के लिए बीज की मात्रा 3.5 - 4 किलो प्रति
+          एकड़ होनी चाहिए। देसी कपास की हाइब्रिड किस्म के लिए बीज की मात्रा 1.25 - 2 किलो प्रति एकड़ और कपास की देसी
+          किस्मों के लिए 3 - 4 किलो प्रति एकड़ होनी चाहिए।
+        </p>
+        <h2 class="h-secondary center">बीज रोपाई का तरीका :-</h2><br>
+        <p class="center">देसी कपास की बिजाई के लिए बिजाई वाली मशीन का प्रयोग करें और हाइब्रिड या बी टी किस्मों के लिए
+          गड्ढे खोदकर बिजाई करें। आयताकार के मुकाबले वर्गाकार बिजाई लाभदायक होती है। कुछ बीजों के अंकुरन ना होने के कारण
+          और नष्ट होने के कारण कईं जगहों पर फासला बढ़ जाता है। इस फासले को खत्म करना जरूरी है। बिजाई के दो सप्ताह बाद
+          कमज़ोर, बीमार और प्रभावित पौधों को नष्ट कर दें।|<br>
+          <a href="https://www.youtube.com/watch?v=mwP88zK5tfc"><b><u>बीज रोपाई की अधिक जानकारी के लिए यह वीडियो
+            देखे...</u></b></a>
+          <br>
+
+
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+
+
+        <img src="{% static 'images/cotton9.jpg' %}" alt="">
+        <p class="center">irrigation technique </p>
+        <img src="{% static 'images/cotton10.jfif' %}" alt="">
+        <p class="center"> Cotton Towing </p>
+        <img src="{% static 'images/cotton11.jfif' %}" alt="">
+        <p class="center"> Cotton Towing </p>
+        <img src="{% static 'images/cotton12.jfif' %}" alt="">
+        <p class="center"> Cotton Towing </p>
+
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">सिंचाई प्रबंधन</h2><br>
+        <p class="center">कपास की फसल में 3-4 सिंचाई देनी आवश्यक होती है। पहली सिंचाई देर से करनी चाहिये। कपास की खेती
+          को काफी कम पानी जरूरत होती हैं। अगर बारिश ज्यादा होती है तो इसे शुरूआती सिंचाई की जरूरत नही होती। लेकिन बारिश
+          टाइम पर नही होने पर इसकी पहली सिंचाई लगभग 45 से 50 दिन बाद चाहिए। गूलर व फूल आते समय खेत की सिंचाई अवश्य की
+          जानी चाहिये।
+        </p>
+        <p class="center"> सिंचाई फुव्वारा विधि से करनी चाहिये| इसमें
+          क्यारी सिंचाई की अपेक्षा कम पानी की आवश्यकता होती है|<br>
+          <a href="https://www.youtube.com/watch?v=sdHW9rS_Qas"><b><u>सिंचाई की अधिक जानकारी के लिए यह वीडियो
+                देखे...</u></b></a>
+
+        </p>
+        <h2 class="h-secondary center">तुड़ाई</h2><br>
+        <p class="center">कपास की पहली तुड़ाई जब कपास की टिंडे 40 से 60 प्रतिशत खिल जाएँ तब करनी चाहिए। उसके बाद दूसरी
+          तुड़ाई सभी टिंडे खिलने के बाद करते हैं। कपास की चुनाई का कार्य 3-4 बार में पूरा होता है।<br>
+          <a href="https://www.youtube.com/watch?v=HExZUMYsgtI"><b><u>तुड़ाई की अधिक जानकारी के लिए यह वीडियो
+                देखे...</u></b></a>
+        </p>
+        <h2 class="h-secondary center">पैदावार</h2><br>
+        <p class="center">उपरोक्त उन्नत विधि से खेती करने पर देशी कपास की 20 से 25, संकर कपास की 25 से 32 और बी टी कपास
+          की 30 से 50 क्विण्टल प्रति हैक्टेयर पैदावार ली जा सकती है।
+        </p>
+        <h2 class="h-secondary center">कपास की खेती से अधिक पैदावार के लिए आवश्यक बिंदु</h2><br>
+        <p class="center">
+          कपास में टिंडे पूरे खिल जाये तब उनकी चुनाई कर लीजिये| प्रथम चुनाई 50 से 60 प्रतिशत टिण्डे खिलने पर शुरू करें
+          और दूसरी शेष टिण्डों के खिलने पर करें|<br>
+
+          किसान भाई कपास की फसल के साथ सह फसली खेती करके अतिरिक्त लाभ अर्जित कर सकते हैं। कपास एक लंबी
+          अवधि वाली फसल है और प्रारंभिक अवस्था में इसके पौधों में बढ़वार की धीमी गति से होती है। इसके अलावा कपास की
+          पंक्तियों के मध्य खाली स्थान भी अधिक होता है। कपास की दो पंक्तियों के मध्य मूंग,उड़द, मूंगफली, सोयाबीन आदि
+          फसलों की बुवाई कर अतिरिक्त मुनाफा अर्जित किया जा सकता है। सहफसली खेती से कपास में खरपतवार, कीट रोग का प्रकोप
+          भी कम होता है। कपास के साथ दलहनी फसलों की सह फसली खेती भूमि की उर्वरा शक्ति में इजाफा करने और नमीं सरंक्षण में
+          सहायक होती है।
+        </p>
+
+      </div>
+    </div>
+  </section>
+  <div class="bod">
+    <h1>Details about pesticides and weedicides</h1>
+  </div>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxt" id="box5">
+
+        <table>
+          <tr>
+            <th>Detail</th>
+            <th>fertilizer/pesticides</th>
+            <th>quantity</th>
+          </tr>
+          <tr>
+            <td>कपास की बुवाई से पहले खेत तैयार करते समय </td>
+            <td>सड़ी हुई गोबर की खाद ,फास्फोरस,नाइट्रोजन</td>
+            <td>
+              20 to 35 tone,25kg,50kg/hectare</td>
+          </tr>
+          <tr>
+            <td>हरा मच्छर,तेला</td>
+            <td> इमिडाक्लोप्रिड 17.8 एस एल या मोनोक्रोटोफॉस 36 एस एल </td>
+            <td>मेडिकेटर के निर्देशानुसार छिड़काव करें</td>
+          </tr>
+          <tr>
+            <td>थ्रिप्स ,सफेद मक्खी ,मिली बग </td>
+            <td>मिथाइल डेमेटान 25 ई सी ,एसेटामीप्रिड 4 ग्राम या एसीफेट 75 डब्लयू पी ,क्विनलफॉस 25 ई सी </td>
+            <td>मेडिकेटर के निर्देशानुसार छिड़काव करें</td>
+          </tr>
+          <tr>
+            <td>चितकबरी सुंडी - अमेरिकन सुंडी - तंबाकू सुंडी - गुलाबी सुंडी </td>
+            <td>क्यूनालफॉस 25 ई सी,इन्डोक्साकार्ब 14.5 एस सी, फ्लूबेन्डियामाइड 480 एस सी</td>
+            <td>मेडिकेटर के निर्देशानुसार छिड़काव करें</td>
+          </tr>
+          <tr>
+            <td>हानिकारक रोग -झुलसा रोग ,पौध अंगमारी रोग </td>
+            <td>काँपर ऑक्सीक्लोराइड ,एन्ट्राकाल या मेन्कोजेब </td>
+            <td>मेडिकेटर के निर्देशानुसार छिड़काव करें</td>
+          </tr>
+          <tr>
+            <td>अल्टरनेरिया पत्ती धब्बा रोग </td>
+            <td>टैबुकोनाज़ोल,ट्राइफलोकसीट्रोबिन + टैबुकोनाज़ोल </td>
+            <td>मेडिकेटर के निर्देशानुसार छिड़काव करें</td>
+          </tr>
+          
+        </table>
+      </div>
+
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxt" id="box5">
+        <div class="bod">
+          <h1>To get more detail about the Cotton farming you have to watch this video...</h1>
+          <h1><a href="https://www.youtube.com/watch?v=LsEo5iUfceE"><b>Detail about Cotton farming... click here</b></a>
+          </h1>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="bod">
+    <h1>Minimum Support Price(M.S.P) for Cotton </h1>
+  </div>
+  <section></section>
+  <section id="msp">
+    <ul style="list-style-type:disc;">
+      <li class="msp1">Price : 5825 Rs</li>
+      <li class="msp1">Quantity : 1 quintal</li>
+      <li class="msp1">year : 2020-21</li>
+    </ul><br>
+    <a href="{% url 'cottonmsp' %}"><b><u>To get more detail about M.S.P of Cotton from 2010 to 2021 Click here...</u></b></a>
+  </section>
+
+
+
+  <footer>
+    <h4 align="center">Made in Djano</h4>
+    <div class="container_12">
+      <div class="grid_2"></div>
+      <div class="grid_2"></div>
+      <div class="grid_2"></div>
+      <div class="grid_3 prefix_1"></div>
+      <div class="clear"></div>
+    </div>
+    <div class="f_bot">
+      <div class="container_12">
+        <div class="grid_12"></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

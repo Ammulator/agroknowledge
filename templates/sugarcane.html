@@ -1,0 +1,377 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>AgroKnowledge |Crops| SugarCane</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/crop.css' %}">
+  <script src="{% static 'js/jquery.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate-1.1.1.js' %}"></script>
+  <script src="{% static 'js/superfish.js' %}"></script>
+  <script src="{% static 'js/sForm.js' %}"></script>
+  <script src="{% static 'js/jquery.equalheights.js' %}"></script>
+  <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+</head>
+<body>
+
+
+  <header>
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="h_phone">Need Help? Call Us +91 6265222852</div>
+        <h1><a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt=""></a></h1>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="menu_block">
+      <div class="container_12">
+        <div class="grid_12">
+          <div class="socials"><a
+              href="https://www.facebook.com/groups/787250868600891/?notif_id=1618812220245678&notif_t=group_invited_to_group&ref=notif"></a><a
+              href="https://twitter.com/AgroKnowledge"></a></div>
+          <div class="autor">Social </div>
+          <nav class="">
+            <ul class="sf-menu">
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="{% url 'services' %}">Schemes</a>
+              </li>
+              <li><a href="{% url 'products' %}">Crops</a>
+                <ul>
+                  <li><a href="#">Rabi Crops</a>
+                    <ul>
+                      <li class="current"><a href="{% url 'wheat' %}">Wheat</a></li>
+                      <li><a href="{% url 'gram' %}">Gram</a></li>
+                      <li><a href="{% url 'sunflower' %}">Sunflower</a></li>
+                      <li><a href="{% url 'potato' %}">Potato</a></li>
+                      <li><a href="{% url 'onion' %}">Onion</a></li>
+                      <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Kharif Crops</a>
+                    <ul>
+                      <li><a href="{% url 'rice' %}">Rice</a></li>
+                      <li><a href="{% url 'corn' %}">Corn</a></li>
+                      <li><a href="{% url 'soyabean' %}">Soyabean</a></li>
+                      <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                      <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                      <li><a href="{% url 'moong' %}">Moong</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="{% url 'contacts' %}">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="bod">
+    <h1>Sugarcane Farming ( गन्ने की खेती )</h1>
+  </div>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box1">
+        <img src="{% static 'images/sugar1.jfif' %}" alt="">
+        <p class="center">Sugarcane (Saccharum officinarum L.) is the main sources of sugar in India and holds a
+          prominent position as a cash crop. ... Nearly 2.8 lakh farmers have been cultivating sugarcane in the vast...
+        </p>
+      </div>
+      <div class="box" id="box2">
+        <h2 class="h-secondary">गन्ने की खेती</h2><br>
+        <p class="center">गन्ना एक प्रमुख व्यवसायिक फसल है, विषम परिस्थितियां भी इसकी फसल को बहुत अधिक प्रभावित नहीं कर
+          पाती इन्ही विशेष कारणों से गन्ना की खेती अपने आप में सुरक्षित और लाभ की खेती मानी जाती है| इसकी अधिक पैदावार
+          वैज्ञानिक तकनीक व कुशल सस्य प्रबंधन के माध्यम से ही संभव है|
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+        <img src="{% static 'images/sugar2.jfif' %}" alt="">
+        <p class="center">This is all about wheather conditon in Sugarcane farming. </p>
+        <img src="{% static 'images/gram3.jfif' %}" alt="">
+        <p class="center">This is all about land selection in Sugarcane farming. </p>
+        <img src="{% static 'images/gram4.jfif' %}" alt="">
+        <p class="center">This is all about land preparation in Sugarcane farming. </p>
+        <img src="{% static 'images/sugar5.jfif' %}" alt="">
+        <p class="center">Different types of Sugarcane for different conditions </p>
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">उपयुक्त जलवायु</h2><br>
+        <p class="center">गन्ने की बुआई वर्ष में दो बार कि जाती है, जैसे-
+          <b>शरदकालीन बुवाई</b>- इसमें अक्टूबर से नवम्बर में फसल की बुवाई करते हैं एवं फसल 10 से 14 माह में तैयार होता
+          है|<br>
+          <b>बसंत कालीन बुवाई</b>- इसमें फरवरी से मार्च तक फसल की बुवाई करते है| इसमें फसल 10 से 12 माह में तैयार हो
+          जाती है|
+          शरदकालीन गन्ने की बसंत में बोये गये गन्ने से 25 से 30 प्रतिशत व ग्रीष्मकालीन गन्ने से 30 से 40 प्रतिशत अधिक
+          पैदावार होती है|
+
+
+        </p>
+        <h2 class="h-secondary center">भूमि का चयन</h2><br>
+        <p class="center">गन्ना की खेती मध्यम से भारी काली मिट्टी में की जा सकती है| दोमट भूमि जिसमें सिंचाई की उचित
+          व्यवस्था और जल का निकास अच्छा हो, एवं पी एच मान 6.5 से 7.5 के बीच हो, गन्ने के लिए सर्वोत्तम होती है|
+        </p>
+        <h2 class="h-secondary center">खेती की तैयारी</h2><br>
+        <p class="center">खेत की गीष्मकाल में अप्रेल से 15 मई के पूर्व एक गहरी जुताई करें| इसके पश्चात 2 से 3 बार देशी
+          हल या कल्टीवेटर, से जुताई कर और रोटावेटर या पाटा चलाकर खेत को भुरभुरा, समतल तथा खरपतवार रहित कर लें, अब रिजर
+          की सहायता से 3 से 4.5 फुट की दूरी में 20 से 30 सेंटीमीटर गहरी नाली बनाये|<br>
+          <a href="https://www.youtube.com/watch?v=O9jGm67Z-_U"><b><u>खेत की तैयारी की अधिक जानकारी के लिए यह वीडियो
+                देखे...</u></b></a>
+
+        </p>
+        <h2 class="h-secondary center">उन्नत किस्में</h2><br>
+        <p class="center">गन्ने की फसल से भरपूर उत्पादन लेने के लिए उन्नत किस्म के बीज का प्रयोग करना आवश्यक है| उन्नत
+          किस्मों से 15 से 25 प्रतिशत अधिक उत्पादन प्राप्त होता है| कुछ उन्नतशील किस्में उष्णकटिबंधीय और उपोष्णकटिबंधीय
+          क्षेत्रों के लिए इस प्रकार है, जैसे-
+          उष्णकटिबंधीय क्षेत्रों हेतु- को- 0218, को- 0403, को- 06027, को- 06030, को- 2000-13, को- 2000-15, को- 91010,
+          को- 92005, को- 94008, को- 94012, को- 99004, सीओए- 03081 (97 अ 85), सीओए- 88081 (84 अ 125), सीओए- 99082 (93 अ
+          145), सीओसी (एस सी)- 22, सीओसी (एस सी)- 23, सीओसी (एस सी)- 24, सीओसी- 01061, सीओसी- 08336, सीओएम- 0265, सीओएम-
+          7714, सीओएम- 88121, सीओएन- 85134, सीओ एसएनके- 05104, सीओवी- 94101 (86 वी 96), सीओवी- 95101 (91 वी 83),
+          सीओवीसी- 2003-165, सीओवीसी- 94463, वीसीएफ- 05171 और को- 0212 आदि प्रमुख है|
+
+
+        </p>
+        <p class="center">उपोष्णकटिबंधीय क्षेत्रों हेतु- बीओ- 145, 146, 147, 153, को- 0118, 0124, 0232, 0233, 0237,
+          0238, 05009, 05011, 98014, सी ओ बी एल एन- 02173, 90006, 9101, 9102, 9103, 9104, 9105, 94063, सीओ एच- 110, सीओ
+          एच- 119, सीओ एच- 128, कोजा- 89, कोलख- 94184, सीओ पी- 2061, सीओ पी- 9702, कोपंत- 03220, कोपंत- 90222, कोपंत-
+          94211, कोपंत- 96219, कोपंत- 97222, कोपंत- 99214, सीओ पीबी- 09181 (कोपंजाब 91), कोपीके- 05191, कोशा- 03251,
+          कोशा- 07250, कोशा- 08277, कोशा- 96269, कोशा- 96275, कोशा- 97261, कोशा- 98259, कोशा- 99259, कोशे- 00235, 01235,
+          01424, 01434, 03234, 96234, यूपी- 0097 और यूपी- 05125 और को- 06034 आदि प्रमुख है|
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+        <img src="{% static 'images/sugar6.jfif' %}" alt="">
+        <p class="center">This is all about sowing techniques </p>
+        <img src="{% static 'images/sugar7.jfif' %}" alt="">
+        <p class="center">sowing techniques </p>
+        <img src="{% static 'images/sugar8.jfif' %}" alt="">
+        <p class="center">sowing techniques </p>
+        <img src="{% static 'images/sugar9.jfif' %}" alt="">
+        <p class="center">Pesticides spraying </p>
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">बुवाई का समय</h2><br>
+        <p class="center">गन्ना बुवाई का सबसे उपयुक्त समय अक्टूबर-नवम्बर ही क्यों चुनें<br>
+          1. फसल में अग्रवेधक कीट का प्रकोप नहीं होता है|<br>
+          2. फसल वृद्धि के लिए अधिक समय मिलने के साथ ही अंतरवर्तीय फसलों की भरपूर संभावना|<br>
+          3. अंकुरण अच्छा होने से बीज कम लगता है और कल्ले अधिक फूटते है|
+
+        </p>
+        <h2 class="h-secondary center">बीज की मात्रा</h2><br>
+        <p class="center">गन्ने की मोटाई के अनुसार बीज की मात्रा कम-ज्यादा होती है, लेकिन आमतौर पर गन्ने की बीज दर इस
+          प्रकार है, जैसे-<br>
+          1. 90 सेंटीमीटर की दूरी पर बिजाई के लिए 35 से 45 क्विंटल बीज गन्ना प्रति एकड़ (12 आँख प्रति मीटर की दर
+          से)|<br>
+          2. एक आँख बीज के टुकडे 53,000 से 53,500 प्रति एकड़|<br>
+          3. एक आँख के बीज टुकड़ों को एक दूसरे के सिरे मिलाकर 31,000 से 31,500 प्रति एकड़ (40 से 50 प्रतिशत बीज की
+          बचत)|<br>
+          4. दो आँख बीज के टुकड़े 26,500 से 27,000 प्रति एकड़|<br>
+          5. तीन आँख बीज के टुकड़े 17,500 से 18,000 प्रति एकड़ उचित होते है|
+
+        </p>
+        <h2 class="h-secondary center">बुवाई की विधि एवं अन्तराल</h2><br>
+        <p class="center">कतार से कतार की दूरी और गन्ने की मोटाई के आधार पर निर्भर करता है, जिसका विवरण इस प्रकार है|
+          आमतौर पर मेड़ नाली पद्धति से बनी 20 से 35 सेंटीमीटर बनी गहरी नालियों में सिरा से सिरा या आंख से आंख मिलाकर
+          सिंगल या डबल गन्ना टुकड़े की बुवाई की जाती है| बिछे हुए गन्ने के टुकड़ों के ऊपर 2 से 3 सेंटीमीटर से अधिक
+          मिट्टी की परत न हो अन्यथा अंकुरण प्रभावित होता है|<br>
+          <br>
+
+          <b>बीजोपचार</b>- बीज जनित रोग और कीट नियंत्रण हेतु कार्बेन्डाजिम 2 ग्राम प्रति लीटर पानी व क्लोरोपायरीफास 5
+          मिलीलीटर
+          प्रति हेक्टेयर की दर से घोल बनाकर आवश्यक बीज का 15 से 20 मिनिट तक उपचार करें|<br>
+          <b>मिटटी उपचार</b>- ट्राईकोडर्मा विरडी 5 किलोग्राम प्रति हेक्टेयर 150 किलोग्राम वर्मी कम्पोस्ट के साथ मिश्रित
+          कर एक
+          या दो दिन नम रखकर बुवाई पूर्व कूड़ों में या प्रथम गुड़ाई के समय भुरकाव करने से कवक जनित रोगों से राहत मिलती
+          है|
+    
+        </p>
+        <a href="https://www.youtube.com/watch?v=faZqhBCR8Q4"><b><u>बुवाई की विधि की अधिक जानकारी के लिए यह वीडियो
+          देखे...</u></b></a>
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+
+
+        <img src="{% static 'images/sugar10.jfif' %}" alt="">
+        <p class="center">irrigation technique </p>
+        <img src="{% static 'images/sugar11.jfif' %}" alt="">
+        <p class="center">Sugarcane harvesting </p>
+        <img src="{% static 'images/sugar12.jfif' %}" alt="">
+        <p class="center">Sugarcane harvesting </p>
+        <img src="{% static 'images/sugar13.jfif' %}" alt="">
+        <p class="center">Sugarcane harvesting </p>
+        <img src="{% static 'images/sugar14.jfif' %}" alt="">
+        <p class="center">Sugarcane yielding</p>
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">सिंचाई प्रबंधन</h2><br>
+        <p class="center">गर्मी के दिनों में भारी मिट्टी वाले खेतों में 8 से 10 दिन के अंतर पर और ठंड के दिनों में 15
+          दिनों के अंतर से सिंचाई करें| हल्की मिट्टी वाले खेतों में 5 से 7 दिनों के अंतर से गर्मी के दिनों में व 10 दिन
+          के अंतर से ठंड के दिनों में सिंचाई करना चाहिये|<br>
+          सिंचाई की मात्रा कम करने के लिये खाली जगह में गन्ने की सुखी पत्तियों की पलवार की 10 से 15 सेंटीमीटर की तह
+          बिछाएं गर्मी में पानी की मात्रा कम होने पर एक नाली छोड़कर सिंचाई देकर फसल बचाएं| कम पानी उपलब्ध होने पर ड्रिप
+          (टपक विधि) से सिंचाई करने से भी 60 प्रतिशत पानी की बचत होती है|<br>
+          गर्मी के मौसम तक जब फसल 5 से 6 महीने तक की होती है, स्प्रींकलर (फव्वारा) विधि से सिंचाई करके 40 प्रतिशत पानी
+          की बचत की जा सकती है| वर्षा के मौसम में खेत में उचित जल निकास का प्रबंध रखें| खेत में पानी के जमाव होने से
+          गन्ने की बढ़वार और रस की गुणवत्ता प्रभावित होती है|
+
+        </p>
+        <p class="center"> सिंचाई फुव्वारा विधि से करनी चाहिये| इसमें
+          क्यारी सिंचाई की अपेक्षा कम पानी की आवश्यकता होती है|<br>
+          <a href="https://www.youtube.com/watch?v=1Gna-AHoHHA"><b><u>सिंचाई की अधिक जानकारी के लिए यह वीडियो
+                देखे...</u></b></a>
+
+        </p>
+        <h2 class="h-secondary center">कटाई एवं मॅडाई</h2><br>
+        <p class="center">फसल की कटाई उस समय करें, जब गन्ने में सुकोज की मात्रा सबसे अधिक हो| क्योंकि यह अवस्था थोड़े
+          समय के लिये होती है तथा जैसे ही तापमान बढ़ता है सुकोज का ग्लूकोज में परिवर्तन प्रारम्भ हो जाता है और ऐसे गन्ने
+          से शक्कर तथा गुड़ की मात्रा कम मिलती है| कटाई पूर्व पकाव सर्वेक्षण करें, इस हेतु रिफलेक्टो मीटर का उपयोग करें|
+          यदि माप 18 या इसके उपर है, तो गन्ना परिपक्व होने का संकेत है| गन्ने की कटाई गन्ने की सतह से करें|<br>
+          <a href="https://www.youtube.com/watch?v=uDA_WZu_IDU"><b><u>कटाई एवं मॅडाई की अधिक जानकारी के लिए यह वीडियो
+                देखे...</u></b></a>
+        </p>
+        <h2 class="h-secondary center">पैदावार</h2><br>
+        <p class="center">गन्ने उत्पादन में उपरोक्त उन्नत वैज्ञानिक तकनीकों का उपयोग कर लगभग 1000 से 1500 क्विंटल प्रति
+          हेक्टेयर तक गन्ना प्राप्त किया जा सकता है|
+        </p>
+        <h2 class="h-secondary center">गन्ने की खेती से अधिक पैदावार के लिए आवश्यक बिंदु</h2><br>
+        <p class="center">1. अनुशंसित किस्मों (शीघ्र पकने वाली) का उपयोग करें|<br>
+          2. गन्ना फसल हेतु 8 माह की आयु का ही गन्ना बीज उपयोग करे|<br>
+          3. शरदकालीन गन्ना (अक्टूर से नवम्बर) की ही बुवाई करें|<br>
+          4. गन्ना की बुवाई कतार से कतार 120 से 150 सेंटीमीटर दूरी पर नाली या आधुनिक पद्धति से करें|<br>
+          5. बीजोपचार (फफूदनाशक कार्बेन्डाजेम 2 ग्राम प्रति लीटर व कीटनाशक क्लोरोपायरीफास 5 मिलीलीटर प्रति लीटर पानी में
+          15 से 20 मिनट तक डुबोकर ) ही बुवाई करें|<br>
+          6. जड़ी प्रबंधन के तहत ठूंठ जमीन की सतह से काटना, गरेड़ तोड़ना, फफूदनाशक व कीटनाशक से ठूंठ का उपचार, गेप
+          फिलिंग, संतुलित उर्वरक (एन पी के- 300:85:60) का उपयोग करें|<br>
+          7. गन्ने की फसल के कतारों के मध्य कम समय में तैयार होने वाली फसलों चना, मटर, धनिया, आलू, प्याज आदि फसलें लें|<br>
+          8. खरपतवार नियंत्रण हेतु ऐटाजिन 1.0 किलोग्राम प्रति हेक्टेयर सक्रिय तत्व की दर से बुवाई के 3 से 5 दिन के अंदर
+          और 2-4-डी, 750 ग्राम प्रति हेक्टेयर सक्रिय तत्व 35 दिन के अंदर छिडकाव करे|<br>
+          9. गन्ना उत्पादक क्षेत्रों में टपक सिंचाई पद्धति को प्रोत्साहन दिया जाए|<br>
+          10. गन्ना पैदावार हेतु गन्ना उत्पादक किसानों को शुगर केन हारवेस्टर, पावर बडचिपर एवं अन्य उन्नत कृषियंत्रों की
+          जानकारी होनी चाहिए|
+
+        </p>
+
+      </div>
+    </div>
+  </section>
+  <div class="bod">
+    <h1>Details about pesticides and weedicides</h1>
+  </div>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxt" id="box5">
+
+        <table>
+          <tr>
+            <th>Detail</th>
+            <th>fertilizer/pesticides</th>
+            <th>quantity</th>
+          </tr>
+          <tr>
+            <td>फसल के पकने की अवधि लम्बी होने कारण खाद और उर्वरक की आवश्यकता  अधिक होती है\
+            </td>
+            <td>Nitrogen deficiency ,phosphorus and potash and cow dung before sowing</td>
+            <td>300kg,90kg,100kg /hectare<br>
+              20 to 35 tone</td>
+          </tr>
+          <tr>
+            <td>खरपतवार प्रबंधन</td>
+            <td> एट्राजीन</td>
+            <td>2kg/hectare in 600 litre water </td>
+          </tr>
+          <tr>
+            <td>चौड़ी पत्ती,चौड़ी -सकरी मिश्रित खरपतवार  </td>
+            <td>2 4- डी सोडियम साल्ट</td>
+            <td>2.8 किलोग्राम प्रति हेक्टेयर के हिसाब से 600 लीटर 45 दिन बाद </td>
+          </tr>
+          <tr>
+            <td>कीट नियंत्रण :अग्रतना छेदक </td>
+            <td>गन्ना बीज को बुवाई के पूर्व 0.1 प्रतिशत क्लोरोपाइीफास <br>25 ई सी के घोल में 20 मिनिट तक उपचारित करे|</td>
+            <td>------------</td>
+          </tr>
+          <tr>
+            <td>पाईरिल्ला-,सफेद मक्खी- </td>
+            <td>एपीरीकीनिया जैविक कीट के परजीवी 5000 प्रति हेक्टेयर उपयोग करें|<br>
+            आवश्यकता पड़ने पर क्विनालफास 25 ई सी, एसिटामेप्रिड या एमिडाक्लोप्रिड 17.8 एस ए एल  </td>
+            <td>मेडिकेटर के निर्देशानुसार छिड़काव करें</td>
+          </tr>
+          <tr>
+            <td>कंडवा रोग- ,लाल सड़न,उकठा,ग्रासी सूट</td>
+            <td>कार्बन्डाजिम या वीटावेक्स पावर घोल में 20 मिनट तक उपचारित करें,</td>
+            <td>--------</td>
+          </tr>
+          
+        </table>
+      </div>
+
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxt" id="box5">
+        <div class="bod">
+          <h1>To get more detail about the Sugarcane farming you have to watch this video...</h1>
+          <h1><a href="https://www.youtube.com/watch?v=bIWvSnKR2Pk"><b>Detail about Sugarcane farming... click
+                here</b></a>
+          </h1>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="bod">
+    <h1>Minimum Support Price(M.S.P) for Sugarcane</h1>
+  </div>
+  <section></section>
+  <section id="msp">
+    <ul style="list-style-type:disc;">
+      <li class="msp1">Price : 285 Rs</li>
+      <li class="msp1">Quantity : 1 quintal</li>
+      <li class="msp1">year : 2020-21</li>
+    </ul><br>
+    <a href="{% url 'sugarcanemsp' %}"><b><u>To get more detail about M.S.P of Sugarcane from 2010 to 2021 Click here...</u></b></a>
+  </section>
+
+
+
+  <footer>
+    <h4 align="center">Made in Djano</h4>
+    <div class="container_12">
+      <div class="grid_2"></div>
+      <div class="grid_2"></div>
+      <div class="grid_2"></div>
+      <div class="grid_3 prefix_1"></div>
+      <div class="clear"></div>
+    </div>
+    <div class="f_bot">
+      <div class="container_12">
+        <div class="grid_12"></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,379 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>AgroKnowledge |Crops| Onion</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/crop.css' %}">
+  <script src="{% static 'js/jquery.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate-1.1.1.js' %}"></script>
+  <script src="{% static 'js/superfish.js' %}"></script>
+  <script src="{% static 'js/sForm.js' %}"></script>
+  <script src="{% static 'js/jquery.equalheights.js' %}"></script>
+  <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+</head>
+<body>
+
+
+  <header>
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="h_phone">Need Help? Call Us +91 6265222852</div>
+        <h1><a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt=""></a></h1>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="menu_block">
+      <div class="container_12">
+        <div class="grid_12">
+          <div class="socials"><a
+              href="https://www.facebook.com/groups/787250868600891/?notif_id=1618812220245678&notif_t=group_invited_to_group&ref=notif"></a><a
+              href="https://twitter.com/AgroKnowledge"></a></div>
+          <div class="autor">Social </div>
+          <nav class="">
+            <ul class="sf-menu">
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="{% url 'services' %}">Schemes</a>
+              </li>
+              <li><a href="{% url 'products' %}">Crops</a>
+                <ul>
+                  <li><a href="#">Rabi Crops</a>
+                    <ul>
+                      <li class="current"><a href="{% url 'wheat' %}">Wheat</a></li>
+                      <li><a href="{% url 'gram' %}">Gram</a></li>
+                      <li><a href="{% url 'sunflower' %}">Sunflower</a></li>
+                      <li><a href="{% url 'potato' %}">Potato</a></li>
+                      <li><a href="{% url 'onion' %}">Onion</a></li>
+                      <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Kharif Crops</a>
+                    <ul>
+                      <li><a href="{% url 'rice' %}">Rice</a></li>
+                      <li><a href="{% url 'corn' %}">Corn</a></li>
+                      <li><a href="{% url 'soyabean' %}">Soyabean</a></li>
+                      <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                      <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                      <li><a href="{% url 'moong' %}">Moong</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="{% url 'contacts' %}">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="bod">
+    <h1>Onion Farming ( प्याज की खेती )</h1>
+  </div>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box1">
+        <img src="{% static 'images/onion1.jfif' %}" alt="">
+        <p class="center">Onion crop can be grown successfully on heavy soil with application of organic manure prior to
+          planting and preparation of the field for onion cultivation should be very good.
+        </p>
+      </div>
+      <div class="box" id="box2">
+        <h2 class="h-secondary">प्याज की खेती </h2><br>
+        <p class="center">प्याज दैनिक जीवन में रोजमर्रा की चीज है| प्याज की खेती आमतौर पर मैदानी व मध्य पर्वतीय
+          क्षेत्रों में रबी के समय की जाती है| जबकि कई क्षेत्रों में खरीफ में भी इसकी खेती की जाती है| यह एक महत्वपूर्ण
+          व्यवसायिक फसल है| भारत के प्याज की मांग विदेशों में भी अच्छी है| इसलिए हमारा देश प्याज का प्रमुख निर्यातक देश
+          है| इसका महत्व आहार के रूप में तो आप जानते ही है| लेकिन प्याज का औषधियों के रूप में भी महत्वपूर्ण स्थान है,
+          जैसे- पीलिया, कब्ज, बवासीर और यकृत सम्बंधी रोगों में बहुत लाभकारी पाया गया है| भारत का प्याज गुणवता में अच्छा
+          तो है, लेकिन फसल क्षेत्रफल की दृष्टी से इसकी पैदावार अच्छी नही है|
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+        <img src="{% static 'images/onion2.jfif' %}" alt="">
+        <p class="center">This is all about wheather conditon in onion farming. </p>
+        <img src="{% static 'images/onion3.jfif' %}" alt="">
+        <p class="center">This is all about land selection in onion farming. </p>
+        <img src="{% static 'images/gram4.jfif' %}" alt="">
+        <p class="center">This is all about land preparation in onion farming. </p>
+        <img src="{% static 'images/onion5.jfif' %}" alt="">
+        <p class="center">Different types of onion for different conditions </p>
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">उपयुक्त जलवायु</h2><br>
+        <p class="center">प्याज सूर्य के प्रकाश व तापमान के प्रति बहुत संवेदनशील है| यह मुख्यतः एक शीतकालीन फसल है|
+          आमतौर पर इसकी अच्छी बढ़वार के लिए आरम्भ 10 से 15 डिग्री सेल्सियस और कंदों के विकास के लिए 20 से 30 डिग्री
+          सेल्सियस तथा कंद निकालते समय 30 से 35 डिग्री सेल्सियस तापमान व 10 से 12 घंटे सूर्यप्रकाश की आवश्यकता होती है|
+          प्याज की खेती के प्रतिकूल जलवायु न मिलने पर उपज पर भारी प्रभाव पड़ता है|
+
+        </p>
+        <h2 class="h-secondary center">भूमि का चयन</h2><br>
+        <p class="center">प्याज की खेती हर प्रकार की भूमि में की जा सकती है| प्याज की अधिकतम उपज के लिए जीवांशयुक्त उचित
+          जल निकास वाली बलुई दोमट या दोमट मिट्टी सबसे उपयुक्त होती है| अधिक अम्बलीय और क्षारीय भूमि में कन्द का विकाश
+          अच्छे से नही होता है| इस प्रकार की मिट्टी में कंदों का विकास ठीक से नहीं होता है| इसके लिए मिट्टी का पी एच मान
+          6.5 से 7.5 होना चाहिए|
+        </p>
+        <h2 class="h-secondary center">खेती की तैयारी</h2><br>
+        <p class="center">प्याज की अच्छी पैदावार के लिए खेत की चार से पांच बार अच्छी जुताई करनी चाहिए| प्रत्येक जुताई के
+          बाद पाटा लागाकर मिट्टी को भूरभूरी बना लेनी चाहिए| भूमि की सतह से 15 सेंटीमीटर की उंचाई पर 1.2 मीटर चौड़ी पट्टी
+          पर रोपाई की जानी चाहिए| इसके लिए खेत को रेज्ड-बेड सिस्टम से भी तैयार किया जा सकता है|<br>
+          <a href="https://www.youtube.com/watch?v=Ip6qR1djZOY"><b><u>खेत की तैयारी की अधिक जानकारी के लिए यह वीडियो
+                देखे...</u></b></a>
+
+        </p>
+        <h2 class="h-secondary center">उन्नत किस्में</h2><br>
+        <p class="center"><b>रबी मौसम</b>- एग्रीफाउण्ड लाईट रेड, एग्रीफाउण्ड डार्क रेड, अर्का कल्याण, अर्का निकेतन, पूसा
+          साध्वी, पटना रेड, पूसा रेड, एन.- 53, नासिक रेड, बसन्त, पूना रेड, भीम रेड, भीमा सुपर आदि प्रमुख है|<br>
+          <b>खरीफ मौसम</b>- अर्को लालिमा, अर्का पीताम्बर, अर्का कीर्तिमान, एन.- 53, एग्रीफाउण्ड डार्क रेड, बसन्त आदि
+          प्रमुख है|<br>
+          <b>लाल रंग कि किस्में</b>- भीमा लाल, भीमा गहरा लाल, भीमा सुपर, हिसार- 2, पंजाब लाल गोल, पंजाब चयन, पटना लाल,
+          नासिक
+          लाल, लाल ग्लोब, बेलारी लाल, पूना लाल, पूसा लाल, पूसा रतनार, अर्का निकेतन, अर्का प्रगति, अर्का लाइम, कल्याणपुर
+          लाल और एल- 2-4-1 इत्यादि प्रमुख है|<br>
+          <b>पीले रंग वाली किस्में</b>- आई आई एच आर पिली, अर्का पीताम्बर, अर्ली ग्रेनो और येलो ग्लोब इत्यादि प्रमुख
+          है|<br>
+          <b>सफेद रंग वाली किस्में</b>- भीमा शुभ्रा, भीमा श्वेता, प्याज चयन- 131, उदयपुर 102, प्याज चयन- 106, नासिक
+          सफ़ेद,
+          सफ़ेद ग्लोब, पूसा व्हाईट राउंड, पूसा व्हाईट फ़्लैट, एन- 247-9 -1 और पूसा राउंड फ़्लैट इत्यादि प्रमुख है|
+
+
+        </p>
+
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+        <img src="{% static 'images/onion6.jfif' %}" alt="">
+        <p class="center">This is all about sowing techniques </p>
+        <img src="{% static 'images/onion7.jfif' %}" alt="">
+        <p class="center">sowing techniques </p>
+        <img src="{% static 'images/onion8.jpeg' %}" alt="">
+        <p class="center">sowing techniques </p>
+        <img src="{% static 'images/onion9.jfif' %}" alt="">
+        <p class="center">Pesticides spraying </p>
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">बुवाई का समय</h2><br>
+        <p class="center">खरीफ प्याज के लिए बीज की बोआई पूरे जून महीने में की जाती है और रबी प्याज के लिए मध्य अक्टूबर
+          से नवम्बर में बोआई की जाती है|
+        </p>
+        <h2 class="h-secondary center">बीज की मात्रा</h2><br>
+        <p class="center">रबी में प्रति हेक्टर रोपाई के लिए 8 से 10 किलो की आवश्यकता होती है| जबकि खरीफ में 15 से 20
+          किलोग्राम प्रति हेक्टेयर बीज की आवश्यकता होती हैं|
+        </p>
+        <h2 class="h-secondary center">पौधा तैयार करना</h2><br>
+        <p class="center">बीज को ऊँची उठी हुई क्यारियों में बोया जाता है| क्यारियों की चौड़ाई 1 से 1.25 मीटर और लम्बाई
+          सुविधानुसार रखते हैं| वैसे 3 से 5 मीटर लम्बी क्यारियाँ सुविधाजनक होती है| एक हेक्टेयर रोपाई के लिए 70
+          क्यारियाँ (1.0 X 5.0 मीटर आकार की) पर्याप्ति होती है| रोगों से बचाने के लिए बीज और पौधशाला की मिट्टी को
+          कवकनाशी थाईरम या कैप्टान आदि से उपचारित करना चाहिए| 2 से 3 ग्राम दवा प्रति किलोग्राम बीज के लिए पर्याप्त होती
+          है|<br><br>
+          भूमि उपचार करने के लिए 4 से 5 ग्राम दवा प्रति वर्ग मीटर भूमि के लिए आवश्यक है| पौध तैयार करने वाली मिट्टी को
+          बोआई से 15 से 20 दिन पहले पानी देकर सफेद पॉलिथीन से ढककर सौरियकरण’ या बोआई के पहले ट्रायकोडर्मा विरिडी कवक से
+          उपचारित करने से भी आर्द्रगलन कम होती है| बीज को 4 से 5 सेंटीमीटर की दूरी पर कतारों में बोना चाहिए| बीज की बोआई
+          के बाद आधा सेंटीमीटर तक सड़ी व छनी हुई गोबर की खाद या मिट्टी से बीज पूर्णतया ढक देते हैं|<br><br>
+          इसके बाद फव्वारों से हल्की सिंचाई करके क्यारियों को सूखी घास से ढक देते हैं| जब बीज अच्छी तरह अंकुरित हो जाए
+          तो घास को हटा देना चाहिए| रोज फव्वारे से हल्की सिंचाई करते रहना चाहिए| इस प्रकार से खरीफ में 6 से 7 सप्ताह में
+          तथा रबी में 8 से 9 सप्ताह में पौध रोपाई के लिए तैयार हो जाती है|
+
+        </p>
+        <h2 class="h-secondary center">पौध रोपाई</h2><br>
+        <p class="center"><b>रोपाई का समय</b>- खरीफ मौसम में प्याज की रोपाई अगस्त में करते हैं और रबी मौसम में, प्याज की
+          रोपाई
+          दिसम्बर से 15 जनवरी तक करते हैं|<br>
+          <b>रोपाई की दूरी</b>- रोपाई करते समय कतारों की दूरी 15 सेंटीमीटर तथा कतार में पौधे की दूरी 10 सेंटीमीटर रखते
+          हैं|
+          रोपाई के तुरन्त बाद हल्की सिंचाई करना अत्यंत आवश्यक होता है| नही तो 100 प्रतिशत तक हानि हो सकती है| खरीफ में
+          प्याज रोपाई के लिए ऊँची उठी क्यारियाँ बनानी चाहिए| रोपाई से पूर्व पौधे की जड़ों को 0.1 प्रतिशत कारबेन्डाजिम +
+          0.1 प्रतिशत मोनोक्रोटोफॉस के घोल में डूबोकर लगाने से पौधे स्वस्थ रहते है|
+
+
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+
+
+        <img src="{% static 'images/onion10.jpeg' %}" alt="">
+        <p class="center">irrigation technique </p>
+        <img src="{% static 'images/onion11.jpeg' %}" alt="">
+        <p class="center">onion dig </p>
+        <img src="{% static 'images/onion12.jfif' %}" alt="">
+        <p class="center">onion harvesting </p>
+        <img src="{% static 'images/onion13.jfif' %}" alt="">
+        <p class="center">onion dig </p>
+        <img src="{% static 'images/onion14.jfif' %}" alt="">
+        <p class="center">onion yielding</p>
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">सिंचाई प्रबंधन</h2><br>
+        <p class="center">पौध की रोपाई के तुरन्त बाद हल्की सिंचाई करना चाहिए| सर्दी में सिंचाई लगभग 8 से 10 दिन के अन्तर
+          पर करते हैं तथा गर्मी में प्रति सप्ताह सिंचाई की आवश्यकता होती है| जिस समय कंद बढ़ रहे हों, उस समय सिंचाई
+          जल्दी करते हैं| पानी की कमी के कारण कंद अच्छी तरह से नहीं बढ़ पाते है और इस तरह से पैदावार में कमी हो जाती है|
+          प्याज फसल की सिंचाई ड्रिप से भी अच्छी तरह से की जा सकती है|
+        </p>
+        <p class="center"> सिंचाई फुव्वारा विधि से करनी चाहिये| इसमें
+          क्यारी सिंचाई की अपेक्षा कम पानी की आवश्यकता होती है|<br>
+          <a href="https://www.youtube.com/watch?v=KEL0cbEqeUw"><b><u>सिंचाई की अधिक जानकारी के लिए यह वीडियो
+                देखे...</u></b></a>
+
+        </p>
+        <h2 class="h-secondary center">खुदाई और प्याज को सुखाना</h2><br>
+        <p class="center">खरीफ फसल को तैयार होने में लगभग 5 माह लग जाते है, क्योकि कंद नवम्बर में तैयार हो जाता है, जिस
+          समय तापमान काफी कम होता है| पौधे पूरी तरह सुख नहीं पाते इसलिए जैसे ही कंद अपने पूरे आकार की हो जाये और उनका
+          रंग लाल हो जाये करीब 10 दिन खुदाई से पहले सिचाई बन्द कर देनी चाहिए| इससे कंद सुडौल और ठोस हो जाते है तथा उनकी
+          वृद्धि रुक जाती है| जब कंद अच्छे आकार के होने पर भी खुदाई नहीं की जाती है, तो वे फटना शुरू कर देते है|<br>
+          खुदाई के बाद इनको कतारों में रखकर सुखा देते हैं| पत्ती को गर्दन से लगभग 2.5 सेंटीमीटर उपर से अलग कर देते हैं
+          तथा फिर एक सप्ताह तक सुखा लेते हैं| रोपाई के 75 दिन बाद 0.2 प्रतिशत मैलिक हाईड्रोजाइड रसायन का छिड़काव और
+          खुदाई से 10 से 15 दिन पहले सिंचाई रोकने से भंडारण में होने वाली क्षति कम हो जाती है|
+          <br>
+          <a href="https://www.youtube.com/watch?v=OjwdDd7AoD4"><b><u>खुदाई  की अधिक जानकारी के लिए यह वीडियो
+                देखे...</u></b></a>
+        </p>
+        <h2 class="h-secondary center">पैदावार</h2><br>
+        <p class="center">उपरोक्त तकनीक से प्याज की खेती करने पर खरीफ में 250 से 300 क्विंटल प्रति हेक्टर औसत पैदावार हो
+          जाती है, और रबी में 350 -450 क्विंटल प्रति हेक्टर प्याज के कंदों की पैदावार हो जाती है||
+        </p>
+        <h2 class="h-secondary center">प्याज की खेती से अधिक पैदावार के लिए आवश्यक बिंदु</h2><br>
+        <p class="center">
+          प्याज की बुवाई करते समय भूमि से 10 सेमी. ऊंची क्यारियां बनाकर बुवाई करनी चाहिए। इसके बाद बीज को ढक देना चाहिए।
+          आद्र्र गलन का रोग पौधों में न लग पाए इसके लिए क्यारियों में 1 प्रतिशत बोर्डो मिश्रण का छिडक़ाव करना चाहिए।
+          प्याज की कतार 15 सेमी., पौधे 10-15 सेमी. ऊंचे हो जाएं तब खेत में रोपण करना चाहिए। अधिक उम्र के पौधे या जब
+          उनमें जड़ वाला भाग मोटा होने लगे, तब इसे नहीं लगाना चाहिए। इसकी के लिए खेत की तैयारी आलू के समान ही की जानी
+          चाहिए। पौध रोपण के तुरंत बाद ही सिंचाई जरूर करनी चाहिए।
+          प्याज के पौधों की कतारों के मध्य पुआल या सूखी पत्तियां बिछा देनी चाहिए जिससे सिंचाई की बचत होती है। फूल आना या
+          बोल्टिंग- कन्द के लिए ली जाने वाली फसल में फूल आना उचित नहीं माना जाता है, इससे कन्द का आकार घट जाता है। अत:
+          आरंभ में ही निकलते हुए डंठलों को तोड़ देना चाहिए।
+          प्याज के लिए कुल 12-15 सिंचाई की आवश्यकता होती है, 7-12 दिन के अन्तर से भूमि के अनुसार सिंचाई की जानी चाहिए।
+          पौधों का सिरा जब मुरझाने लगे, यह कन्द पकने के लक्षण हैं, इस समय सिंचाई नहीं करनी चाहिए।
+          जब पत्तियों का ऊपरी भाग सूखने लगे तो उसे भूमि में गिरा देना चाहिए जिससे प्याज के कन्द ठीक से पक सकें। खुदाई
+          करने में कन्द को चोट या खरोंच नहीं लगनी चाहिए।
+          प्याज के छोटे आकार के कंदों में बड़े आकार की तुलना में संग्रहण क्षमता अधिक होती है। वहीं मोटी गर्दन वाले कंद
+          संग्रहण में शीघ्र ही खराब होने लगते हैं। फसल में नाइट्रोजन युक्त उर्वरक अधिक देने से कंदों की संग्रहण क्षमता
+          कम हो जाती है। इसलिए इसका आवश्यकता से ज्यादा प्रयोग नहीं करें। वहीं फॉस्फोरस और पोटाश का कोई महत्वपूर्ण प्रभाव
+          इस पर नहीं पड़ता है।
+
+        </p>
+
+      </div>
+    </div>
+  </section>
+  <div class="bod">
+    <h1>Details about pesticides and weedicides</h1>
+  </div>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxt" id="box5">
+
+        <table>
+          <tr>
+            <th>Detail</th>
+            <th>fertilizer/pesticides</th>
+            <th>quantity</th>
+          </tr>
+          <tr>
+            <td>Nitrogen deficiency ,phosphorus and potash found in most of the gram<br>
+              growing areas for this before sowing: 1 .Time-fed condition:<br>
+              2.Late sowing ,cow dung manure</td>
+            <td>Nitrogen , phosphorus ,potash</td>
+            <td>20kg,40kg,20kg /hectare<br>
+              3 to 5 tone</td>
+          </tr>
+          <tr>
+            <td>weed control After 4 to 5 days:</td>
+            <td> Pendimethalin 30 E.C</td>
+            <td>3 to 4 litre with 800 litre water /hectare</td>
+          </tr>
+          <tr>
+            <td>To control Plant rot disease</td>
+            <td>Seeds should be treated with 0.2 percent thiram</td>
+            <td>------</td>
+          </tr>
+          <tr>
+            <td>To control Purple leaf bloch</td>
+            <td>Copper oxychloride,Endosulfan</td>
+            <td>2kg and 3g/litre /hectare</td>
+          </tr>
+          <tr>
+            <td>To avoid Root disease</td>
+            <td>Carbendazim</td>
+            <td>1gram with seed at the time of Transplanting</td>
+          </tr>
+          <tr>
+            <td>Angamari infestation </td>
+            <td>Menkogeb or zineb</td>
+            <td>2g/litre water</td>
+          </tr>
+          <tr>
+            <td> To avoid Foil jive (thrips</td>
+            <td>Imidacloprid 17.8 S.L</td>
+            <td>0.5ml/litre </td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxt" id="box5">
+        <div class="bod">
+          <h1>To get more detail about the onion farming you have to watch this video...</h1>
+          <h1><a href="https://www.youtube.com/watch?v=aQsJQAflfBs"><b>Detail about onion farming... click here</b></a>
+          </h1>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="bod">
+    <h1>Minimum Support Price(M.S.P) for onion</h1>
+  </div>
+  <section></section>
+  <section id="msp">
+    <ul style="list-style-type:disc;">
+      <li class="msp1">Price : 800 to 1000 Rs</li>
+      <li class="msp1">Quantity : 1 quintal</li>
+      <li class="msp1">year : 2020-21</li>
+    </ul><br>
+    <a href="{% url 'onionmsp' %}"><b><u>To get more detail about M.S.P of onion from 2010 to 2021 Click here...</u></b></a>
+  </section>
+
+
+
+  <footer>
+    <h4 align="center">Made in Djano</h4>
+    <div class="container_12">
+      <div class="grid_2"></div>
+      <div class="grid_2"></div>
+      <div class="grid_2"></div>
+      <div class="grid_3 prefix_1"></div>
+      <div class="clear"></div>
+    </div>
+    <div class="f_bot">
+      <div class="container_12">
+        <div class="grid_12"></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,366 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>AgroKnowledge |Crops| Moong</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/crop.css' %}">
+  <script src="{% static 'js/jquery.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate-1.1.1.js' %}"></script>
+  <script src="{% static 'js/superfish.js' %}"></script>
+  <script src="{% static 'js/sForm.js' %}"></script>
+  <script src="{% static 'js/jquery.equalheights.js' %}"></script>
+  <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+</head>
+<body>
+
+
+  <header>
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="h_phone">Need Help? Call Us +91 6265222852</div>
+        <h1><a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt=""></a></h1>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="menu_block">
+      <div class="container_12">
+        <div class="grid_12">
+          <div class="socials"><a
+              href="https://www.facebook.com/groups/787250868600891/?notif_id=1618812220245678&notif_t=group_invited_to_group&ref=notif"></a><a
+              href="https://twitter.com/AgroKnowledge"></a></div>
+          <div class="autor">Social </div>
+          <nav class="">
+            <ul class="sf-menu">
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="{% url 'services' %}">Schemes</a>
+              </li>
+              <li><a href="{% url 'products' %}">Crops</a>
+                <ul>
+                  <li><a href="#">Rabi Crops</a>
+                    <ul>
+                      <li class="current"><a href="{% url 'wheat' %}">Wheat</a></li>
+                      <li><a href="{% url 'gram' %}">Gram</a></li>
+                      <li><a href="{% url 'sunflower' %}">Sunflower</a></li>
+                      <li><a href="{% url 'potato' %}">Potato</a></li>
+                      <li><a href="{% url 'onion' %}">Onion</a></li>
+                      <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Kharif Crops</a>
+                    <ul>
+                      <li><a href="{% url 'rice' %}">Rice</a></li>
+                      <li><a href="{% url 'corn' %}">Corn</a></li>
+                      <li><a href="{% url 'soyabean' %}">Soyabean</a></li>
+                      <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                      <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                      <li><a href="{% url 'moong' %}">Moong</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="{% url 'contacts' %}">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="bod">
+    <h1>Moong Farming (मूंग की खेती )</h1>
+  </div>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box1">
+        <img src="{% static 'images/moong1.jfif' %}" alt="">
+        <p class="center">Green gram also known as moong is one of the main pulse crop of India. It is a rich source of
+          Protein along with fibre and iron. It can be cultivated as Kharif as well as summer crop.
+        </p>
+      </div>
+      <div class="box" id="box2">
+        <h2 class="h-secondary">मूंग की खेती</h2><br>
+        <p class="center">भारत में मूंग (Moong) ग्रीष्म और खरीफ दोनों मौषम की कम समय में पकने वाली अक मुख्य दलहनी फसल
+          है| मूंग (Moong) का उपयोग मुख्य रूप से आहार में किया जाता है, जिसमें 24 से 26 प्रतिशत प्रोटीन, 55 से 60
+          प्रतिशत कार्बोहाइड्रेट और 1.3 प्रतिशत वसा होती है| यह दलहनी फसल होने के कारण इसके तने में नाइट्रोजन की गाठें
+          पाई जाती है| जिसे इस फसल के खेत को 35 से 40 किलोग्राम नाइट्रोजन प्रति हेक्टेयर प्राप्त होती है| ग्रीष्म मूंग
+          की खेती चना, मटर, गेहूं, सरसों, आलू, जौ, अलसी आदि फसलों की कटाई के बाद खाली हुए खेतों में की जा सकती है|
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+        <img src="{% static 'images/moong2.jfif' %}" alt="">
+        <p class="center">This is all about wheather conditon in Moong farming. </p>
+        <img src="{% static 'images/moong3.jfif' %}" alt="">
+        <p class="center">This is all about land selection in Moong farming. </p>
+        <img src="{% static 'images/moong4.jpg' %}" alt="">
+        <p class="center">This is all about land preparation in Moong farming. </p>
+        <img src="{% static 'images/moong5.jfif' %}" alt="">
+        <p class="center">Different types of Moong for different conditions </p>
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">उपयुक्त जलवायु</h2><br>
+        <p class="center">मूंग की फसल हर प्रकार के मौसम में उगाई जा सकती है| उत्तर भारत में इसे ग्रीष्म और वर्षा ऋतु में
+          उगाते हैं| दक्षिण भारत में इसे रबी में भी उगाते हैं| ऐसे क्षेत्र जहां 60 से 75 सेंटीमीटर वर्षा होती है, मूंग
+          के लिए उपयुक्त होते हैं| फली बनते और पकते समय वर्षा होने से दाने सड़ जाते हैं एवं काफी हानि होती है| उत्तरी
+          भारत में मूंग को वसंत ऋतु (जायद) में भी उगाते हैं| अच्छे अंकुरण और समुचित बढ़वार हेतु क्रमशः 25 डिग्री तथा 20
+          से 40 डिग्री सेल्सियस तापमान उपयुक्त होता है|
+
+        </p>
+        <h2 class="h-secondary center">भूमि का चयन</h2><br>
+        <p class="center">दोमट भूमि सबसे अधिक उपयुक्त होती है| इसकी खेती मटियार एवं बलुई दोमट में भी की जा सकती है,
+          जिनका पी एच 7.0 से 7.5 हो, इसके लिए उत्तम हैं| खेत में जल निकास उत्तम होना चाहिये|
+        </p>
+        <h2 class="h-secondary center">खेती की तैयारी</h2><br>
+        <p class="center">खरीफ की फसल के लिए एक गहरी जुताई मिट्टी पलटने वाले हल से करना चाहिए और वर्षा प्रारंभ होते ही 2
+          से 3 बार देशी हल या कल्टीवेटर से जुताई कर खरपतवार रहित करने के उपरान्त खेत में पाटा चलाकर समतल करें| दीमक से
+          बचाव के लिये क्लोरोपायरीफॉस 1.5 प्रतिशत चूर्ण 20 से 25 किलोग्राम प्रति हेक्टेयर की दर से खेत की तैयारी के समय
+          मिट्टी में मिलाना चाहिये|<br>
+          <a href="https://www.youtube.com/watch?v=P0ggkgkGXbU"><b><u>खेत की तैयारी की अधिक जानकारी के लिए यह वीडियो
+                देखे...</u></b></a>
+
+        </p>
+        <h2 class="h-secondary center">उन्नत किस्में</h2><br>
+        <p class="center">टाइप 44- इस मूंग की किस्म का पौधा बौना होता है| तना अर्धविस्तारी तथा पत्तियां गहरे हरे रंग की
+          होती हैं| फूल पीले, बीज गहरे हरे रंग के एवं मध्यम आकार के होते हैं| फसल पकने में 60 से 70 दिन का समय लेती है|
+          यह सभी मौसमों में उगाई जा सकती है|
+          मूंग एस 8- पौधा मध्यम ऊंचाई का तथा सीधे बढ़ने वाला होता है| तना विस्तारी, फूल हल्के पीले रंग के, फलियां 6 से 8
+          सेंटीमीटर लम्बी, चिकनी व काली होती हैं| एक फली में 10 से 12 तक हरे चमकदार बीज, फसल तैयार होने में 75 से 80 दिन
+          लेती है| इसमें पीले मोजैक रोग का प्रकोप कम होता है| यह खरीफ ऋतु में उगाई जा सकती है|
+          पूसा विशाल- उत्तर पश्चिमी मैदानी क्षेत्र हेतु बसंत और ग्रीष्म मौसम में बुवाई के लिए उपयुक्त, यह विषाणु जनित
+          पीली चित्ती रोग की प्रतिरोधी, एक साथ पकने वाली है जो बसंत के मौसम में 65 से 70 दिनों में और ग्रीष्म में 60 से
+          65 दिनों में पककर तैयार हो जाती है| पैदावार 12 क्विंटल प्रति हेक्टेयर है|
+          पूसा रतना- मुंग की यह किस्म उत्तर क्षेत्र में खरीफ मौसम में बुवाई के लिए उपयुक्त, एक साथ पकने वाली, 65 से 70
+          दिनों में पककर तैयार, विषाणु जनित पीली चित्ती रोग की सहिष्णु है| पैदावार 12 क्विंटल प्रति हेक्टेयर है|
+          पूसा 0672- यह किस्म उत्तरी पहाड़ी क्षेत्र, खरीफ मौसम में बुवाई के लिए उपयुक्त, मूंग के विषाणु जनित पीली चित्ती
+          रोग व अन्य रोगों की सहिष्णु, दाना चमकदार हरा, आकर्षक और मध्यम आकार का होता है| पैदावार 10 क्विंटल प्रति
+          हेक्टेयर है|
+
+
+        </p>
+
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+        <img src="{% static 'images/moong6.jfif' %}" alt="">
+        <p class="center">This is all about sowing techniques </p>
+        <img src="{% static 'images/moong7.jfif' %}" alt="">
+        <p class="center">sowing techniques </p>
+        <img src="{% static 'images/moong8.jpg' %}" alt="">
+        <p class="center">sowing techniques </p>
+        <img src="{% static 'images/moong9.jfif' %}" alt="">
+        <p class="center">Pesticides spraying </p>
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">बुवाई का समय</h2><br>
+        <p class="center">खरीफ मूंग की बुआई का उपयुक्त समय जून के द्वितीय पखवाड़े से जुलाई के प्रथम पखवाड़े के मध्य है|
+          बसंत कालीन मूंग को मार्च के प्रथम पखवाड़े में और ग्रीष्मकालीन मूंग को 15 मार्च से 15 अप्रैल तक बोनी कर देना
+          चाहिये| बोनी में विलम्ब होने पर फूल आते समय तापक्रम वृद्धि के कारण फलियाँ कम बनती हैं या बनती ही नहीं है, इससे
+          इसकी पैदावार प्रभावित होती है|
+        </p>
+        <h2 class="h-secondary center">बीजशोधन</h2><br>
+        <p class="center">मिटटी और बीज जनित रोगों से बीजों के बचाव के लिए थायरम 2 ग्राम + कार्बेन्डाजिम 1 ग्राम या
+          कार्बेन्डाजिम केप्टान (1:2) 3 ग्राम दवा या कार्बेन्डाजिम 2.5 ग्राम प्रति किलोग्राम बीज की दर से शोधित कर लें|
+          इसके बाद बीज को इमिडाक्लोप्रिड 70 डब्लू एस से 7 ग्राम प्रति किलोग्राम बीज के हिसाब से उपचारित करें|
+        </p>
+        <h2 class="h-secondary center">बीजोपचार</h2><br>
+        <p class="center">बीज शोधन के 2 से 3 दिन बाद बीज को राइजोबियम कल्चर से उपचारित करना चाहिए| 50 ग्राम गुड़ या
+          शक्कर को आधा लीटर जल में घोलकर उबालें एवं ठण्डा कर लें| ठण्डा होने पर इस घोल में राइजोबियम कल्चर डालकर 10
+          किलोग्राम बीज को उपचारित करे| उपचारित बीजों को 4 से 5 घंटे तक छाया में फेला देते हैं| उपचारित बीज को धूप में
+          नहीं सुखाना चाहिए| बीज उपचार दोपहर में करें ताकि शाम को या दूसरे दिन बुआई की जा सके| बीजोपचार कवकनाशी-कीटनाशी
+          एवं राइजोबियम कल्चर को क्रम से ही करना चाहिए
+        </p>
+
+        <h2 class="h-secondary center">बीज की मात्रा</h2><br>
+        <p class="center">खरीफ में कतार विधि से बुआई हेतु मूंग 12 से 15 किलोग्राम प्रति हेक्टेयर पर्याप्त होता है| बसंत
+          या ग्रीष्मकालीन बुआई हेतु 20 से 25 किलोग्राम प्रति हेक्टेयर बीज की आवश्यकता पड़ती है| गन्ने के साथ सहफसली खेती
+          के लिए मूंग की बीज दर 7 से 8 किलोग्राम प्रति हेक्टेयर रखनी चाहिए| मिश्रित फसल में मूंग की बीज दर 8 से 10
+          किलोग्राम प्रति हेक्टेयर रखते है|
+        </p>
+        <h2 class="h-secondary center">बुवाई की विधि एवं अन्तराल</h2><br>
+        <p class="center">सीड ड्रिल या देशी हल के पीछे नाई या चोंगा बॉधकर केवल पंक्तियों में ही बुवाई करना चाहिए| खरीफ
+          फसल के लिए कतार से कतार की दूरी 45 सेंटीमीटर और बसंत (ग्रीष्म) के लिये 30 सेंटीमीटर रखी जाती है| पौधे से पौधे
+          की दूरी 10 से 15 सेंटीमीटर रखते हुये 4 सेंटीमीटर की गहराई पर बोना चाहिये|<br>
+          <br>
+          <a href="https://www.youtube.com/watch?v=1qrpvcieT_M"><b><u>बुवाई की अधिक जानकारी के लिए यह वीडियो
+            देखे...</u></b></a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+
+
+        <img src="{% static 'images/moong10.jfif' %}" alt="">
+        <p class="center">irrigation technique </p>
+        <img src="{% static 'images/moong11.jfif' %}" alt="">
+        <p class="center">Moong harvesting </p>
+        <img src="{% static 'images/moong12.jfif' %}" alt="">
+        <p class="center">Moong harvesting </p>
+        <img src="{% static 'images/moong13.jfif' %}" alt="">
+        <p class="center">Moong yielding </p>
+        
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">सिंचाई प्रबंधन</h2><br>
+        <p class="center">पलेवा के अतिरिक्त फसल की आवश्यकता के अनुसार 4 से 5 सिंचाई करनी चाहिए| बुआई के 20 से 25 दिन बाद
+          पहली सिंचाई करने पर अधिकतम पैदावार प्राप्त होती है| इसके बाद 12 से 15 दिन के अंतराल पर सिंचाई करनी चाहिए| जब
+          फसल पूरी तरह फूल खिलने की अवस्था में हो तो सिंचाई नही करें और फसल पकने के 15 दिन पूर्व सिंचाई बंद कर देना
+          चाहिये|
+        </p>
+        <p class="center"> सिंचाई फुव्वारा विधि से करनी चाहिये| इसमें
+          क्यारी सिंचाई की अपेक्षा कम पानी की आवश्यकता होती है|<br>
+          <a href="https://www.youtube.com/watch?v=yWc8ZZG7TG8"><b><u>सिंचाई की अधिक जानकारी के लिए यह वीडियो
+                देखे...</u></b></a>
+
+        </p>
+        <h2 class="h-secondary center">कटाई एवं मॅडाई</h2><br>
+        <p class="center">जब 70 से 80 प्रतिशत फलियां पक जाएं, कटाई आरम्भ कर देनी चाहिए| तत्पश्चात बण्डल बनाकर फसल को
+          खलिहान में ले आते हैं| 3 से 4 दिन सुखाने के पश्चात सुखााने के उपरान्त श्रेसर द्वारा भूसा से दाना अलग कर लेते
+          हैं||<br>
+          <a href="https://www.youtube.com/watch?v=QSP8we68mxs"><b><u>कटाई एवं मॅडाई की अधिक जानकारी के लिए यह वीडियो
+                देखे...</u></b></a>
+        </p>
+        <h2 class="h-secondary center">पैदावार</h2><br>
+        <p class="center">मुंग की खेती उन्नत तरीके से करने पर बर्षाकालीन फसल से 10 से 12 क्विंटल प्रति हेक्टेयर और
+          ग्रीष्मकालीन फसल से 12 से 15 क्विंटल प्रति हेक्टेयर औसत पैदावार प्राप्त की जा सकती है| मिश्रित फसल में 4 से 7
+          क्विंटल प्रति हेक्टेयर पैदावार प्राप्त की जा सकती है|
+          <b>भण्डारण</b>- भण्डारण करने से पूर्व दानों को अच्छी तरह धूप में सुखाने के उपरान्त ही जब उसमें नमी की मात्रा 8
+          से 10
+          प्रतिशत रहे तभी वह भण्डारण के योग्य रहती है|
+
+        </p>
+        <h2 class="h-secondary center">मूंग की खेती से अधिक पैदावार के लिए आवश्यक बिंदु</h2><br>
+        <p class="center">1. स्वस्थ और प्रमाणित बीज का उपयोग करें|<br>
+          2. सही समय पर बुवाई करें, देर से बुवाई करने पर पैदावार कम हो जाती है|<br>
+          3. किस्मों का चयन क्षेत्रीय अनुकूलता के अनुसार करें|<br>
+          4. बीज उपचार अवश्य करें जिससे पौधो को बीज और मिटटी जनित बीमारियों से प्रारंभिक अवस्था में प्रभावित होने से
+          बचाया जा सके|<br>
+          5. मिट्टी परीक्षण के आधार पर संतुलित उर्वरक उपयोग करे जिससे भूमि की उर्वराशक्ति बनी रहती है, जो अधिक उत्पादन
+          के लिए जरूरी है|<br>
+          6. खरीफ मौसम में मेड नाली पद्धति से बुबाई करें|<br>
+          7. समय पर खरपतवारों नियंत्रण और कीट और रोग रोकथाम करें|<br>
+          8. पीला मोजेक रोग रोधी किस्मों का चुनाव क्षेत्र की अनुकूलता के अनुसार करे|<br>
+          9. पौध संरक्षण के लिये एकीकृत पौध संरक्षण के उपायों को अपनाना चाहिए|
+
+
+        </p>
+
+      </div>
+    </div>
+  </section>
+  <div class="bod">
+    <h1>Details about pesticides and weedicides</h1>
+  </div>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxt" id="box5">
+
+        <table>
+          <tr>
+            <th>Detail</th>
+            <th>fertilizer/pesticides</th>
+            <th>quantity</th>
+          </tr>
+          <tr>
+            <td>नाइट्रोजन और फास्फोरस की पूर्ति के लिए ,</td>
+            <td>नाइट्रोजन,फास्फोरस ,डी ए पी</td>
+            <td>20kg,40kg,100kg /hectare<br>
+              3 to 5 tone</td>
+          </tr>
+          <tr>
+            <td>खरपतवार नियंत्रण</td>
+            <td> पेन्डीमिथालीन 30 ई सी</td>
+            <td>750 से 1000 ग्राम मात्रा प्रति हेक्टेयर 0 से 3 दिन बाद</td>
+          </tr>
+          <tr>
+            <td>कीट रोकथाम
+              थ्रिप्स या रसचूसक कीट</td>
+            <td>बुवाई से पूर्व बीजो को थायोमेथोक्जम 70 डब्ल्यू एस ,और <br>थायोमेथोक्जम 25 डब्ल्यू जी 2 मिलीलीटर प्रति लीटर, पानी में </td>
+            <td>----------</td>
+          </tr>
+          <tr>
+            <td>माहू और सफेद मक्खी</td>
+            <td>डायमिथोएट,इमिडाक्लोप्रिड 17.8 एस एल</td>
+            <td>मेडिकेटर के निर्देशानुसार छिड़काव करें</td>
+          </tr>
+          <tr>
+            <td>पीला चितकबरा रोग</td>
+            <td>रोगरोधी प्रजातियाँ जैसे नरेन्द्र मूंग- 1, पन्त मूंग – 3, पी.डी.एम.- 139, पी डी एम- 11, एम यू एम- 2,</td>
+            <td>मेडिकेटर के निर्देशानुसार चुनाव  करें</td>
+          </tr>
+          <tr>
+            <td>श्वेत मक्खी</td>
+            <td>ट्रायजोफॉस 40 ई सी/थायोमेथाक्साम 25 डब्लू जी</td>
+            <td>2 मिलीलीटर प्रति लीटर/2 ग्राम प्रति लीटर </td>
+          </tr>
+          
+        </table>
+      </div>
+
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxt" id="box5">
+        <div class="bod">
+          <h1>To get more detail about the Moong farming you have to watch this video...</h1>
+          <h1><a href="https://www.youtube.com/watch?v=Zf1TRvcuPhg"><b>Detail about Moong farming... click here</b></a>
+          </h1>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="bod">
+    <h1>Minimum Support Price(M.S.P) for Moong</h1>
+  </div>
+  <section></section>
+  <section id="msp">
+    <ul style="list-style-type:disc;">
+      <li class="msp1">Price : 7196 Rs</li>
+      <li class="msp1">Quantity : 1 quintal</li>
+      <li class="msp1">year : 2020-21</li>
+    </ul><br>
+    <a href="{% url 'moongmsp' %}"><b><u>To get more detail about M.S.P of Moong from 2010 to 2021 Click here...</u></b></a>
+  </section>
+
+
+
+  <footer>
+    <h4 align="center">Made in Djano</h4>
+    <div class="container_12">
+      <div class="grid_2"></div>
+      <div class="grid_2"></div>
+      <div class="grid_2"></div>
+      <div class="grid_3 prefix_1"></div>
+      <div class="clear"></div>
+    </div>
+    <div class="f_bot">
+      <div class="container_12">
+        <div class="grid_12"></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

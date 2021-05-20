@@ -1,0 +1,392 @@
+{% load static %}
+{% static "images" as baseUrl %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>AgroKnowledge |Crops| Wheat</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/crop.css' %}">
+  <script src="{% static 'js/jquery.js' %}"></script>
+  <script src="{% static 'js/jquery-migrate-1.1.1.js' %}"></script>
+  <script src="{% static 'js/superfish.js' %}"></script>
+  <script src="{% static 'js/sForm.js' %}"></script>
+  <script src="{% static 'js/jquery.equalheights.js' %}"></script>
+  <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+</head>
+<body>
+
+
+  <header>
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="h_phone">Need Help? Call Us +91 6265222852</div>
+        <h1><a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt=""></a></h1>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="menu_block">
+      <div class="container_12">
+        <div class="grid_12">
+          <div class="socials"><a
+              href="https://www.facebook.com/groups/787250868600891/?notif_id=1618812220245678&notif_t=group_invited_to_group&ref=notif"></a><a
+              href="https://twitter.com/AgroKnowledge"></a></div>
+          <div class="autor">Social </div>
+          <nav class="">
+            <ul class="sf-menu">
+              <li><a href="{% url 'index' %}">Home</a></li>
+              <li><a href="{% url 'services' %}">Schemes</a>
+              </li>
+              <li><a href="{% url 'products' %}">Crops</a>
+                <ul>
+                  <li><a href="#">Rabi Crops</a>
+                    <ul>
+                      <li class="current"><a href="{% url 'wheat' %}">Wheat</a></li>
+                      <li><a href="{% url 'gram' %}">Gram</a></li>
+                      <li><a href="{% url 'sunflower' %}">Sunflower</a></li>
+                      <li><a href="{% url 'potato' %}">Potato</a></li>
+                      <li><a href="{% url 'onion' %}">Onion</a></li>
+                      <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Kharif Crops</a>
+                    <ul>
+                      <li><a href="{% url 'rice' %}">Rice</a></li>
+                      <li><a href="{% url 'corn' %}">Corn</a></li>
+                      <li><a href="{% url 'soyabean' %}">Soyabean</a></li>
+                      <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                      <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                      <li><a href="{% url 'moong' %}">Moong</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="{% url 'contacts' %}">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </header>
+  <div class="bod">
+    <h1>Wheat Farming ( गेहूँ की खेती )</h1>
+  </div>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box1">
+        <img src="{% static 'images/wheat1.jpg' %}" alt="">
+        <p class="center">Wheat is a grass widely cultivated for its seed, a cereal grain which is a
+          worldwide staple food. The many species of wheat together make up the genus Triticum;
+        </p>
+      </div>
+      <div class="box" id="box2">
+        <h2 class="h-secondary">गेहूं की खेती</h2><br>
+        <p class="center">हमारे देश का गेहूं की खेती और उत्पादन में प्रमुख स्थान है| पंजाब, हरियाणा एवं उत्तर प्रदेश
+          इसके मुख्य उत्पादक राज्य हैं|<br>
+          भारत देश आज 8 करोड़ टन से अधिक गेहूं का उत्पादन कर रहा है| हालांकि, देश की बढ़ती जनसंख्या को देखते हुए गेहूं
+          <br>
+          उत्पादन में वृद्धि की और अधिक आवश्यकता है| इसके लिए गेहूं की उन्नत उत्पादन तकनीकियों को अपनाने की आवश्यकता
+          है|<br>
+          इन तकनीकियों में किस्मों का चुनाव, बोने की विधियां, बीज दर, पोषक तत्व प्रबंधन, सिंचाई प्रबन्धन, खरपतवार
+          नियन्त्रण तथा <br>
+          फसल संरक्षण आदि प्रमुख है|इस लेख में गेहूं की खेती की वैज्ञानिक तकनीक का उल्लेख किया गया है|
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+        <img src="{% static 'images/wheat2.jpg' %}" alt="">
+        <p class="center">This is all about wheather conditon in wheat farming. </p>
+        <img src="{% static 'images/wheat3.gif' %}" alt="">
+        <p class="center">This is all about land selection in wheat farming. </p>
+        <img src="{% static 'images/wheat4.jfif' %}" alt="">
+        <p class="center">This is all about land selection in wheat farming. </p>
+        <img src="{% static 'images/wheat5.jpg' %}" alt="">
+        <p class="center">Different types of wheat for different conditions </p>
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">उपयुक्त जलवायु</h2><br>
+        <p class="center">गेहूं के बीज अंकुरण के लिए 20 से 25 डिग्री सेन्टीग्रेड तापमान उचित रहता है| गेहूं की बढवार के
+          लिए 27 डिग्री सेन्टीग्रेड से अधिक तापमान होने पर विपरीत प्रभाव होता है और पौधो की सुचारू रूप से बढवार नहीं हो
+          पाती है, क्योंकि तापमान अधिक होने से उत्स्वेदन प्रक्रिया द्वारा अधिक उर्जा की क्षति होती है तथा बढवार कम रह
+          जाती है| जिसका फसल उत्पादन पर विपरीत प्रभाव पड़ता है| फूल आने के समय कम तथा अधिक तापमान हानिकारक होता है|
+        </p>
+        <h2 class="h-secondary center">भूमि का चयन</h2><br>
+        <p class="center">सिंचाई के क्षेत्रों में गेहूं की खेती हर प्रकार की भूमि में की जा सकती है, किन्तु अच्छी
+          पैदावार के लिए बलुई दोमट मिट्टी से चिकनी दोमट समतल एवं जल निकास वाली उपजाऊ भूमि अधिक उपयुक्त है| गेहूं के लिये
+          अधिक लवणीय एवं क्षारीय भूमि उपयुक्त नहीं है| जहां पर एक मीटर तक कठोर पड़त हो, वहां गेहूं की खेती नहीं करनी
+          चाहिए|
+        </p>
+        <h2 class="h-secondary center">खेती की तैयारी</h2><br>
+        <p class="center">भारी मिट्टी के खेतों की तैयारी- भारी मिट्टी के खेतों में मिट्टी पलटने वाले हल से पहली जुताई
+          गर्मी में उत्तर से दक्षिण में कर के खेत को खाली छोड़ दें| वर्षा के दिनों में दो तीन बार आवश्यकतानुसार खेत की
+          जुताई करते रहें, जिससे खेत में खरपतवार न जमें| वर्षा उपरान्त एक जुताई और करके सुहागा लगा कर खेत को बोनी के लिए
+          तैयार कर दें|
+        </p>
+        <p class="center">हल्की मिट्टी के खेतों की तैयारी- हल्की मिट्टी वाले खेतों में गर्मी की जुताई न करें| वर्षा के
+          दिनों में तीन बार आवश्यकतानुसार जुताई करें व सुहागा लगाकार खेत को बोनी के लिये तैयार करें| सिंचाई और सघन खेती
+          वाले क्षेत्रों में उपरोक्त दोनों प्रकार की भूमि की जुताइयाँ आवश्यकतानुसार करे|<br>
+          <a href="https://www.youtube.com/watch?v=TcOmDSeC0xA"><b><u>गेहूं के खेत की तैयारी की अधिक जानकारी के लिए यह वीडियो
+              देखे...</u></b></a>
+        </p>
+        <h2 class="h-secondary center">उन्नत किस्में</h2><br>
+        <p class="center">गेहूं उत्पादक किसान बन्धुओं को अपने क्षेत्र की प्रचलित और अधिकतम उपज देने वाली के साथ-साथ
+          विकार रोधी किस्म का चयन करना चाहिए| ताकि इस फसल से अच्छी पैदावार प्राप्त की जा सके कुछ प्रचलित और उन्नत
+          किस्में इस प्रकार है, जैसे-
+        </p>
+        <p class="center">सिंचित अवस्था में समय से बुवाई- एच डी- 2967, एच डी- 4713, एच डी- 2851, एच डी- 2894, एच डी-
+          2687, डी बी डब्ल्यू- 17, पी बी डब्ल्यू- 550, पी बी डब्ल्यू- 502, डब्ल्यू एच- 542, डब्ल्यू- एच- 896 और यू पी-
+          2338 आदि प्रमुख है, इनका बुवाई का उपयुक्त समय 10 नवम्बर से 25 नवम्बर माना जाता है|
+        </p>
+        <p class="center">सिंचित अवस्था में देरी से बुवाई- एच डी- 2985, डब्ल्यू आर- 544, राज- 3765, पी बी डब्ल्यू- 373,
+          डी बी डब्ल्यू- 16, डब्ल्यू एच- 1021, पी बी डब्ल्यू- 590 और यू पी- 2425 आदि प्रमुख है, इनका बुवाई का उपयुक्त
+          समय 25 नवम्बर से 25 दिसम्बर माना जाता है|-
+        </p>
+        <p class="center">असिंचित अवस्था में समय से बुवाई- एच डी- 2888, पी बी डब्ल्यू- 396, पी बी डब्ल्यू- 299, डब्ल्यू
+          एच- 533, पी बी डब्ल्यू- 175 और कुन्दन आदि प्रमुख है|
+        </p>
+        <p class="center">लवणीय मृदाओं के लिए- के आर एल- 1, 4 व 19 प्रमुख है|
+        </p>
+
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+        <img src="{% static 'images/wheat6.jpg' %}" alt="">
+        <p class="center">This is all about sowing techniques </p>
+        <img src="{% static 'images/wheat7.jfif' %}" alt="">
+        <p class="center">sowing techniques </p>
+        <img src="{% static 'images/wheat8.jfif' %}" alt="">
+        <p class="center">sowing techniques </p>
+        <img src="{% static 'images/wheat12.jpg' %}" alt="">
+        <p class="center">Pesticides spraying </p>
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">बुवाई का समय</h2><br>
+        <p class="center">उत्तर-पश्चिमी मैदानी क्षेत्रों में सिंचित दशा में गेहूं बोने का उपयुक्त समय नवम्बर का प्रथम
+          पखवाड़ा है| लेकिन उत्तरी-पूर्वी भागों में मध्य नवम्बर तक गेहूं बोया जा सकता है| देर से बोने के लिए
+          उत्तर-पश्चिमी मैदानों में 25 दिसम्बर के बाद तथा उत्तर-पूर्वी मैदानों में 15 दिसम्बर के बाद गेहूं की बुवाई करने
+          से उपज में भारी हानि होती है| इसी प्रकार बारानी क्षेत्रों में अक्टूबर के अन्तिम सप्ताह से नवम्बर के प्रथम
+          सप्ताह तक बुवाई करना उत्तम रहता है| यदि भूमि की ऊपरी सतह में संरक्षित नमी प्रचुर मात्रा में हो तो गेहूं की
+          बुवाई 15 नवम्बर तक कर सकते हैं|
+        </p>
+        <h2 class="h-secondary center">बीज की मात्रा</h2><br>
+        <p class="center">बीज साफ, स्वस्थ एवं खरपतवारों के बीजों से रहित होना चाहिए| सिकुड़े, छोटे एवं कटे-फटे बीजों को
+          निकाल देना चाहिए| हमेशा उन्नत, नई तथा क्षेत्र विशेष के लिए संस्तुत प्रजातियों का चयन करना चाहिए| बीज दर दानों
+          के आकार, जमाव प्रतिशत, बोने का समय, बोने की विधि और भूमि की दशा पर निर्भर करती है| सामान्यतः यदि 1000 बीजों का
+          भार 38 ग्राम है, तो एक हेक्टेयर के लिए लगभग 100 किलोग्राम बीज की आवश्यकता होती है| यदि दानों का आकार बड़ा या
+          छोटा है, तो उसी अनुपात में बीज दर घटाई या बढ़ाई जा सकती है|
+
+          इसी प्रकार सिंचित क्षेत्रों में समय से बुवाई के लिए 100 किलोग्राम प्रति हेक्टेयर बीज पर्याप्त होता है| लेकिन
+          सिंचित क्षेत्रों में देरी से बोने के लिए 125 किलोग्राम प्रति हेक्टेयर बीज की आवश्यकता होती है| लवणीय तथा
+          क्षारीय मृदाओं के लिए बीज दर 125 किलोग्राम प्रति हेक्टेयर रखनी चाहिए| सदैव प्रमाणित बीजों का प्रयोग करना चाहिए
+          और हर तीसरे वर्ष बीज बदल देना चाहिए|
+        </p>
+        <h2 class="h-secondary center">बुवाई की विधि एवं अन्तराल</h2><br>
+        <p class="center">गेहूं की खेती हेतु बुवाई सीड ड्रिल या देशी हल (केरा या पोरा) से ही करनी चाहिए| छिड़काव विधि से
+          बोने से बीज ज्यादा लगता है तथा जमाव कम, निकाई-गुड़ाई में असुविधा तथा असमान पौध संख्या होने से पैदावार कम हो
+          जाती है| सीड ड्रिल की बुवाई से बीज की गहराई और पंक्तियों की दूरी नियन्त्रित रहती है तथा इससे जमाव अच्छा होता
+          है| विभिन्न परिस्थितियों में बुवाई हेतु फर्टी-सीड ड्रिल (बीज एवं उर्वरक एक साथ बोने हेतु), जीरो टिल ड्रिल
+          (जीरो टिलेज या शून्य कर्षण में बुवाई हेतु), फर्ब ड्रिल (फर्ब बुवाई हेतु) आदि मशीनों का प्रचलन बढ़ रहा है|
+        </p>
+        <p class="center">इसी प्रकार फसल अवशेष के बिना साफ किए हुए अगली फसल के बीज बोने के लिए रोटरी-टिल ड्रिल मशीन भी
+          उपयोग में लाई जा रही है| सामान्यतः गेहूं को 15 से 23 सेंटीमीटर की दूरी पर पंक्तियों में बोया जाता है|
+          पंक्तियों की दूरी मिटटी की दशा, सिंचाईयों की उपलब्धता तथा बोने के समय पर निर्भर करती है| सिंचित एवं समय से
+          बोने हेतु पंक्तियों की दूरी 23 सेंटीमीटर रखनी चाहिए| देरी से बोने पर और ऊसर भूमियों में पंक्तियों की दूरी 15
+          से 18 सेंटीमीटर रखनी चाहिए|
+        </p>
+        <p class="center">सामान्य दशाओं में बौनी किस्मों के गेहूं को लगभग 5 सेंटीमीटर गहरा बोना चाहिए, ज्यादा गहराई में
+          बोने से जमाव तथा उपज पर बुरा प्रभाव पड़ता हैं| बारानी क्षेत्रों में जहाँ बोने के समय भूमि में नमी कम हो वहाँ
+          बीज को कूड़ों में बोना अच्छा रहता है| बुवाई के बाद पाटा नहीं लगाना चाहिए, इससे बीज ज्यादा गहराई में पहुँच जाते
+          हैं, जिससे जमाव अच्छा नहीं होता है|<br>
+          <a href="https://www.youtube.com/watch?v=8H4PUTuv75A"><b><u>बुवाई की विधि एवं अन्तराल की अधिक जानकारी के लिए यह
+              वीडियो देखे...</u></b></a>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxe" id="box4">
+
+
+        <img src="{% static 'images/wheat15.jfif' %}" alt="">
+        <p class="center">irrigation technique </p>
+        <img src="{% static 'images/wheat13.jpg' %}" alt="">
+        <p class="center">wheat harvesting </p>
+        <img src="{% static 'images/wheat11.jpg' %}" alt="">
+        <p class="center">wheat harvesting </p>
+        <img src="{% static 'images/wheat10.jfif' %}" alt="">
+        <p class="center">wheat harvesting </p>
+        <img src="{% static 'images/wheat14.jpg' %}" alt="">
+        <p class="center">wheat yielding</p>
+      </div>
+      <div class="box" id="box3">
+        <h2 class="h-secondary center">सिंचाई प्रबंधन</h2><br>
+        <p class="center">बुवाई के पश्चात फसल की क्रान्तिको अवस्थाओं पर सिंचाई करने से 6 सिंचाई पर्याप्त होती है| प्रथम
+          सिंचाई शीर्ष जड़ जमते समय जब फसल 20 से 25 दिन की हो जाये तब करनी चाहिये| दूसरी सिंचाई जब कल्ले बनने लगे तथा
+          फसल 45 से 50 दिन की हो जाये, तीसरी सिंचाई गाँठ बनते समय बुवाई के 65 से 70 दिन बाद, चौथी सिंचाई बालियाँ निकलते
+          समय बुवाई के 85 से 90 दिन बाद, पाँचवी सिंचाई 100 से 110 दिन बाद जब फसल दूधिया अवस्था में हो तथा अंतिम सिंचाई
+          दाना पकते समय करनी चाहिये, जब फसल 115 से 120 दिन की हो जाये|
+        </p>
+        <p class="center">यदि सिंचाई के लिए पानी की उपलब्धता कम हो तथा चार सिंचाई ही दे सकते हो तो शीर्ष जड़ बनते समय,
+          गाँठ बनते समय, बालियां निकलते समय और दाना पकते समय करनी चाहिये| सिंचाई फुव्वारा विधि से करनी चाहिये| इसमें
+          क्यारी सिंचाई की अपेक्षा कम पानी की आवश्यकता होती है|<br>
+          <a href="https://www.youtube.com/watch?v=O9krcnniqJM"><b><u>सिंचाई की अधिक जानकारी के लिए यह वीडियो देखे...</u></b></a>
+
+        </p>
+        <h2 class="h-secondary center">कटाई एवं मॅडाई</h2><br>
+        <p class="center">जब पौधे पीले पड़ जाये तथा बालियां सूख जाये तो फसल की कटाई कर लेनी चाहिये| जब दानों में 15 से
+          20 प्रतिशत नमी हो तो कटाई का उचित समय होता है| कटाई के पश्चात् फसल को 3 से 4 दिन सूखाना चाहिये तथा मंडाई करके
+          अनाज में जब 8 से 10 प्रतिशत नमी रह जाये तो भंडारण कर देना चाहिये|
+          इसी प्रकार सिंचित क्षेत्रों में समय से बुवाई के लिए 100 किलोग्राम प्रति हेक्टेयर बीज पर्याप्त होता है| लेकिन
+          सिंचित क्षेत्रों में देरी से बोने के लिए 125 किलोग्राम प्रति हेक्टेयर बीज की आवश्यकता होती है| लवणीय तथा
+          क्षारीय मृदाओं के लिए बीज दर 125 किलोग्राम प्रति हेक्टेयर रखनी चाहिए| सदैव प्रमाणित बीजों का प्रयोग करना चाहिए
+          और हर तीसरे वर्ष बीज बदल देना चाहिए|<br>
+          <a href="https://www.youtube.com/watch?v=c22rZ2yu0ts"><b><u>कटाई एवं मॅडाई की अधिक जानकारी लिए के यह वीडियो
+              देखे...</u></b></a>
+        </p>
+        <h2 class="h-secondary center">पैदावार</h2><br>
+        <p class="center">गेहूं की फसल से उपज किस्म के चयन, खाद और उर्वरक के उचित प्रयोग और फसल की देखभाल पर निर्भर करती
+          है| लेकिन सामान्यतः उपरोक्त वैज्ञानिक विधि से खेती करने पर 40 से 70 कुन्तल प्रति हैक्टर तक अनाज की उपज प्राप्त
+          की जा सकती है|
+        </p>
+        <h2 class="h-secondary center">गेहूं की खेती से अधिक पैदावार के लिए आवश्यक बिंदु</h2><br>
+        <p class="center">1. गेहूं की खेती के लिए शुद्ध एवं प्रमाणित बीज की बुआई बीज शोधन के बाद की जाए|<br>
+
+          2. प्रजाति का चयन क्षेत्रीय अनुकूलता एवं समय विशेष के अनुसार किया जाए|<br>
+
+          3. गेहूं की खेती हेतु दो वर्ष के बाद बीज अवश्य बदल दीजिए|<br>
+          4. संतुलित मात्रा में उर्वरकों का प्रयोग मृदा परीक्षण के आधार पर सही समय पर उचित विधि से किया जाए|
+          <br>
+          5. क्रान्तिक अवस्थाओं (ताजमूल अवस्था एवं पुष्पावस्था) पर सिंचाई समय से उचित विधि एवं मात्रा में की जानी चाहिए|
+          <br>
+          6. गेहूं की खेती में कीड़े एवं बीमारीयों से बचाव हेतु विशेष ध्यान दिया जाना चाहिए|
+          <br>
+          7. गेहूं की खेती में कीट और रोगों का प्रकोप होने पर उसका नियंत्रण समय से किया जाना चाहिए|
+          <br>
+          8. गेहूं की खेती के जीरोटिलेज एवं रेज्ड वेड विधि का प्रयोग किया जाए|
+          <br>
+          9. गेहूं की खेती हेतु खेत की तैयारी के लिए रोटवेटर हैरो का प्रयोग किया जाना चाहिए|
+          <br>
+          10. गेहूं की खेती में अधिक से अधिक जीवांश खादों का प्रयोग किया जाना चाहिए|
+          <br>
+          11. गेहूं की खेती के लिए यथा सम्भव आधी खादों की मात्रा जीवांश खादों से पूरी की जानी चाहिए|
+          <br>
+          12. किसी भी प्रकार की खाद का अंधाधुंध प्रयोग न करें उनकी संतुलित मात्रा फसल के लिए अच्छी रहती है|
+          <br>
+          13. गेहूं की खेती हेतु जिंक और गंधक की कमी वाले खेतों में बुवाई से पहले इनकी संतुलित मात्रा अवश्य डालें|<br>
+        </p>
+
+      </div>
+    </div>
+  </section>
+  <div class="bod">
+    <h1>Details about pesticides and weedicides</h1>
+  </div>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxt" id="box5">
+
+        <table>
+          <tr>
+            <th>Detail</th>
+            <th>Fertilizer/pesticides</th>
+            <th>Quantity</th>
+          </tr>
+          <tr>
+            <td>Nitrogen deficiency ,phosphorus and potash found in most of the wheat<br>
+              growing areas for this before sowing: 1 .Time-fed condition:<br>
+              2.Late sowing </td>
+            <td>Nitrogen , phosphorus ,potash</td>
+            <td>125kg,60kg,40kg /Acre<br>
+              125kg,70-80kg,50-80kg/Acre </td>
+          </tr>
+          <tr>
+            <td>weed control After 4 to 5 days:</td>
+            <td> Pendimethalin</td>
+            <td>2.5 litre with 500 litre water /Acre</td>
+          </tr>
+          <tr>
+            <td>wild oats(जंगली जई) weed control</td>
+            <td>Isoproturon or Mataxinran</td>
+            <td>1kg in 500 litre water/Acre</td>
+          </tr>
+          <tr>
+            <td>weed control After 30 to 35 days:</td>
+            <td>2,4-D</td>
+            <td>750gram in 600 litre water/Acre</td>
+          </tr>
+          <tr>
+            <td>To avoid pest While preparing the land</td>
+            <td>endosulfan cracking </td>
+            <td>20-25 kg/Acre</td>
+          </tr>
+          <tr>
+            <td>If termite infestation is in standing crop</td>
+            <td>Chlorpyrifos</td>
+            <td>4 litre/hectare</td>
+          </tr>
+          <tr>
+            <td> To avoid Scorched and leaf blotch, Roli disease, Kandwa, Molyap</td>
+            <td>Mencozeb 2 Kg,Carbofuran,Phosphide or ratafine</td>
+            <td>2kg/hectare</td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+  </section>
+  <section id="services-container">
+    <div id="services">
+      <div class="boxt" id="box5">
+        <div class="bod">
+          <h1>To get more detail about the wheat farming you have to watch this video...</h1>
+          <h1><a href="https://www.youtube.com/watch?v=sErLr664rZU"><b><u>Detail about wheat farming... click here</u></b></a>
+          </h1>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <div class="bod">
+    <h1>Minimum Support Price(M.S.P) for wheat</h1>
+  </div>
+  <section id="msp">
+        <ul style="list-style-type:disc;"  >
+            <li class="msp1">Price : 1975 Rs</li>
+            <li class="msp1">Quantity : 1 quintal</li>
+            <li class="msp1">year : 2020-21</li>
+          </ul><br>
+          <a href="{% url 'wheatmsp' %}"><b><u>To get more detail about M.S.P of wheat from 2010 to 2021 Click here...</u></b></a>
+    </section>
+    <footer>
+      <h4 align="center">Made in Djano</h4>
+      <div class="container_12">
+        <div class="grid_2"></div>
+        <div class="grid_2"></div>
+        <div class="grid_2"></div>
+        <div class="grid_3 prefix_1"></div>
+        <div class="clear"></div>
+      </div>
+      <div class="f_bot">
+        <div class="container_12">
+          <div class="grid_12"></div>
+        </div>
+      </div>
+    </footer>
+  
+  
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>AgroKnowledge| Home</title>
+<meta charset="utf-8">
+<link rel="icon" href="{% static 'images/favicon.ico' %}">
+<link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="{% static 'css/slider.css' %}">
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/jquery-migrate-1.1.1.js' %}"></script>
+<script src="{% static 'js/superfish.js' %}"></script>
+<script src="{% static 'js/sForm.js' %}"></script>
+<script src="{% static 'js/jquery.equalheights.js' %}"></script>
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'js/tms-0.4.1.js' %}"></script>
+<script src="{% static 'js/jquery.carouFredSel-6.1.0-packed.js' %}"></script>
+<script	src="{% static 'js/jquery.touchSwipe.min.js' %}"></script>
+<script>
+$(window).load(function () {
+    $('.slider')._TMS({
+        show: 0,
+        pauseOnHover: false,
+        prevBu: '.prev',
+        nextBu: '.next',
+        playBu: false,
+        duration: 800,
+        preset: 'fade',
+        pagination: false, //'.pagination',true,'<ul></ul>'
+        pagNums: false,
+        slideshow: 8000,
+        numStatus: false,
+        banners: true,
+        waitBannerAnimation: false,
+        progressBar: false
+    })
+});
+$(window).load(
+    function () {
+        $('.carousel1').carouFredSel({
+            auto: false,
+            prev: '.prev1',
+            next: '.next1',
+            width: 1030,
+            items: {
+                visible: {
+                    min: 1,
+                    max: 4
+                },
+                height: 'auto',
+                width: 157,
+            },
+            responsive: true,
+            scroll: 1,
+            mousewheel: false,
+            swipe: {
+                onMouse: true,
+                onTouch: true
+            }
+        });
+    });
+</script>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<link rel="stylesheet" media="screen" href="css/ie.css">
+<![endif]-->
+</head>
+<body class="page1">
+
+  
+<header>
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="h_phone">Need Help? Call Us +91 6265222852</div>
+      <h1><a href="{% url 'index' %}"><img src="{% static 'images/logo.png' %}" alt=""></a></h1>
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="menu_block">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="socials"><a href="https://www.facebook.com/groups/787250868600891/?notif_id=1618812220245678&notif_t=group_invited_to_group&ref=notif"></a><a href="https://twitter.com/AgroKnowledge"></a></div>
+        <div class="autor">Social </div>
+        <nav class="">
+          <ul class="sf-menu">
+            <li class="current"><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'services' %}">Schemes</a>
+            </li>
+            <li><a href="{% url 'products' %}">Crops</a>
+              <ul>
+                <li><a href="#">Rabi Crops</a>
+                  <ul>
+                    <li><a href="{% url 'wheat' %}">Wheat</a></li>
+                    <li><a href="{% url 'gram' %}">Gram</a></li>
+                    <li><a href="{% url 'sunflower' %}">Sunflower</a></li>
+                      <li><a href="{% url 'potato' %}">Potato</a></li>
+                      <li><a href="{% url 'onion' %}">Onion</a></li>
+                      <li><a href="{% url 'tomato' %}">Tomato</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Kharif Crops</a>
+                    <ul>
+                      <li><a href="{% url 'rice' %}">Rice</a></li>
+                      <li><a href="{% url 'corn' %}">Corn</a></li>
+                      <li><a href="{% url 'soyabean' %}">Soyabean</a></li>
+                      <li><a href="{% url 'cotton' %}">Cotton</a></li>
+                      <li><a href="{% url 'sugarcane' %}">Sugarcane</a></li>
+                      <li><a href="{% url 'moong' %}">Moong</a></li>
+                  </ul>
+                </li>
+              </ul></li>
+            <li><a href="{% url 'contacts' %}">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</header>
+
+
+
+<div class="slider-relative">
+  <div class="slider-block">
+    <div class="slider"> <a href="#" class="prev"></a> <a href="#" class="next"></a>
+      <ul class="items">
+        <li> <img src="{% static 'images/slide.jpg' %}" alt="">
+          <div class="banner">Enlightenment the<br>
+            <br>
+            life of Farmers</div>
+        </li>
+        <li> <img src="{% static 'images/slide1.jpg' %}" alt="">
+          <div class="banner">A new generation <br>
+            <br>
+            of farming</div>
+        </li>
+        <li> <img src="{% static 'images/slide2.jpg' %}" alt="">
+          <div class="banner">Best food is<br>
+            <br>
+            natural food</div>
+        </li>
+        <li> <img src="{% static 'images/slide3.jpg' %}" alt="">
+          <div class="banner">Healthy life
+            <br><br>
+            tastes delicious<br>
+            </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="content">
+  <div class="black">
+    <div class="page1_block">
+      <div class="container_12">
+        <div class="grid_12">
+          <h2>Natural and fresh goods only!<br>
+            <br>
+            <br>
+            The best agricultural technologies</h2>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="white wt1">
+      <div class="container_12">
+        <div class="grid_12">
+          <h3>Our News</h3>
+        </div>
+
+
+        {% for n in new %}
+        <div class="grid_4"> <img src="{{n.news_image.url}}" alt="" class="img_inner fleft">
+          <div class="extra_wrapper">
+            <time datetime="2021-01-01">{{n.news_date}}</time>
+            <div class="col1">{{n.news_title}}</div>
+            {{n.news_description}}...<br>
+            <a href="{{n.news_url}}" class="btn">More</a> </div>
+        </div>
+        {% if forloop.counter == 3 or forloop.counter == 6 or forloop.counter == 9 %}
+        <div class="clear cl6"></div>
+        {% endif %}
+        {% endfor %}
+
+
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div class="gray g2">
+      <div class="container_12">
+        <div class="grid_12">
+          <h3>Our People</h3>
+        </div>
+        <div class="grid_4"> <img src="{% static 'images/yuvraj.png' %}" alt="" class="img_inner fleft">
+          <div class="extra_wrapper">
+            <p class="col1 upp"><a href="https://instagram.com/yuvrajsinghr4?igshid=fwql4xgkhf1f">YUVRAJ SINGH</a></p>
+            Persuing B.tech from Shri Vaishnav Vidyapeeth Vishwavidyalaya specilization in Artifical Intelligence </div>
+        </div>
+        <div class="grid_4"> <img src="{% static 'images/sandeep.png' %}" alt="" class="img_inner fleft">
+          <div class="extra_wrapper">
+            <p class="col1 upp"><a href="https://instagram.com/sandy_2699?igshid=1urohg46w7ka4">SANDEEP CHOUDHARY</a></p>
+            Persuing B.tech from Shri Vaishnav Vidyapeeth Vishwavidyalaya specilization in Artifical Intelligence </div>
+        </div>
+        <div class="grid_4"> <img src="{% static 'images/harsh.png' %}" alt="" class="img_inner fleft">
+          <div class="extra_wrapper">
+            <p class="col1 upp"><a href="https://instagram.com/harshporwal_195?igshid=o87cxvul8hjp">HARSH PORWAL</a></p>
+            Persuing B.tech from Shri Vaishnav Vidyapeeth Vishwavidyalaya specilization in Artifical Intelligence </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  
+
+
+
+<footer>
+  <h4 align="center">Made in Djano</h4>
+  <div class="container_12">
+    <div class="grid_2"></div>
+    <div class="grid_2"></div>
+    <div class="grid_2"></div>
+    <div class="grid_3 prefix_1"></div>
+    <div class="clear"></div>
+  </div>
+  <div class="f_bot">
+    <div class="container_12">
+      <div class="grid_12"></div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

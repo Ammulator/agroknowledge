@@ -1,0 +1,1 @@
+web: gunicorn agroknowledge.wsgi --log-file -
